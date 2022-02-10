@@ -105,3 +105,21 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
+ALRT_TXT = """Hello {},
+This is not your movie request,
+Request your's..."""
+
+OLD_ALRT_TXT = """Hey {},
+You are using one of my old messages, 
+please send the request again."""
+
+CUDNT_FND = """I couldn't find anything related to {}
+Did you mean any one of these?"""
+
+I_CUDNT = """I couldn't find any movie related to {}"""
+
+I_CUD_NT = """I couldn't find anything related to {}. Please check the spelling on Google or IMDb..."""
+
+MVE_NT_FND = """Movie not found in Database..."""
+
+TOP_ALRT_MSG = """Checking for movie in database..."""
