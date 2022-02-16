@@ -105,21 +105,25 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
-ALRT_TXT = """Hello {},
-This is not your movie request,
-Request your's..."""
+ALRT_TXT = """ʜᴇʟʟᴏ {},
+ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
 
-OLD_ALRT_TXT = """Hey {},
-You are using one of my old messages, 
-please send the request again."""
+ʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ..."""
 
-CUDNT_FND = """I couldn't find anything related to {}
-Did you mean any one of these?"""
+OLD_ALRT_TXT = """ʜᴇʏ {},
+ʏᴏᴜ ᴀʀᴇ ᴜꜱɪɴɢ ᴏɴᴇ ᴏꜰ ᴍʏ ᴏʟᴅ ᴍᴇꜱꜱᴀɢᴇꜱ, 
 
-I_CUDNT = """I couldn't find any movie related to {}"""
+ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴛʜᴇ ʀᴇQᴜᴇꜱᴛ ᴀɢᴀɪɴ."""
 
-I_CUD_NT = """I couldn't find anything related to {}. Please check the spelling on Google or IMDb..."""
+CUDNT_FND = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}
+ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ?"""
 
-MVE_NT_FND = """Movie not found in Database..."""
+I_CUDNT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}"""
+
+I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}.
+
+ᴘʟᴇᴀꜱᴇ ᴄʜᴇᴄᴋ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ ᴏʀ ɪᴍᴅʙ..."""
+
+MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ..."""
 
 TOP_ALRT_MSG = """Checking for movie in database..."""
