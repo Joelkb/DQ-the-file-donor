@@ -14,11 +14,11 @@ class script(object):
 - This bot is not an open source project. 
 - Source - https://t.me/+wHX4yUfmj91iNmJl  
 
-<b>DEVS:</b>
-- <a href=https://t.me/+wHX4yUfmj91iNmJl>TEAM FILMY HARBOUR</a>"""
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
+<b>𝐃𝐄𝐕𝐒:</b>
+- <a href=https://t.me/+wHX4yUfmj91iNmJl>𝚃𝙴𝙰𝙼 𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁</a>"""
+    MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and I will respond whenever a keyword is found the message
+- ꜰɪʟᴛᴇʀ ɪꜱ ᴛʜᴇ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
 
 <b>NOTE:</b>
 1. This bot should have admin privillage.
