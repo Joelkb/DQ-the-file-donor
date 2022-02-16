@@ -14,7 +14,7 @@ class script(object):
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 - 𝐒𝐨𝐮𝐫𝐜𝐞 - https://t.me/+wHX4yUfmj91iNmJl  
 
-<b>𝐃𝐄𝐕𝐒:</b>
+𝐃𝐄𝐕𝐒:
 - <a href=https://t.me/+wHX4yUfmj91iNmJl>𝚃𝙴𝙰𝙼 𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁</a>"""
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 
@@ -59,7 +59,7 @@ class script(object):
 1. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.
 2. ꜱᴇɴᴅ <ᴄᴏᴅᴇ>/ᴄᴏɴɴᴇᴄᴛ</ᴄᴏᴅᴇ> ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴍ
 
-<b>𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:</b>
+𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:
 • /connect  - <code>ᴄᴏɴɴᴇᴄᴛ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ</code>
 • /disconnect  - <code>ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ</code>
 • /connections - <code>ʟɪꜱᴛ ᴀʟʟ ʏᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ</code>"""
@@ -68,20 +68,20 @@ class script(object):
 <b>ɴᴏᴛᴇ:</b>
 ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ
 
-<b>𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:</b>
+𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:
 • /id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</code>
 • /info  - <code>ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ.</code>
 • /imdb  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.</code>
 • /search  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ.</code>"""
-    ADMIN_TXT = """Help: <b>Admin mods</b>
+    ADMIN_TXT = """ʜᴇʟᴘ: 𝐀𝐝𝐦𝐢𝐧 𝐦𝐨𝐝𝐬
 
-<b>NOTE:</b>
-This module only works for my admins
+<b>ɴᴏᴛᴇ:</b>
+𝐓𝐡𝐢𝐬 𝐦𝐨𝐝𝐮𝐥𝐞 𝐨𝐧𝐥𝐲 𝐰𝐨𝐫𝐤𝐬 𝐟𝐨𝐫 𝐦𝐲 𝐚𝐝𝐦𝐢𝐧𝐬
 
-<b>Commands and Usage:</b>
-• /logs - <code>to get the rescent errors</code>
-• /stats - <code>to get status of files in db.</code>
-• /delete - <code>to delete a specific file from db.</code>
+𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:
+• /logs - <code>ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʀᴇꜱᴄᴇɴᴛ ᴇʀʀᴏʀꜱ</code>
+• /stats - <code>ᴛᴏ ɢᴇᴛ ꜱᴛᴀᴛᴜꜱ ᴏꜰ ꜰɪʟᴇꜱ ɪɴ ᴅʙ.</code>
+• /delete - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴇ ꜰʀᴏᴍ ᴅʙ.</code>
 • /users - <code>to get list of my users and ids.</code>
 • /chats - <code>to get list of the my chats and ids </code>
 • /leave  - <code>to leave from a chat.</code>
