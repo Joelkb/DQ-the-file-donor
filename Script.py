@@ -10,9 +10,9 @@ class script(object):
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝚁𝙰𝙸𝙻𝚆𝙰𝚈
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
-    SOURCE_TXT = """<b>NOTE:</b>
-- This bot is not an open source project. 
-- Source - https://t.me/+wHX4yUfmj91iNmJl  
+    SOURCE_TXT = """<b>ɴᴏᴛᴇ:</b>
+-  ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
+- 𝐒𝐨𝐮𝐫𝐜𝐞 - https://t.me/+wHX4yUfmj91iNmJl  
 
 <b>𝐃𝐄𝐕𝐒:</b>
 - <a href=https://t.me/+wHX4yUfmj91iNmJl>𝚃𝙴𝙰𝙼 𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁</a>"""
