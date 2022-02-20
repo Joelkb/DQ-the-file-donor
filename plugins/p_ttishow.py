@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
-from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS
+from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_VID
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
@@ -53,7 +53,17 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>ഹലോ {u.mention}😍, {message.chat.title} ഗ്രൂപ്പിലേക്ക് സ്വാഗതം ❤️.\n\nസിനിമകൾ request ചെയ്യുന്നതിന് മുമ്പ് സിനിമകളിലേക്ക് ഉള്ള access ലഭിക്കുവാൻ താഴെ കാണുന്ന ഞങ്ങളുടെ </b><a href='https://t.me/+LJRsBp82HiJhNDhl'><b>മെയിൻ ചാനലിൽ</b></a> <b>Join ചെയ്യുക. ജോയിൻ ചെയ്താലേ എല്ലാ സിനിമയിലേക്കും ഉള്ള access ലഭിക്കുകയുള്ളൂ...👇👇\n\nNB: Correct സ്പെല്ലിങ്ങിൽ type ചെയ്താലേ പടം കിട്ടൂ 😂\n\nമൂവി / സീരീസ് ചോദിച്ചിട്ട് കിട്ടിയില്ല എങ്കിൽ അഡ്മിനെ മെൻഷൻ ചെയുക\n\n🤷 Example : @admin Avengers\n\nWᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ Oɴʟʏ Sʜᴀʀᴇ Tʜᴏsᴇ Fɪʟᴇs Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Sʜᴀʀᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟsᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ ❗️\n\n⚠️ Iꜰ Yᴏᴜ Oᴡɴ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛs Oꜰ Aɴʏ Sᴛᴜꜰꜰ Iɴᴛɪᴍᴀᴛᴇ Us Wɪᴛʜ Pʀᴏᴏꜰ Wᴇ Wɪʟʟ Rᴇᴍᴏᴠᴇ\n\nDon't contact Admin directly...\n\nIf you want to contact Admin, Please send the message to @assistant_m4_bot and the bot will deliver the message to the group Admin...\n\n<a href='https://t.me/filmy_harbour_support'>If you are facing any problems with our movie files, bots or groups report it in our support group @filmy_harbour_support</a>\n\nFor admin support type @admins with your message and the bot will forward the message to the admin...</b>")
+                temp.MELCOW['welcome'] = await message.reply_video(
+                                                 video=(MELCOW_VID),
+                                                 caption=f"<b>ഹലോ {u.mention}😍, {message.chat.title} ഗ്രൂപ്പിലേക്ക് സ്വാഗതം ❤️.\n\nസിനിമകൾ request ചെയ്യുന്നതിന് മുമ്പ് സിനിമകളിലേക്ക് ഉള്ള access ലഭിക്കുവാൻ താഴെ കാണുന്ന ഞങ്ങളുടെ </b><a href='https://t.me/+LJRsBp82HiJhNDhl'><b>മെയിൻ ചാനലിൽ</b></a> <b>Join ചെയ്യുക. ജോയിൻ ചെയ്താലേ എല്ലാ സിനിമയിലേക്കും ഉള്ള access ലഭിക്കുകയുള്ളൂ...👇👇\n\nNB: Correct സ്പെല്ലിങ്ങിൽ type ചെയ്താലേ പടം കിട്ടൂ 😂\n\nമൂവി / സീരീസ് ചോദിച്ചിട്ട് കിട്ടിയില്ല എങ്കിൽ അഡ്മിനെ മെൻഷൻ ചെയുക\n\n🤷 Example : @admin Avengers\n\nWᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ Oɴʟʏ Sʜᴀʀᴇ Tʜᴏsᴇ Fɪʟᴇs Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Sʜᴀʀᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟsᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ ❗️\n\n⚠️ Iꜰ Yᴏᴜ Oᴡɴ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛs Oꜰ Aɴʏ Sᴛᴜꜰꜰ Iɴᴛɪᴍᴀᴛᴇ Us Wɪᴛʜ Pʀᴏᴏꜰ Wᴇ Wɪʟʟ Rᴇᴍᴏᴠᴇ\n\nDon't contact Admin directly...\n\nIf you want to contact Admin, Please send the message to @assistant_m4_bot and the bot will deliver the message to the group Admin...\n\n<a href='https://t.me/filmy_harbour_support'>If you are facing any problems with our movie files, bots or groups report it in our support group @filmy_harbour_support</a>\n\nFor admin support type @admins with your message and the bot will forward the message to the admin...</b>",
+                                                 reply_markup=InlineKeyboardMarkup(
+                                                                         [[
+                                                                           InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
+                                                                           InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
+                                                                         ]]
+                                                 ),
+                                                 parse_mode='html'
+)
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
