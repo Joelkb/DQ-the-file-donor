@@ -60,43 +60,14 @@ async def save_group(bot, message):
                                                                          [[
                                                                            InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
                                                                            InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
-                                                                        ],[
-                                                                           InlineKeyboardButton("🇮🇳 Translate to Malayalam 🇮🇳", callback_data='melcow_mal') 
+                                                                         
                                                                          ]]
                                                  ),
                                                  parse_mode='html'
 )
                 
                
-@Client.on_callback_query()
-async def mcb_handler(bot, query: CallbackQuery):
-    if query.data == "melcow_eng":
-        buttons = [[
-                    InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
-                    InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
-                 ],[
-                    InlineKeyboardButton("🇮🇳 Translate to Malayalam 🇮🇳", callback_data='melcow_mal') 
-                  ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=(MELCOW_ENG.format(query.from_user.mention)),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
 
-    elif query.data == "melcow_mal":
-        buttons = [[
-                    InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
-                    InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
-                 ],[
-                    InlineKeyboardButton("🇺🇸 Translate to English 🇺🇸", callback_data='melcow_eng')
-                  ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=(MELCOW_MAL.format(query.from_user.mention)),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
