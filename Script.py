@@ -127,7 +127,7 @@ MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱ
 
 TOP_ALRT_MSG = """𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐦𝐨𝐯𝐢𝐞 𝐢𝐧 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞..."""
 
-MELCOW_ENG = """Hello {}😍, and welcome to the {} Group.❤️
+MELCOW_ENG = """<b>Hello {}😍, and welcome to the {} Group.❤️
 
 Join our main channel below to get access to the movies. Before requesting the movies, Must join our main channel. Only by joining will you get access to all the movies...
 
@@ -147,4 +147,26 @@ If you want to contact Admin, Please send the message to @ assistant_m4_bot and 
 
 If you are facing any problems with our movie files, bots or groups, report it in our support group @filmy_harbour_support
 
-For admin support type @admins with your message and the bot will forward the message to the admin..."""
+For admin support type @admins with your message and the bot will forward the message to the admin...</b>"""
+
+MELCOW_MAL = """<b>ഹലോ {}😍, {} ഗ്രൂപ്പിലേക്ക് സ്വാഗതം ❤️.
+
+സിനിമകൾ request ചെയ്യുന്നതിന് മുമ്പ് സിനിമകളിലേക്ക് ഉള്ള access ലഭിക്കുവാൻ താഴെ കാണുന്ന ഞങ്ങളുടെ </b><a href='https://t.me/+LJRsBp82HiJhNDhl'><b>മെയിൻ ചാനലിൽ</b></a> <b>Join ചെയ്യുക. ജോയിൻ ചെയ്താലേ എല്ലാ സിനിമയിലേക്കും ഉള്ള access ലഭിക്കുകയുള്ളൂ...👇👇
+
+NB: Correct സ്പെല്ലിങ്ങിൽ type ചെയ്താലേ പടം കിട്ടൂ 😂
+
+മൂവി / സീരീസ് ചോദിച്ചിട്ട് കിട്ടിയില്ല എങ്കിൽ അഡ്മിനെ മെൻഷൻ ചെയുക...
+
+🤷 Example : @admin Avengers
+
+Wᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ Oɴʟʏ Sʜᴀʀᴇ Tʜᴏsᴇ Fɪʟᴇs Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Sʜᴀʀᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟsᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ ❗️
+
+⚠️ Iꜰ Yᴏᴜ Oᴡɴ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛs Oꜰ Aɴʏ Sᴛᴜꜰꜰ Iɴᴛɪᴍᴀᴛᴇ Us Wɪᴛʜ Pʀᴏᴏꜰ Wᴇ Wɪʟʟ Rᴇᴍᴏᴠᴇ
+
+Don't contact Admin directly...
+
+If you want to contact Admin, Please send the message to @assistant_m4_bot and the bot will deliver the message to the group Admin...
+
+<a href='https://t.me/filmy_harbour_support'>If you are facing any problems with our movie files, bots or groups report it in our support group @filmy_harbour_support</a>
+
+For admin support type @admins with your message and the bot will forward the message to the admin...</b>"""
