@@ -127,7 +127,7 @@ MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱ
 
 TOP_ALRT_MSG = """𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐦𝐨𝐯𝐢𝐞 𝐢𝐧 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞..."""
 
-MELCOW_ENG = """<b>Hello {}😍, and welcome to the {} Group.❤️
+MELCOW_ENG = """<b>Hello {}😍, and welcome to the Filmy Harbour Group.❤️
 
 Join our main channel below to get access to the movies. Before requesting the movies, Must join our main channel. Only by joining will you get access to all the movies...
 
@@ -149,7 +149,7 @@ If you are facing any problems with our movie files, bots or groups, report it i
 
 For admin support type @admins with your message and the bot will forward the message to the admin...</b>"""
 
-MELCOW_MAL = """<b>ഹലോ {}😍, {} ഗ്രൂപ്പിലേക്ക് സ്വാഗതം ❤️.
+MELCOW_MAL = """<b>ഹലോ {}😍, Filmy Harbour ഗ്രൂപ്പിലേക്ക് സ്വാഗതം ❤️.
 
 സിനിമകൾ request ചെയ്യുന്നതിന് മുമ്പ് സിനിമകളിലേക്ക് ഉള്ള access ലഭിക്കുവാൻ താഴെ കാണുന്ന ഞങ്ങളുടെ </b><a href='https://t.me/+LJRsBp82HiJhNDhl'><b>മെയിൻ ചാനലിൽ</b></a> <b>Join ചെയ്യുക. ജോയിൻ ചെയ്താലേ എല്ലാ സിനിമയിലേക്കും ഉള്ള access ലഭിക്കുകയുള്ളൂ...👇👇
 
