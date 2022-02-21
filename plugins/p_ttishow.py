@@ -61,7 +61,7 @@ async def save_group(bot, message):
                                                                            InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
                                                                            InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
                                                                         ],[
-                                                                           InlineKeyboardMarkup("🇮🇳 Translate to Malayalam 🇮🇳", callback_data='melcow_mal') 
+                                                                           InlineKeyboardButton("🇮🇳 Translate to Malayalam 🇮🇳", callback_data='melcow_mal') 
                                                                          ]]
                                                  ),
                                                  parse_mode='html'
@@ -75,7 +75,7 @@ async def mcb_handler(bot, query: CallbackQuery):
                     InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
                     InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
                  ],[
-                    InlineKeyboardMarkup("🇮🇳 Translate to Malayalam 🇮🇳", callback_data='melcow_mal') 
+                    InlineKeyboardButton("🇮🇳 Translate to Malayalam 🇮🇳", callback_data='melcow_mal') 
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -89,7 +89,7 @@ async def mcb_handler(bot, query: CallbackQuery):
                     InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
                     InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
                  ],[
-                    InlineKeyboardMarkup("🇺🇸 Translate to English 🇺🇸", callback_data='melcow_eng')
+                    InlineKeyboardButton("🇺🇸 Translate to English 🇺🇸", callback_data='melcow_eng')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
