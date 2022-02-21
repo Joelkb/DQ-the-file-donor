@@ -129,7 +129,7 @@ TOP_ALRT_MSG = """𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐦𝐨𝐯𝐢
 
 MELCOW_ENG = """<b>Hello {}😍, and welcome to the Filmy Harbour Group.❤️
 
-Join our main channel below to get access to the movies. Before requesting the movies, Must join our main channel. Only by joining will you get access to all the movies...
+Join our <a href='https://t.me/+LJRsBp82HiJhNDhl'>main channel</a> below to get access to the movies. Before requesting the movies, Must join our main channel. Only by joining will you get access to all the movies...
 
 NB: You can only get the movie by typing in the correct spelling...
 
@@ -143,9 +143,9 @@ Wᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ 
 
 Do not contact Admin directly...
 
-If you want to contact Admin, Please send the message to @ assistant_m4_bot and the bot will deliver the message to the group Admin...
+If you want to contact Admin, Please send the message to @assistant_m4_bot and the bot will deliver the message to the group Admin...
 
-If you are facing any problems with our movie files, bots or groups, report it in our support group @filmy_harbour_support
+<a href='https://t.me/filmy_harbour_support'>If you are facing any problems with our movie files, bots or groups, report it in our support group @filmy_harbour_support</a>
 
 For admin support type @admins with your message and the bot will forward the message to the admin...</b>"""
 
