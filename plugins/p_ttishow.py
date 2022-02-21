@@ -1,11 +1,11 @@
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
 from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_VID
 from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
-from Script import script
+from Script import script, MELCOW_ENG
 from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
@@ -60,10 +60,27 @@ async def save_group(bot, message):
                                                                          [[
                                                                            InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
                                                                            InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
+                                                                        ],[
+                                                                           InlineKeyboardMarkup("🇺🇸 Translate to English 🇺🇸", callback_data='melcow_eng')
                                                                          ]]
                                                  ),
                                                  parse_mode='html'
 )
+                
+               
+@Client.on_callback_query()
+async def mcb_handler(bot, query: CallbackQuery):
+    if query.data == "melcow_eng":
+        buttons = [[
+                    InlineKeyboardButton("Support", url="https://t.me/+8i064A8O6zYzZWY1"),
+                    InlineKeyboardButton("Main Channel", url="https://t.me/+LJRsBp82HiJhNDhl")
+                  ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=(MELCOW_ENG.format(u.mention, message.chat.title)),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
