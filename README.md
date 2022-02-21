@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+DQ-The-File-Donor!;Created+by+Joelkb!;A+simple+Autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;And+more+features!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+DQ-The-File-Donor!;Created+by+Joelkb!;A+simple+and+powerful+Bot!;A+Bot+with+double+button!;Start+message+with+pic!;And+more+features!)
 </p>
 
 ## Disclaimer
