@@ -126,3 +126,25 @@ I_CUD_NT = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ʀᴇʟ�
 MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ..."""
 
 TOP_ALRT_MSG = """𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐦𝐨𝐯𝐢𝐞 𝐢𝐧 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞..."""
+
+MELCOW_ENG = """Hello {}😍, and welcome to the {} Group.❤️
+
+Join our main channel below to get access to the movies. Before requesting the movies, Must join our main channel. Only by joining will you get access to all the movies...
+
+NB: You can only get the movie by typing in the correct spelling...
+
+If you do not get the Movie / Series, mention the admin in the following format 👇
+
+🤷 Example: @admin Avengers
+
+Wᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ Oɴʟʏ Sʜᴀʀᴇ Tʜᴏsᴇ Fɪʟᴇs Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Sʜᴀʀᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟsᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ
+
+⚠️ Iꜰ Yᴏᴜ Oᴡɴ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛs Oꜰ Aɴʏ Sᴛᴜꜰꜰ, Iɴᴛɪᴍᴀᴛᴇ Us Wɪᴛʜ Pʀᴏᴏꜰ Wᴇ Wɪʟʟ Rᴇᴍᴏᴠᴇ
+
+Do not contact Admin directly...
+
+If you want to contact Admin, Please send the message to @ assistant_m4_bot and the bot will deliver the message to the group Admin...
+
+If you are facing any problems with our movie files, bots or groups, report it in our support group @filmy_harbour_support
+
+For admin support type @admins with your message and the bot will forward the message to the admin..."""
