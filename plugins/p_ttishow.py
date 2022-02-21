@@ -79,7 +79,7 @@ async def mcb_handler(bot, query: CallbackQuery):
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=(MELCOW_ENG.format(query.from_user.mention, query.chat.title)),
+            text=(MELCOW_ENG.format(query.from_user.mention)),
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -93,7 +93,7 @@ async def mcb_handler(bot, query: CallbackQuery):
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=(MELCOW_MAL.format(query.from_user.mention, query.chat.title)),
+            text=(MELCOW_MAL.format(query.from_user.mention)),
             reply_markup=reply_markup,
             parse_mode='html'
         )
