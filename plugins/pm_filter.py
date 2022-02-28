@@ -411,39 +411,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/+LJRsBp82HiJhNDhl')
                   ]]
         await query.message.edit_text(
-            text="𝙵"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄"
-        )
-        await query.message.edit_text(
             text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -465,39 +432,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔮 Status', callback_data='stats')
         ]]
         await query.message.edit_text(
-            text="𝙵"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄"
-        )
-        await query.message.edit_text(
             text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -512,39 +446,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
         ]]
-        await query.message.edit_text(
-            text="𝙵"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾"
-        )
-        await query.message.edit_text(
-            text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄"
-        )
         await query.message.edit_text(
             text="𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁"
         )
