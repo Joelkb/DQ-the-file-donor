@@ -8,7 +8,7 @@ from Script import script, ALRT_TXT, OLD_ALRT_TXT, CUDNT_FND, I_CUDNT, I_CUD_NT,
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
-from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF,NOR_IMG, IMDB, \
+from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, NOR_IMG, SPELL_IMG, IMDB, \
     SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
@@ -800,7 +800,8 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply(CUDNT_FND.format(query),
+    await msg.reply_photo(photo=(SPELL_IMG),
+                          caption=(CUDNT_FND.format(query)),
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
