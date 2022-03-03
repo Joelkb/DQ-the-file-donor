@@ -4,7 +4,7 @@ import re
 import ast
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
-from Script import script, ALRT_TXT, OLD_ALRT_TXT, CUDNT_FND, I_CUDNT, I_CUD_NT, MVE_NT_FND, TOP_ALRT_MSG
+from Script import script, ALRT_TXT, OLD_ALRT_TXT, CUDNT_FND, I_CUDNT, I_CUD_NT, MVE_NT_FND, TOP_ALRT_MSG, OWNER_INFO
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
@@ -402,7 +402,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'https://t.me/auto_m4_mallumovies_bot?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴', url=f'https://t.me/creatorbeatz'),
+                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴', callback_data="owner_info"),
                     InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/filmy_harbour')
                 ],[
                     InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
@@ -573,6 +573,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "owner_info":
+            btn = [[
+                    InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="start"),
+                    InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ", url="t.me/creatorbeatz")
+                  ]]
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_text(
+                text=(OWNER_INFO),
+                reply_markup=reply_markup,
+                parse_mode='html'
+            )
+
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
