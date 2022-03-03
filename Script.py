@@ -148,3 +148,10 @@ If you want to contact Admin, Please send the message to @assistant_m4_bot and t
 <a href='https://t.me/filmy_harbour_support'>If you are facing any problems with our movie files, bots or groups, report it in our support group @filmy_harbour_support</a>
 
 For admin support type @admins with your message and the bot will forward the message to the admin...</b>"""
+
+OWNER_INFO = """
+<b>⍟───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───⍟
+    
+• ꜰᴜʟʟ ɴᴀᴍᴇ : ᴊᴏᴇʟ ᴋᴜʀɪᴀɴ ʙɪᴊᴜ
+• ᴜꜱᴇʀɴᴀᴍᴇ : @creatorbeatz
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/creatorbeatz'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
