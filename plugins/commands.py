@@ -78,9 +78,12 @@ async def start(client, message):
         ]
 
         if message.command[1] != "subscribe":
-            kk, file_id = message.command[1].split("_", 1)
-            pre = 'checksubp' if kk == 'filep' else 'checksub' 
-            btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+            try:
+            	kk, file_id = message.command[1].split("_", 1)
+            	pre = 'checksubp' if kk == 'filep' else 'checksub' 
+            	btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+            except IndexError:
+                btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**താഴെ കാണുന്ന ഞങ്ങളുടെ ബാക്കപ് ചാനലിൽ നിങ്ങൾ ഇല്ല അതുകൊണ്ട് നിങ്ങൾക്ക് സിനിമയുടെ ഫയൽ കിട്ടുകയില്ല...\n\nസിനിമയുടെ ഫയൽ വേണമെങ്കിൽ താഴെ കാണുന്ന '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്ത് ജോയിൻ ചെയ്ത ശേഷം ഈ താഴെ കാണുന്ന '🔄 Try Again' എന്ന ബട്ടണിൽ ക്ലിക്ക് ചെയ്യുക...\n\nഅപ്പോൾ നിങ്ങൾക്ക് ഫയൽ ലഭിക്കുന്നതാണ്...\n\nYou are not in our Back-up channel given below so you don't get the movie file...\n\n If you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below to join and then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files...**",
