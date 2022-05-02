@@ -408,13 +408,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
 
     elif query.data == "reqinfo":
-        await query.answer("REQINFO", show_alert=True)
+        await query.answer(f"REQINFO", show_alert=True)
 
     elif query.data == "minfo":
-        await query.answer("MINFO", show_alert=True)
+        await query.answer(f"MINFO", show_alert=True)
 
     elif query.data == "sinfo":
-        await query.answer("SINFO", show_alert=True)
+        await query.answer(f"SINFO", show_alert=True)
 
     elif query.data == "start":
         buttons = [[
