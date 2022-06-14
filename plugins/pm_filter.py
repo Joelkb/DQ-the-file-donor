@@ -744,7 +744,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Hey {message.from_user.mention},\n\nHere is the result for your query {search}\n\n🎞 Requested Movie: {search}\n🗣 Requested By {message.from_user.mention}\n© Powered By {message.chat.title}"
+        cap = f"<b>Hey {message.from_user.mention}, Here is What I Found In My Database For Your Query {search}.</b>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
