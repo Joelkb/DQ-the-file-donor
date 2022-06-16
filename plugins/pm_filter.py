@@ -810,11 +810,14 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply(I_CUD_NT.format(query))
-        btn = [[
+        k = await msg.reply_text(
+            text=(I_CUD_NT.format(query)),
+            reply_markup = InlineKeyboardMarkup(
+             [[
                 InlineKeyboardButton("Check Spelling On Google ✅", url=f"https://google.com/search?q={query}%20Movie")
-              ]]
-        reply_markup = InlineKeyboardMarkup(btn)
+             ]]
+            )
+        )
         await asyncio.sleep(60)
         await k.delete()
         return
