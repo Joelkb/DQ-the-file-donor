@@ -156,4 +156,5 @@ OWNER_INFO = """
 • ᴜꜱᴇʀɴᴀᴍᴇ : @creatorbeatz
 • ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/creatorbeatz'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
-
+URL = """
+https://google.com/search?q={}%20Movie"""
