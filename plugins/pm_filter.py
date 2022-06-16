@@ -811,9 +811,9 @@ async def advantage_spell_chok(msg):
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
         btn = [[
-                InlineKeyboardButton("Check Spelling On Google ✅", url=f'https://google.com/search?q={query}')
+                InlineKeyboardButton(text="Check Spelling On Google ✅", url=f'https://google.com/search?q={query}')
               ]]
-        k = await msg.reply_text(
+        k = await msg.reply(
             text=(I_CUD_NT.format(query)),
             reply_markup = InlineKeyboardMarkup(btn))
         await asyncio.sleep(8)
