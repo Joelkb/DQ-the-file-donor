@@ -777,11 +777,12 @@ async def advantage_spell_chok(msg):
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
         "", msg.text, flags=re.IGNORECASE)  # plis contribute some common words
     query = query.strip() + " movie"
+    RQST = query.strip()
     g_s = await search_gagala(query)
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply(I_CUDNT.format(query))
+        k = await msg.reply(I_CUDNT.format(RQST))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -810,12 +811,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        btn = [[
-                InlineKeyboardButton(text="Check Spelling On Google ✅", url=f'https://google.com/search?q={query}')
-              ]]
-        k = await msg.reply(
-            text=(I_CUD_NT.format(query)),
-            reply_markup = InlineKeyboardMarkup(btn))
+        k = await msg.reply(I_CUD_NT.format(RQST))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -828,7 +824,7 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply_photo(photo=(SPELL_IMG),
-                          caption=(CUDNT_FND.format(query)),
+                          caption=(CUDNT_FND.format(RQST)),
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
