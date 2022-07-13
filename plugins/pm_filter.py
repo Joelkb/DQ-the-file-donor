@@ -871,42 +871,34 @@ async def manual_filters(client, message, text=False):
                 try:
                     if fileid == "None":
                         if btn == "[]":
-                            d1 = await client.send_message(group_id, reply_text, disable_web_page_preview=True)
-                            await asyncio.sleep(600)
-                            await d1.delete()
+                            await client.send_message(group_id, reply_text, disable_web_page_preview=True)
 
                         else:
                             button = eval(btn)
-                            d2 = await client.send_message(
+                            await client.send_message(
                                 group_id,
                                 reply_text,
                                 disable_web_page_preview=True,
                                 reply_markup=InlineKeyboardMarkup(button),
                                 reply_to_message_id=reply_id
                             )
-                            await asyncio.sleep(600)
-                            await d2.delete()
 
                     elif btn == "[]":
-                        d3 = await client.send_cached_media(
+                        await client.send_cached_media(
                             group_id,
                             fileid,
                             caption=reply_text or "",
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(600)
-                        await d3.delete()
 
                     else:
                         button = eval(btn)
-                        d4 = await message.reply_cached_media(
+                        await message.reply_cached_media(
                             fileid,
                             caption=reply_text or "",
                             reply_markup=InlineKeyboardMarkup(button),
                             reply_to_message_id=reply_id
                         )
-                        await asyncio.sleep(600)
-                        await d4.delete()
 
                 except Exception as e:
                     logger.exception(e)
