@@ -32,7 +32,9 @@ SPELL_CHECK = {}
 
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client, message):
-    await manual_filters(client, message)
+    k = await manual_filters(client, message)
+    await asyncio.sleep(600)
+    await k.delete()
     await auto_filter(client, message)
 
 
