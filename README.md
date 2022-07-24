@@ -4,7 +4,7 @@
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://github.com/Joelkb/DQ-the-file-donor">
+<a href="https://heroku.com/deploy/https://github.com/Joelkb/DQ-the-file-donor">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
