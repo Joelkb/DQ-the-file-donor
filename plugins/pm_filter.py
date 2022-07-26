@@ -659,11 +659,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Welcome', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✅ Yes' if settings["welcome"] else '❌ No',
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('Auto Delete', callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('10 mins' if settings["auto_delete"] else '30 mins',
-                                         callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ]
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
@@ -776,60 +771,32 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"<b>Hey {message.from_user.mention}, Here is What I Found In My Database For Your Query {search}.</b>"
-        if settings['auto_delete']:
-            if imdb and imdb.get('poster'):
-                try:
-                    hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-                    await asyncio.sleep(600)
-                    await hehe.delete()
-                    await message.delete()
-                except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-                    pic = imdb.get('poster')
-                    poster = pic.replace('.jpg', "._V1_UX360.jpg")
-                    hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-                    await asyncio.sleep(600)
-                    await hmm.delete()
-                    await message.delete()
-                except Exception as e:
-                    logger.exception(e)
-                    fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-                    await asyncio.sleep(600)
-                    await fek.delete()
-                    await message.delete()
-            else:
-                fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        if imdb and imdb.get('poster'):
+            try:
+                hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
                 await asyncio.sleep(600)
-                await fuk.delete()
+                await hehe.delete()
                 await message.delete()
-                if spoll:
-                    await msg.message.delete()
+            except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
+                pic = imdb.get('poster')
+                poster = pic.replace('.jpg', "._V1_UX360.jpg")
+                hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+                await asyncio.sleep(600)
+                await hmm.delete()
+                await message.delete()
+            except Exception as e:
+                logger.exception(e)
+                fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+                await asyncio.sleep(600)
+                await fek.delete()
+                await message.delete()
         else:
-            if imdb and imdb.get('poster'):
-                try:
-                    hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-                    await asyncio.sleep(1800)
-                    await hehe.delete()
-                    await message.delete()
-                except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
-                    pic = imdb.get('poster')
-                    poster = pic.replace('.jpg', "._V1_UX360.jpg")
-                    hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-                    await asyncio.sleep(1800)
-                    await hmm.delete()
-                    await message.delete()
-                except Exception as e:
-                    logger.exception(e)
-                    fek = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-                    await asyncio.sleep(1800)
-                    await fek.delete()
-                    await message.delete()
-            else:
-                fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-                await asyncio.sleep(1800)
-                await fuk.delete()
-                await message.delete()
-                if spoll:
-                    await msg.message.delete()
+            fuk = await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(600)
+            await fuk.delete()
+            await message.delete()
+            if spoll:
+                await msg.message.delete()
 
 
 async def advantage_spell_chok(msg):
