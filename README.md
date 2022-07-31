@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="assets/logo.jpg" alt="DQ-The-File-Donor Logo">
+</p>
+<h1 align="center">
+  <b>DQ-The-File-Donor Bot</b>
+</h1>
+
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+DQ-The-File-Donor!;Created+by+Joelkb!;A+simple+and+powerful+Bot!;A+Bot+with+double+button!;Start+message+with+pic!;And+more+features!)
 </p>
 
