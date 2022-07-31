@@ -10,9 +10,9 @@ class script(object):
 ✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
 ✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v2.0.3 [ 𝚂𝚃𝙰𝙱𝙻𝙴 ]"""
-    SOURCE_TXT = """<b>ɴᴏᴛᴇ:</b>
-- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-- 𝐒𝐨𝐮𝐫𝐜𝐞 - https://t.me/joeltgx  
+    SOURCE_TXT = """<b>ɴᴏᴛᴇ:
+- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
+- 𝐒𝐨𝐮𝐫𝐜𝐞 - <a href="https://github.com/Joelkb/DQ-The-File-Donor>ʜᴇʀᴇ</a></b>
 
 𝐃𝐄𝐕𝐒:
 - <a href="https://t.me/filmy_harbour">𝚃𝙴𝙰𝙼 𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁</a>"""
