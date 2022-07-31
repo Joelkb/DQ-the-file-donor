@@ -2,9 +2,17 @@
 </p>
 
 ## Features
-
-- [x] Auto Filter
-- [x] Manual Filter
+- [x] IMDB Template Set
+- [x] Settings Menu
+- [x] Welcome Message
+- [x] Automatic File Filtering
+- [x] Double Filter Button
+- [x] Single Filter Button
+- [x] Bot PM File Send Mode
+- [x] Auto File Send
+- [x] Forward Restriction
+- [x] File Protect
+- [x] Manual File Filtering
 - [x] IMDB
 - [x] Admin Commands
 - [x] Broadcast
