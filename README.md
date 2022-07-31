@@ -110,6 +110,11 @@ python3 bot.py
 
 <hr>
 
+## Credits 
+* [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
+* [![Joel TGX]https://img.shields.io/static/v1?label=Joel TGX&message=Github&color=critical)](https://github.com/Joelkb)
+* [![Contact]https://img.shields.io/static/v1?label=Contact&message=On Telegram&color=critical)](https://telegram.me/creatorbeatz)
+
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
 Licensed under [GNU AGPL 2.0.](https://github.com/Joelkb/DQ-The-File-Donor/blob/master/LICENSE)
