@@ -83,6 +83,7 @@
 • /batch - to create link for multiple posts
 • /link - to create link for one post
 • /status - Your Heroku API Key to check dyno, bot uptime and bot working day prediction.
+• /set_template - To set a custom IMDb template for individual groups
 ```
 
 ## Variables
