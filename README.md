@@ -113,7 +113,7 @@ python3 bot.py
 ## Credits 
 * [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 * [![Joel-TGX]https://img.shields.io/static/v1?label=JoelTGX&message=Github&color=critical)](https://github.com/Joelkb)
-* [![Contact]https://img.shields.io/static/v1?label=Contact&message=On-Telegram&color=critical)](https://telegram.me/creatorbeatz)
+* [![Contact]https://img.shields.io/static/v1?label=Contact&message=OnTelegram&color=critical)](https://telegram.me/creatorbeatz)
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
