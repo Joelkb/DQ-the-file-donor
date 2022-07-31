@@ -32,6 +32,9 @@
 - [x] Spelling Check Feature
 - [x] File Store
 - [x] Auto Delete
+- [x] Heroku Dyno Check
+- [x] Bot Uptime
+- [x] Bot work day prediction
 
 <details><summary>Deploy To Heroku</summary>
 <p>
