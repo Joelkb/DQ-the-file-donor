@@ -1,6 +1,30 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+DQ-The-File-Donor!;Created+by+Joelkb!;A+simple+and+powerful+Bot!;A+Bot+with+double+button!;Start+message+with+pic!;And+more+features!)
 </p>
 
+## Features
+
+- [x] Auto Filter
+- [x] Manual Filter
+- [x] IMDB
+- [x] Admin Commands
+- [x] Broadcast
+- [x] Index
+- [x] IMDB search
+- [x] Inline Search
+- [x] Random pics
+- [x] ids and User info 
+- [x] Stats
+- [x] Users
+- [x] Chats
+- [x] User Ban
+- [x] User Unban
+- [x] Chat Leave
+- [x] Chat Disable
+- [x] Channel
+- [x] Spelling Check Feature
+- [x] File Store
+- [x] Auto Delete
+
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
