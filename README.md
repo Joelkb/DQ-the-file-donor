@@ -36,6 +36,40 @@
 - [x] Bot Uptime
 - [x] Bot work day prediction
 
+## Commands
+```
+• /logs - to get the rescent errors
+• /stats - to get status of files in db.
+• /connections - To see all connected groups
+• /settings - To open settings menu
+• /filter - add manual filters
+• /filters - view filters
+• /connect - connect to PM.
+• /disconnect - disconnect from PM
+• /del - delete a filter
+• /delall - delete all filters
+• /deleteall - delete all indexed files.
+• /delete - delete a specific file from index.
+• /info - get user info
+• /id - get tg ids.
+• /imdb - fetch info from imdb.
+• /search - To search from various sources
+• /start - To start the bot
+• /setskip - To skip number of messages when indexing files
+• /users - to get list of my users and ids.
+• /chats - to get list of the my chats and ids 
+• /leave  - to leave from a chat.
+• /disable  -  do disable a chat.
+• /enable - re-enable chat.
+• /ban  - to ban a user.
+• /unban  - to unban a user.
+• /channel - to get list of total connected channels
+• /broadcast - to broadcast a message to all Eva Maria users
+• /batch - to create link for multiple posts
+• /link - to create link for one post
+• /status - Your Heroku API Key to check dyno, bot uptime and bot working day prediction.
+```
+
 ## Variables
 
 ### Required Variables
