@@ -18,6 +18,7 @@
 
 ## Features
 - [x] IMDB Template Set
+- [x] Indexes Files above 2GB
 - [x] Settings Menu
 - [x] Welcome Message
 - [x] Automatic File Filtering
