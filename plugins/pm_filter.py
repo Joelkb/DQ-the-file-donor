@@ -12,7 +12,7 @@ from database.connections_mdb import active_connection, all_connections, delete_
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, NOR_IMG, SPELL_IMG, IMDB, \
     SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings
 from database.users_chats_db import db
@@ -31,7 +31,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 
 
-@Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
+@Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     await manual_filters(client, message)
     await auto_filter(client, message)
@@ -129,7 +129,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.answer(ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
-    movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
+    movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
         return await query.answer(OLD_ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     movie = movies[(int(movie_))]
@@ -154,7 +154,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         userid = query.from_user.id
         chat_type = query.message.chat.type
 
-        if chat_type == "private":
+        if chat_type == enums.ChatType.PRIVATE:
             grpid = await active_connection(str(userid))
             if grpid is not None:
                 grp_id = grpid
@@ -171,7 +171,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
                 return await query.answer('Jᴏɪɴ Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ')
 
-        elif chat_type in ["group", "supergroup"]:
+        elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
@@ -179,7 +179,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return await query.answer('Jᴏɪɴ Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ')
 
         st = await client.get_chat_member(grp_id, userid)
-        if (st.status == "creator") or (str(userid) in ADMINS):
+        if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
             await del_all(query.message, grp_id, title)
         else:
             await query.answer("You need to be Group Owner or an Auth User to do that!", show_alert=True)
@@ -187,14 +187,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         userid = query.from_user.id
         chat_type = query.message.chat.type
 
-        if chat_type == "private":
+        if chat_type == enums.ChatType.PRIVATE:
             await query.message.reply_to_message.delete()
             await query.message.delete()
 
-        elif chat_type in ["group", "supergroup"]:
+        elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             st = await client.get_chat_member(grp_id, userid)
-            if (st.status == "creator") or (str(userid) in ADMINS):
+            if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
                 await query.message.delete()
                 try:
                     await query.message.reply_to_message.delete()
@@ -228,7 +228,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             f"Group Name : **{title}**\nGroup ID : `{group_id}`",
             reply_markup=keyboard,
-            parse_mode="md"
+            parse_mode=enums.ParseMode.MARKDOWN
         )
         return await query.answer('Jᴏɪɴ Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ')
     elif "connectcb" in query.data:
@@ -247,10 +247,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if mkact:
             await query.message.edit_text(
                 f"Connected to **{title}**",
-                parse_mode="md"
+                parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
-            await query.message.edit_text('Some error occurred!!', parse_mode="md")
+            await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
         return await query.answer('Jᴏɪɴ Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ')
     elif "disconnect" in query.data:
         await query.answer()
@@ -267,12 +267,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if mkinact:
             await query.message.edit_text(
                 f"Disconnected from **{title}**",
-                parse_mode="md"
+                parse_mode=enums.ParseMode.MARKDOWN
             )
         else:
             await query.message.edit_text(
                 f"Some error occurred!!",
-                parse_mode="md"
+                parse_mode=enums.ParseMode.MARKDOWN
             )
         return await query.answer('Jᴏɪɴ Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ')
     elif "deletecb" in query.data:
@@ -290,7 +290,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
             await query.message.edit_text(
                 f"Some error occurred!!",
-                parse_mode="md"
+                parse_mode=enums.ParseMode.MARKDOWN
             )
         return await query.answer('Jᴏɪɴ Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ')
     elif query.data == "backcb":
@@ -455,7 +455,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
         await query.answer('Jᴏɪɴ Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ')
     elif query.data == "help":
@@ -474,7 +474,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "about":
         buttons = [[
@@ -489,7 +489,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "source":
         buttons = [[
@@ -499,7 +499,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.SOURCE_TXT,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "manuelfilter":
         buttons = [[
@@ -510,7 +510,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.MANUELFILTER_TXT,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "button":
         buttons = [[
@@ -520,7 +520,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.BUTTON_TXT,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "autofilter":
         buttons = [[
@@ -530,7 +530,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.AUTOFILTER_TXT,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "coct":
         buttons = [[
@@ -540,7 +540,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.CONNECTION_TXT,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "extra":
         buttons = [[
@@ -551,7 +551,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.EXTRAMOD_TXT,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "admin":
         buttons = [[
@@ -561,7 +561,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.ADMIN_TXT,
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "stats":
         buttons = [[
@@ -579,7 +579,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
@@ -598,7 +598,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
-            parse_mode='html'
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "owner_info":
             btn = [[
@@ -609,7 +609,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 text=(OWNER_INFO),
                 reply_markup=reply_markup,
-                parse_mode='html'
+                parse_mode=enums.ParseMode.HTML
             )
 
     elif query.data.startswith("setgs"):
@@ -739,7 +739,7 @@ async def auto_filter(client, msg, spoll=False):
     ])
 
     if offset != "":
-        key = f"{message.chat.id}-{message.message_id}"
+        key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
@@ -864,7 +864,7 @@ async def advantage_spell_chok(msg):
         await asyncio.sleep(8)
         await k.delete()
         return
-    SPELL_CHECK[msg.message_id] = movielist
+    SPELL_CHECK[msg.id] = movielist
     btn = [[
         InlineKeyboardButton(
             text=movie.strip(),
@@ -880,7 +880,7 @@ async def advantage_spell_chok(msg):
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
-    reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
+    reply_id = message.reply_to_message.id if message.reply_to_message else message.id
     keywords = await get_filters(group_id)
     for keyword in reversed(sorted(keywords, key=len)):
         pattern = r"( |^|[^\w])" + re.escape(keyword) + r"( |$|[^\w])"
