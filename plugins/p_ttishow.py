@@ -63,7 +63,7 @@ async def save_group(bot, message):
                                                                          
                                                                          ]]
                                                  ),
-                                                 parse_mode='html'
+                                                 parse_mode=enums.ParseMode.HTML
 )
                 
                
