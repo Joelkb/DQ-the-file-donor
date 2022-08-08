@@ -6,7 +6,7 @@ import time
 import heroku3
 import requests
 
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums
 from database.users_chats_db import db
 
 #=====================================================
@@ -91,5 +91,5 @@ Heroku Account Status
         f"{quota_details}"
         f"{disk}",
         quote=True,
-        parse_mode="md"
+        parse_mode=enums.ParseMode.MARKDOWN
     )
