@@ -1,5 +1,6 @@
 import pymongo
 from info import DATABASE_URI, DATABASE_NAME
+from pyrogram import enums
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
@@ -70,7 +71,7 @@ async def delete_filter(message, text, group_id):
         await message.reply_text(
             f"'`{text}`'  deleted. I'll not respond to that filter anymore.",
             quote=True,
-            parse_mode="md"
+            parse_mode=enums.ParseMode.MARKDOWN
         )
     else:
         await message.reply_text("Couldn't find that filter!", quote=True)
