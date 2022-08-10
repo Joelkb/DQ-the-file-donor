@@ -20,6 +20,7 @@
 - [x] IMDB Template Set
 - [x] Indexes Files above 2GB
 - [x] Settings Menu
+- [x] Force Subscription
 - [x] Welcome Message
 - [x] Automatic File Filtering
 - [x] Double Filter Button
