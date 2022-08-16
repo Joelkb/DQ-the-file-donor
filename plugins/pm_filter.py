@@ -677,7 +677,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('Jᴏɪɴ Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ')
+    await query.answer('Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Hᴀᴠᴇ Bᴇᴇɴ Sᴜᴄᴄᴇssғᴜʟʟʏ Uᴘᴅᴀᴛᴇᴅ !')
 
     
 async def auto_filter(client, msg, spoll=False):
@@ -872,9 +872,13 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply_photo(photo=(SPELL_IMG),
-                          caption=(CUDNT_FND.format(RQST)),
-                    reply_markup=InlineKeyboardMarkup(btn))
+    spell_check_del = await msg.reply_photo(
+        photo=(SPELL_IMG),
+        caption=(CUDNT_FND.format(RQST)),
+        reply_markup=InlineKeyboardMarkup(btn)
+    )
+    await asyncio.sleep(600)
+    await spell_check_del.delete()
 
 
 async def manual_filters(client, message, text=False):
