@@ -5,7 +5,7 @@ import ast
 import math
 
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
-from Script import script, ALRT_TXT, OLD_ALRT_TXT, CUDNT_FND, I_CUDNT, I_CUD_NT, MVE_NT_FND, TOP_ALRT_MSG, OWNER_INFO
+from Script import script
 import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
@@ -40,14 +40,14 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer(ALRT_TXT.format(query.from_user.first_name), show_alert=True)
+        return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer(OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
+        await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -126,14 +126,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer(ALRT_TXT.format(query.from_user.first_name), show_alert=True)
+        return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer(OLD_ALRT_TXT.format(query.from_user.first_name), show_alert=True)
+        return await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer(TOP_ALRT_MSG)
+    await query.answer(script.TOP_ALRT_MSG)
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -141,7 +141,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit(MVE_NT_FND)
+            k = await query.message.edit(script.MVE_NT_FND)
             await asyncio.sleep(10)
             await k.delete()
 
@@ -621,7 +621,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
-                text=(OWNER_INFO),
+                text=(script.OWNER_INFO),
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
             )
@@ -845,7 +845,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply(I_CUDNT.format(RQST))
+        k = await msg.reply(script.I_CUDNT.format(RQST))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -874,7 +874,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply(I_CUD_NT.format(RQST))
+        k = await msg.reply(script.I_CUD_NT.format(RQST))
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -888,7 +888,7 @@ async def advantage_spell_chok(msg):
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
-        caption=(CUDNT_FND.format(RQST)),
+        caption=(script.CUDNT_FND.format(RQST)),
         reply_markup=InlineKeyboardMarkup(btn)
     )
     await asyncio.sleep(600)
