@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝚂𝙾𝚁𝚁𝚈 𝚈𝙾𝚄 𝙲𝙰𝙽'𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿. 𝙱𝙴𝙲𝙰𝚄𝚂𝙴 𝙸'𝙼 𝙾𝙽𝙻𝚈 𝙼𝙰𝙳𝙴 𝙵𝙾𝚁 <a href='https://t.me/filmy_harbour'>𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿</a>. 𝙱𝚄𝚃 𝚈𝙾𝚄 𝙲𝙰𝙽 𝙰𝙳𝙳 𝙼𝚈 𝙱𝚁𝙾𝚃𝙷𝙴𝚁 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿.  𝙹𝚄𝚂𝚃 𝙲𝙻𝙸𝙲𝙺 𝙾𝙽 𝚃𝙷𝙴 '𝙰𝙳𝙳 𝙱𝚁𝙾𝚃𝙷𝙴𝚁 𝚃𝙾 𝙶𝚁𝙾𝚄𝙿' 𝙱𝚄𝚃𝚃𝙾𝙽 𝙱𝙴𝙻𝙾𝚆 𝙰𝙽𝙳 𝙰𝙳𝙳 𝙷𝙸𝙼 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿. 𝙷𝙴 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙷𝙸𝙼 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
@@ -116,15 +116,24 @@ Name - {}
 """
 
     MELCOW_ENG = """<b>Hello {}😍, and welcome to {} Group.❤️
+
 Join our <a href='https://t.me/+LJRsBp82HiJhNDhl'>main channel</a> below to get access to the movies. Before requesting the movies, Must join our main channel. Only by joining will you get access to all the movies...
+
 NB: You can only get the movie by typing in the correct spelling...
+
 If you do not get the Movie / Series, mention the admin in the following format 👇
+
 🤷 Example: @admin Avengers
+
 Wᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ Oɴʟʏ Sʜᴀʀᴇ Tʜᴏsᴇ Fɪʟᴇs Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Sʜᴀʀᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟsᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ
 ⚠️ Iꜰ Yᴏᴜ Oᴡɴ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛs Oꜰ Aɴʏ Sᴛᴜꜰꜰ, Iɴᴛɪᴍᴀᴛᴇ Us Wɪᴛʜ Pʀᴏᴏꜰ Wᴇ Wɪʟʟ Rᴇᴍᴏᴠᴇ
+
 Do not contact Admin directly...
+
 If you want to contact Admin, Please send the message to @assistant_m4_bot and the bot will deliver the message to the group Admin...
+
 <a href='https://t.me/filmy_harbour_support'>If you are facing any problems with our movie files, bots or groups, report it in our support group @filmy_harbour_support</a>
+
 For admin support type @admins with your message and the bot will forward the message to the admin...</b>
 """
 
