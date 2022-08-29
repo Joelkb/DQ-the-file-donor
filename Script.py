@@ -1,19 +1,19 @@
 class script(object):
-    START_TXT = """𝙷𝙴𝙻𝙻𝙾 {},
-𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
-    ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/+wHX4yUfmj91iNmJl>𝙵𝙸𝙻𝙼𝚈 𝙷𝙰𝚁𝙱𝙾𝚄𝚁</a>
-✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝚁𝙰𝙸𝙻𝚆𝙰𝚈
-✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v2.0.3 [ 𝚂𝚃𝙰𝙱𝙻𝙴 ]"""
+    START_TXT = """Hᴇʟʟᴏ {},
+Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍"""
+    HELP_TXT = """Hᴇʏ {}
+Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs."""
+    ABOUT_TXT = """✯ Mʏ Nᴀᴍᴇ: {}
+✯ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/+wHX4yUfmj91iNmJl>Fɪʟᴍʏ Hᴀʀʙᴏᴜʀ</a>
+✯ Lɪʙʀᴀʀʏ: Pʏʀᴏɢʀᴀᴍ
+✯ Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 3
+✯ DᴀᴛᴀBᴀsᴇ: MᴏɴɢᴏDB
+✯ Bᴏᴛ Sᴇʀᴠᴇʀ: Rᴀɪʟᴡᴀʏ
+✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.0.3 [ Sᴛᴀʙʟᴇ ]"""
     SOURCE_TXT = """<b>ɴᴏᴛᴇ:
 - ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-- 𝐒𝐨𝐮𝐫𝐜𝐞 - <a href="https://github.com/Joelkb/DQ-The-File-Donor">ʜᴇʀᴇ</a>
-𝐃𝐄𝐕𝐒:
+- ꜱᴏᴜʀᴄᴇ - <a href="https://github.com/Joelkb/DQ-The-File-Donor">ʜᴇʀᴇ</a>
+Dᴇᴠᴇʟᴏᴘᴇʀ:
 - <a href="https://t.me/creatorbeatz">Jᴏᴇʟ ᠰ TɢX</a></b>"""
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
@@ -21,7 +21,7 @@ class script(object):
 1. ᴛʜɪꜱ ʙᴏᴛ ꜱʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇ.
 2. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ.
 3. ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ ʜᴀᴠᴇ ᴀ ʟɪᴍɪᴛ ᴏꜰ 64 ᴄʜᴀʀᴀᴄᴛᴇʀꜱ.
-𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /filter - <code>ᴀᴅᴅ ᴀ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ</code>
 • /filters - <code>ʟɪꜱᴛ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴛᴇʀꜱ ᴏꜰ ᴀ ᴄʜᴀᴛ</code>
 • /del - <code>ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ</code>
@@ -47,24 +47,24 @@ class script(object):
 <b>ɴᴏᴛᴇ:</b>
 1. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.
 2. ꜱᴇɴᴅ <code>/ᴄᴏɴɴᴇᴄᴛ</code> ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴍ
-𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /connect  - <code>ᴄᴏɴɴᴇᴄᴛ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ</code>
 • /disconnect  - <code>ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ</code>
 • /connections - <code>ʟɪꜱᴛ ᴀʟʟ ʏᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ</code>"""
-    EXTRAMOD_TXT = """ʜᴇʟᴘ: 𝐄𝐱𝐭𝐫𝐚 𝐌𝐨𝐝𝐮𝐥𝐞𝐬
+    EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
 <b>ɴᴏᴛᴇ:</b>
 ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ
-𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</code>
 • /info  - <code>ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ.</code>
 • /imdb  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.</code>
 • /search  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ.</code>"""
-    ADMIN_TXT = """ʜᴇʟᴘ: 𝐀𝐝𝐦𝐢𝐧 𝐦𝐨𝐝𝐬
+    ADMIN_TXT = """ʜᴇʟᴘ: Aᴅᴍɪɴ Mᴏᴅs
 <b>ɴᴏᴛᴇ:</b>
-𝐓𝐡𝐢𝐬 𝐦𝐨𝐝𝐮𝐥𝐞 𝐨𝐧𝐥𝐲 𝐰𝐨𝐫𝐤𝐬 𝐟𝐨𝐫 𝐦𝐲 𝐚𝐝𝐦𝐢𝐧𝐬
-𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙖𝙣𝙙 𝙐𝙨𝙖𝙜𝙚:
+Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs
+Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /logs - <code>ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʀᴇᴄᴇɴᴛ ᴇʀʀᴏʀꜱ</code>
-• /stats - <code>ᴛᴏ ɢᴇᴛ ꜱᴛᴀᴛᴜꜱ ᴏꜰ ꜰɪʟᴇꜱ ɪɴ ᴅʙ.</code>
+• /stats - <code>ᴛᴏ ɢᴇᴛ ꜱᴛᴀᴛᴜꜱ ᴏꜰ ꜰɪʟᴇꜱ ɪɴ ᴅʙ. [Tʜɪs Cᴏᴍᴍᴀɴᴅ Cᴀɴ Bᴇ Usᴇᴅ Bʏ Aɴʏᴏɴᴇ]</code>
 • /delete - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴇ ꜰʀᴏᴍ ᴅʙ.</code>
 • /users - <code>ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴍʏ ᴜꜱᴇʀꜱ ᴀɴᴅ ɪᴅꜱ.</code>
 • /chats - <code>ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴍʏ ᴄʜᴀᴛꜱ ᴀɴᴅ ɪᴅꜱ</code>
@@ -75,18 +75,18 @@ class script(object):
 • /channel - <code>ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴛᴏᴛᴀʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ</code>
 • /broadcast - <code>ᴛᴏ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀʟʟ ᴜꜱᴇʀꜱ</code>"""
     STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
-★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
-★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code>
-★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code>"""
+★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
+★ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
+★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
+★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code>"""
     LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
+Gʀᴏᴜᴘ = {}(<code>{}</code>)
+Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
+Aᴅᴅᴇᴅ Bʏ - {}
 """
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
-Name - {}
+Nᴀᴍᴇ - {}
 """
     ALRT_TXT = """ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
@@ -112,29 +112,29 @@ Name - {}
     MVE_NT_FND = """ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀꜱᴇ...
 """
 
-    TOP_ALRT_MSG = """𝐂𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐟𝐨𝐫 𝐦𝐨𝐯𝐢𝐞 𝐢𝐧 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞...
+    TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ...
 """
 
-    MELCOW_ENG = """<b>Hello {}😍, and welcome to {} Group.❤️
+    MELCOW_ENG = """<b>Hᴇʟʟᴏ {}😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ.❤️
 
-Join our <a href='https://t.me/+LJRsBp82HiJhNDhl'>main channel</a> below to get access to the movies. Before requesting the movies, Must join our main channel. Only by joining will you get access to all the movies...
+Jᴏɪɴ Oᴜʀ <a href='https://t.me/+LJRsBp82HiJhNDhl'>Mᴀɪɴ Cʜᴀɴɴᴇʟ</a> Bᴇʟᴏᴡ Tᴏ Gᴇᴛ Aᴄᴄᴇss Tᴏ Tʜᴇ Mᴏᴠɪᴇs. Bᴇғᴏʀᴇ Rᴇᴏ̨ᴜᴇsᴛɪɴɢ Tʜᴇ Mᴏᴠɪᴇs, Mᴜsᴛ Jᴏɪɴ Oᴜʀ Mᴀɪɴ Cʜᴀɴɴᴇʟ. Oɴʟʏ Bʏ Jᴏɪɴɪɴɢ Wɪʟʟ Yᴏᴜ Gᴇᴛ Aᴄᴄᴇss Tᴏ Aʟʟ Tʜᴇ Mᴏᴠɪᴇs...
 
-NB: You can only get the movie by typing in the correct spelling...
+NB: Yᴏᴜ Cᴀɴ Oɴʟʏ Gᴇᴛ Tʜᴇ Mᴏᴠɪᴇ Bʏ Tʏᴘɪɴɢ Iɴ Tʜᴇ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ...
 
-If you do not get the Movie / Series, mention the admin in the following format 👇
+Iғ Yᴏᴜ Dᴏ Nᴏᴛ Gᴇᴛ Tʜᴇ Mᴏᴠɪᴇ / Sᴇʀɪᴇs, Mᴇɴᴛɪᴏɴ Tʜᴇ Aᴅᴍɪɴ Iɴ Tʜᴇ Fᴏʟʟᴏᴡɪɴɢ Fᴏʀᴍᴀᴛ 👇
 
-🤷 Example: @admin Avengers
+🤷 Exᴀᴍᴘʟᴇ: @admin Avengers
 
 Wᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ Oɴʟʏ Sʜᴀʀᴇ Tʜᴏsᴇ Fɪʟᴇs Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Sʜᴀʀᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟsᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ
 ⚠️ Iꜰ Yᴏᴜ Oᴡɴ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛs Oꜰ Aɴʏ Sᴛᴜꜰꜰ, Iɴᴛɪᴍᴀᴛᴇ Us Wɪᴛʜ Pʀᴏᴏꜰ Wᴇ Wɪʟʟ Rᴇᴍᴏᴠᴇ
 
-Do not contact Admin directly...
+Dᴏ Nᴏᴛ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Dɪʀᴇᴄᴛʟʏ...
 
-If you want to contact Admin, Please send the message to @assistant_m4_bot and the bot will deliver the message to the group Admin...
+Iғ Yᴏᴜ Wᴀɴᴛ Tᴏ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ, Pʟᴇᴀsᴇ Sᴇɴᴅ Tʜᴇ Mᴇssᴀɢᴇ Tᴏ @assistant_m4_bot Aɴᴅ Tʜᴇ Bᴏᴛ Wɪʟʟ Dᴇʟɪᴠᴇʀ Tʜᴇ Mᴇssᴀɢᴇ Tᴏ Tʜᴇ Gʀᴏᴜᴘ Aᴅᴍɪɴ...
 
-<a href='https://t.me/filmy_harbour_support'>If you are facing any problems with our movie files, bots or groups, report it in our support group @filmy_harbour_support</a>
+<a href='https://t.me/filmy_harbour_support'>Iғ Yᴏᴜ Aʀᴇ Fᴀᴄɪɴɢ Aɴʏ Pʀᴏʙʟᴇᴍs Wɪᴛʜ Oᴜʀ Mᴏᴠɪᴇ Fɪʟᴇs, Bᴏᴛs Oʀ Gʀᴏᴜᴘs, Rᴇᴘᴏʀᴛ Iᴛ Iɴ Oᴜʀ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ @filmy_harbour_support</a>
 
-For admin support type @admins with your message and the bot will forward the message to the admin...</b>
+Fᴏʀ Aᴅᴍɪɴ Sᴜᴘᴘᴏʀᴛ Tʏᴘᴇ @admin Wɪᴛʜ Yᴏᴜʀ Mᴇssᴀɢᴇ Aɴᴅ Tʜᴇ Bᴏᴛ Wɪʟʟ Fᴏʀᴡᴀʀᴅ Tʜᴇ Mᴇssᴀɢᴇ Tᴏ Tʜᴇ Aᴅᴍɪɴ...</b>
 """
 
     OWNER_INFO = """
