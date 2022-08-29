@@ -22,15 +22,15 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'https://t.me/auto_m4_mallumovies_bot?startgroup=true')
+                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'https://t.me/auto_m4_mallumovies_bot?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴', callback_data="owner_info"),
-                    InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/filmy_harbour')
+                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
+                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/filmy_harbour')
                 ],[
-                    InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/+LJRsBp82HiJhNDhl')
+                    InlineKeyboardButton('✇ Jᴏɪɴ Oᴜʀ Mᴀɪɴ Cʜᴀɴɴᴇʟ ✇', url='https://t.me/+LJRsBp82HiJhNDhl')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -45,15 +45,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'https://t.me/auto_m4_mallumovies_bot?startgroup=true')
-                    ],[
-                        InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴', callback_data="owner_info"),
-                        InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/filmy_harbour')
-                    ],[
-                        InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
-                        InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
-                    ],[
-                        InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/+LJRsBp82HiJhNDhl')
+                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'https://t.me/auto_m4_mallumovies_bot?startgroup=true')
+                ],[
+                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
+                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/filmy_harbour')
+                ],[
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('✇ Jᴏɪɴ Oᴜʀ Mᴀɪɴ Cʜᴀɴɴᴇʟ ✇', url='https://t.me/+LJRsBp82HiJhNDhl')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -72,7 +72,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿", url=invite_link.invite_link
+                    "❆ Jᴏɪɴ Oᴜʀ Bᴀᴄᴋ-Uᴘ Cʜᴀɴɴᴇʟ ❆", url=invite_link.invite_link
                 )
             ]
         ]
@@ -81,9 +81,9 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**You are not in our Back-up channel given below so you don't get the movie file...\n\nIf you want the movie file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the movie files...**",
@@ -93,15 +93,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'https://t.me/auto_m4_mallumovies_bot?startgroup=true')
-                    ],[
-                        InlineKeyboardButton('🤴ʙᴏᴛ ᴏᴡɴᴇʀ🤴', callback_data="owner_info"),
-                        InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ🍿', url='https://t.me/filmy_harbour')
-                    ],[
-                        InlineKeyboardButton('ℹ️ ʜᴇʟᴘ', callback_data='help'),
-                        InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
-                    ],[
-                        InlineKeyboardButton('💥 ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ 💥', url='https://t.me/+LJRsBp82HiJhNDhl')
+                    InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'https://t.me/auto_m4_mallumovies_bot?startgroup=true')
+                ],[
+                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
+                    InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/filmy_harbour')
+                ],[
+                    InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                ],[
+                    InlineKeyboardButton('✇ Jᴏɪɴ Oᴜʀ Mᴀɪɴ Cʜᴀɴɴᴇʟ ✇', url='https://t.me/+LJRsBp82HiJhNDhl')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -152,10 +152,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("⚡ ᴊᴏɪɴ ɢʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
-                          InlineKeyboardButton("💥 ꜱʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
+                          InlineKeyboardButton("⚡ Jᴏɪɴ Gʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
+                          InlineKeyboardButton("💥 Sʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
                        ],[
-                          InlineKeyboardButton("🔖 ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
+                          InlineKeyboardButton("🔖 Dᴏᴡɴʟᴏᴀᴅ Sᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
                          ]
                         ]
                     )
@@ -171,10 +171,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton("⚡ ᴊᴏɪɴ ɢʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
-                          InlineKeyboardButton("💥 ꜱʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
+                          InlineKeyboardButton("⚡ Jᴏɪɴ Gʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
+                          InlineKeyboardButton("💥 Sʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
                        ],[
-                          InlineKeyboardButton("🔖 ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
+                          InlineKeyboardButton("🔖 Dᴏᴡɴʟᴏᴀᴅ Sᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
                          ]
                         ]
                     )
@@ -242,10 +242,10 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton("⚡ ᴊᴏɪɴ ɢʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
-                      InlineKeyboardButton("💥 ꜱʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
+                      InlineKeyboardButton("⚡ Jᴏɪɴ Gʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
+                      InlineKeyboardButton("💥 Sʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
                    ],[
-                      InlineKeyboardButton("🔖 ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
+                      InlineKeyboardButton("🔖 Dᴏᴡɴʟᴏᴀᴅ Sᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
                      ]
                     ]
                 )
@@ -285,10 +285,10 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton("⚡ ᴊᴏɪɴ ɢʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
-              InlineKeyboardButton("💥 ꜱʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
+              InlineKeyboardButton("⚡ Jᴏɪɴ Gʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
+              InlineKeyboardButton("💥 Sʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
            ],[
-              InlineKeyboardButton("🔖 ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
+              InlineKeyboardButton("🔖 Dᴏᴡɴʟᴏᴀᴅ Sᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
              ]
             ]
         )
@@ -453,81 +453,81 @@ async def settings(client, message):
         buttons = [
             [
                 InlineKeyboardButton(
-                    'Filter Button',
+                    'Fɪʟᴛᴇʀ Bᴜᴛᴛᴏɴ',
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    'Single' if settings["button"] else 'Double',
+                    'Sɪɴɢʟᴇ' if settings["button"] else 'Dᴏᴜʙʟᴇ',
                     callback_data=f'setgs#button#{settings["button"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Bot PM',
+                    'Fɪʟᴇ Sᴇɴᴛ Mᴏᴅᴇ',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["botpm"] else '❌ No',
+                    'Mᴀɴᴜᴀʟ Sᴛᴀʀᴛ' if settings["botpm"] else 'Aᴜᴛᴏ Sᴇɴᴅ',
                     callback_data=f'setgs#botpm#{settings["botpm"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'File Secure',
+                    'Fɪʟᴇ Sᴇᴄᴜʀᴇ',
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["file_secure"] else '❌ No',
+                    'Oɴ' if settings["file_secure"] else 'Oғғ',
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'IMDB',
+                    'Iᴍᴅʙ',
                     callback_data=f'setgs#imdb#{settings["imdb"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["imdb"] else '❌ No',
+                    'Oɴ' if settings["imdb"] else 'Oғғ',
                     callback_data=f'setgs#imdb#{settings["imdb"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Spell Check',
+                    'Sᴘᴇʟʟ Cʜᴇᴄᴋ',
                     callback_data=f'setgs#spell_check#{settings["spell_check"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["spell_check"] else '❌ No',
+                    'Oɴ' if settings["spell_check"] else 'Oғғ',
                     callback_data=f'setgs#spell_check#{settings["spell_check"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Welcome',
+                    'Wᴇʟᴄᴏᴍᴇ Msɢ',
                     callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["welcome"] else '❌ No',
+                    'Oɴ' if settings["welcome"] else 'Oғғ',
                     callback_data=f'setgs#welcome#{settings["welcome"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Auto Delete',
+                    'Aᴜᴛᴏ-Dᴇʟᴇᴛᴇ',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '10 Mins' if settings["auto_delete"] else 'OFF',
+                    '10 Mɪɴs' if settings["auto_delete"] else 'Oғғ',
                     callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{grp_id}',
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    'Auto Filter',
+                    'Aᴜᴛᴏ-Fɪʟᴛᴇʀ',
                     callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
-                    '✅ Yes' if settings["auto_ffilter"] else '❌ No',
+                    'Oɴ' if settings["auto_ffilter"] else 'Oғғ',
                     callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{grp_id}',
                 ),
             ],
@@ -536,7 +536,7 @@ async def settings(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await message.reply_text(
-            text=f"<b>Change Your Settings for {title} As Your Wish ⚙</b>",
+            text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As Yᴏᴜʀ Wɪsʜ ⚙</b>",
             reply_markup=reply_markup,
             disable_web_page_preview=True,
             parse_mode=enums.ParseMode.HTML,
