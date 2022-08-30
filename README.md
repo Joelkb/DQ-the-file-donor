@@ -55,6 +55,7 @@
 
 ## Commands
 ```
+• /invite - to get the invite link of any chat which the bot is admin.
 • /logs - to get the rescent errors
 • /stats - to get status of files in db.
 • /connections - To see all connected groups
