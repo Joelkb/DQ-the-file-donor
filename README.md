@@ -152,7 +152,7 @@ python3 bot.py
 
 ## Note 🏷️
  - If you find any bugs or errors, report it to the developer.
-* [![Contact Developer](https://img.shields.io/static/v1?label=Contact&message=OnTelegram&color=critical)](https://telegram.me/creatorbeatz)
+* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=OnTelegram&color=critical)](https://telegram.me/creatorbeatz)
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
