@@ -150,6 +150,10 @@ python3 bot.py
  - Thanks To [EvamariaTG](https://raw.githubusercontent.com/EvamariaTG) for their awesome [EvaMaria Bot](https://raw.githubusercontent.com/EvamariaTG/EvaMaria)
  - Thanks To Me 😂
 
+## Note 🏷️
+ - If you find any bugs or errors, report it to the developer.
+* [![Contact Developer](https://img.shields.io/static/v1?label=Contact&message=OnTelegram&color=critical)](https://telegram.me/creatorbeatz)
+
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
 Licensed under [GNU AGPL 2.0.](https://github.com/Joelkb/DQ-The-File-Donor/blob/master/LICENSE)
