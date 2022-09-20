@@ -394,10 +394,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton("⚡ Jᴏɪɴ Gʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
-                              InlineKeyboardButton("💥 Sʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
+                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                            ],[
-                              InlineKeyboardButton("🔖 Dᴏᴡɴʟᴏᴀᴅ Sᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
+                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
                              ]
                             ]
                         )
@@ -442,10 +442,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton("⚡ Jᴏɪɴ Gʀᴏᴜᴘ ⚡", url="https://t.me/filmy_harbour"),
-                  InlineKeyboardButton("💥 Sʜᴀʀᴇ 💥", url="https://t.me/share/url?url=%F0%9F%A4%A9%20%D2%93%C9%AA%CA%9F%E1%B4%8D%CA%8F%20%CA%9C%E1%B4%80%CA%80%CA%99%E1%B4%8F%E1%B4%9C%CA%80%20%F0%9F%A4%A9%0A%0A%C2%BB%20%E1%B4%8F%C9%B4%20%E1%B4%9B%CA%9C%E1%B4%87%20s%E1%B4%98%E1%B4%8F%E1%B4%9B%20%CA%80%E1%B4%87s%E1%B4%98%E1%B4%8F%C9%B4s%E1%B4%87.%0A%C2%BB%20%F0%9D%9F%B8%F0%9D%9F%BAx%F0%9D%9F%BD%20%E1%B4%8F%C9%B4%CA%9F%C9%AA%C9%B4%E1%B4%87.%0A%C2%BB%20%E1%B4%A1%C9%AA%E1%B4%85%E1%B4%87%20%E1%B4%A0%E1%B4%80%CA%80%C9%AA%E1%B4%87%E1%B4%9B%CA%8F%20%E1%B4%8F%D2%93%20%E1%B4%8F%CA%9F%E1%B4%85%20%E1%B4%80%C9%B4%E1%B4%85%20%C9%B4%E1%B4%87%E1%B4%A1%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%84%E1%B4%8F%CA%9F%CA%9F%E1%B4%87%E1%B4%84%E1%B4%9B%C9%AA%E1%B4%8F%C9%B4s%20%C9%AA%C9%B4%20%E1%B4%80%CA%9F%CA%9F%20%CA%9F%E1%B4%80%C9%B4%C9%A2%E1%B4%9C%E1%B4%80%C9%A2%E1%B4%87s.%0A%C2%BB%20%E1%B4%80%E1%B4%85%E1%B4%8D%C9%AA%C9%B4%20s%E1%B4%9C%E1%B4%98%E1%B4%98%E1%B4%8F%CA%80%E1%B4%9B.%0A%C2%BB%20%F0%9D%9F%BF.%F0%9D%9F%BB%20%CA%9F%E1%B4%80%E1%B4%8B%CA%9C%2B%20%E1%B4%8D%E1%B4%8F%E1%B4%A0%C9%AA%E1%B4%87%20%E1%B4%80%C9%B4%E1%B4%85%20s%E1%B4%87%CA%80%C9%AA%E1%B4%87s%20%D2%93%C9%AA%CA%9F%E1%B4%87s.%0A%0A%E2%98%85%20%E1%B4%8A%E1%B4%8F%C9%AA%C9%B4%20%C9%B4%E1%B4%8F%E1%B4%A1%20%E2%98%85%0A%40filmy_harbour%0A%40filmy_harbour%0A%40filmy_harbour%0A%0A%E2%98%85%20s%CA%9C%E1%B4%80%CA%80%E1%B4%87%20%E1%B4%9B%CA%9C%C9%AAs%20%E1%B4%8D%E1%B4%87ss%E1%B4%80%C9%A2%E1%B4%87%20%E1%B4%9B%E1%B4%8F%20%CA%8F%E1%B4%8F%E1%B4%9C%CA%80%20%D2%93%CA%80%C9%AA%E1%B4%87%C9%B4%E1%B4%85s%20%E2%98%85")
+                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("🔖 Dᴏᴡɴʟᴏᴀᴅ Sᴜʙᴛɪᴛʟᴇ 🔖", url="https://telegra.ph/DOWNLOAD-SUBTITLES-01-05")
+                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
                  ]
                 ]
             )
