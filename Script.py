@@ -120,26 +120,7 @@ Nᴀᴍᴇ - {}
     TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ Fᴏʀ Mᴏᴠɪᴇ Iɴ Dᴀᴛᴀʙᴀsᴇ...
 """
 
-    MELCOW_ENG = """<b>Hᴇʟʟᴏ {}😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ.❤️
-
-Jᴏɪɴ Oᴜʀ <a href='https://t.me/+LJRsBp82HiJhNDhl'>Mᴀɪɴ Cʜᴀɴɴᴇʟ</a> Bᴇʟᴏᴡ Tᴏ Gᴇᴛ Aᴄᴄᴇss Tᴏ Tʜᴇ Mᴏᴠɪᴇs. Bᴇғᴏʀᴇ Rᴇᴏ̨ᴜᴇsᴛɪɴɢ Tʜᴇ Mᴏᴠɪᴇs, Mᴜsᴛ Jᴏɪɴ Oᴜʀ Mᴀɪɴ Cʜᴀɴɴᴇʟ. Oɴʟʏ Bʏ Jᴏɪɴɪɴɢ Wɪʟʟ Yᴏᴜ Gᴇᴛ Aᴄᴄᴇss Tᴏ Aʟʟ Tʜᴇ Mᴏᴠɪᴇs...
-
-NB: Yᴏᴜ Cᴀɴ Oɴʟʏ Gᴇᴛ Tʜᴇ Mᴏᴠɪᴇ Bʏ Tʏᴘɪɴɢ Iɴ Tʜᴇ Cᴏʀʀᴇᴄᴛ Sᴘᴇʟʟɪɴɢ...
-
-Iғ Yᴏᴜ Dᴏ Nᴏᴛ Gᴇᴛ Tʜᴇ Mᴏᴠɪᴇ / Sᴇʀɪᴇs, Mᴇɴᴛɪᴏɴ Tʜᴇ Aᴅᴍɪɴ Iɴ Tʜᴇ Fᴏʟʟᴏᴡɪɴɢ Fᴏʀᴍᴀᴛ 👇
-
-🤷 Exᴀᴍᴘʟᴇ: @admin Avengers
-
-Wᴇ Dᴏ Nᴏᴛ Oᴡɴ Aɴʏ Cᴏɴᴛᴇɴᴛ Pᴏsᴛᴇᴅ Hᴇʀᴇ. Wᴇ Oɴʟʏ Sʜᴀʀᴇ Tʜᴏsᴇ Fɪʟᴇs Wʜɪᴄʜ Aʀᴇ Aʟʀᴇᴀᴅʏ Sʜᴀʀᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟsᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ
-⚠️ Iꜰ Yᴏᴜ Oᴡɴ Tʜᴇ Cᴏᴘʏʀɪɢʜᴛs Oꜰ Aɴʏ Sᴛᴜꜰꜰ, Iɴᴛɪᴍᴀᴛᴇ Us Wɪᴛʜ Pʀᴏᴏꜰ Wᴇ Wɪʟʟ Rᴇᴍᴏᴠᴇ
-
-Dᴏ Nᴏᴛ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ Dɪʀᴇᴄᴛʟʏ...
-
-Iғ Yᴏᴜ Wᴀɴᴛ Tᴏ Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ, Pʟᴇᴀsᴇ Sᴇɴᴅ Tʜᴇ Mᴇssᴀɢᴇ Tᴏ @assistant_m4_bot Aɴᴅ Tʜᴇ Bᴏᴛ Wɪʟʟ Dᴇʟɪᴠᴇʀ Tʜᴇ Mᴇssᴀɢᴇ Tᴏ Tʜᴇ Gʀᴏᴜᴘ Aᴅᴍɪɴ...
-
-<a href='https://t.me/filmy_harbour_support'>Iғ Yᴏᴜ Aʀᴇ Fᴀᴄɪɴɢ Aɴʏ Pʀᴏʙʟᴇᴍs Wɪᴛʜ Oᴜʀ Mᴏᴠɪᴇ Fɪʟᴇs, Bᴏᴛs Oʀ Gʀᴏᴜᴘs, Rᴇᴘᴏʀᴛ Iᴛ Iɴ Oᴜʀ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ @filmy_harbour_support</a>
-
-Fᴏʀ Aᴅᴍɪɴ Sᴜᴘᴘᴏʀᴛ Tʏᴘᴇ @admin Wɪᴛʜ Yᴏᴜʀ Mᴇssᴀɢᴇ Aɴᴅ Tʜᴇ Bᴏᴛ Wɪʟʟ Fᴏʀᴡᴀʀᴅ Tʜᴇ Mᴇssᴀɢᴇ Tᴏ Tʜᴇ Aᴅᴍɪɴ...</b>
+    MELCOW_ENG = """<b>Hᴇʟʟᴏ {} 😍, Aɴᴅ Wᴇʟᴄᴏᴍᴇ Tᴏ {} Gʀᴏᴜᴘ ❤️</b>
 """
 
     OWNER_INFO = """
