@@ -83,14 +83,22 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
+    if settings['auto_delete']:
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+            ]
+        )
 
-    btn.insert(0, 
-        [
-            InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-            InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-            InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-        ]
-    )
+    else:
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+            ]
+        )
 
     if 0 < offset <= 10:
         off_set = 0
@@ -449,10 +457,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.REQINFO, show_alert=True)
 
     elif query.data == "minfo":
-        await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : Uncharted\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n© ғɪʟᴍʏ ʜᴀʀʙᴏᴜʀ", show_alert=True)
+        await query.answer(text=script.MINFO, show_alert=True)
 
     elif query.data == "sinfo":
-        await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : Loki S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n© ғɪʟᴍʏ ʜᴀʀʙᴏᴜʀ", show_alert=True)
+        await query.answer(text=script.SINFO, show_alert=True)
 
     elif query.data == "start":
         buttons = [[
@@ -743,13 +751,22 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
 
-    btn.insert(0, 
-        [
-            InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-            InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-            InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
-        ]
-    )
+    if settings['auto_delete']:
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
+                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+            ]
+        )
+
+    else:
+        btn.insert(0, 
+            [
+                InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
+                InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+            ]
+        )
 
     btn.insert(0, [
         InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
