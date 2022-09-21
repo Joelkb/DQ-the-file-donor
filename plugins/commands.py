@@ -448,12 +448,16 @@ async def settings(client, message):
         return
     
     settings = await get_settings(grp_id)
-    if 'auto_ffilter' not in settings:
+    try:
+        if settings['auto_ffilter']:
+            settings = await get_settings(grp_id)
+    except KeyError:
         await save_group_settings(grp_id, 'auto_ffilter', True)
-        settings = await get_settings(grp_id)
-    elif 'auto_delete' not in settings:
+    try:
+        if settings['auto_delete']:
+            settings = await get_settings(grp_id)
+    except KeyError:
         await save_group_settings(grp_id, 'auto_delete', True)
-        settings = await get_settings(grp_id)
 
     if settings is not None:
         buttons = [
