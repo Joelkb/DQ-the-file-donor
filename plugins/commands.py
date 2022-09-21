@@ -450,7 +450,7 @@ async def settings(client, message):
     grpid = await active_connection(str(message.from_user.id))
     await save_group_settings(grpid, 'auto_ffilter', True)
     await save_group_settings(grpid, 'auto_delete', True)
-    settings = await get_settings(grp_id)
+    settings = await get_settings(grpid)
 
     if settings is not None:
         buttons = [
