@@ -447,6 +447,8 @@ async def settings(client, message):
     ):
         return
     
+    settings = await get_settings(grp_id)
+    
     try:
         if settings['auto_ffilter']:
             settings = await get_settings(grp_id)
