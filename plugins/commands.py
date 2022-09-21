@@ -447,27 +447,10 @@ async def settings(client, message):
     ):
         return
     
+    grpid = await active_connection(str(message.from_user.id))
+    await save_group_settings(grpid, 'auto_ffilter', True)
+    await save_group_settings(grpid, 'auto_delete', True)
     settings = await get_settings(grp_id)
-    
-    try:
-        if settings['auto_ffilter']:
-            settings = await get_settings(grp_id)
-        else:
-            settings = await get_settings(grp_id)
-    except KeyError:
-        grpid = await active_connection(str(message.from_user.id))
-        await save_group_settings(grpid, 'auto_ffilter', True)
-        settings = await get_settings(message.chat.id)
-        
-    try:
-        if settings['auto_delete']:
-            settings = await get_settings(grp_id)
-        else:
-            settings = await get_settings(grp_id)
-    except KeyError:
-        grpid = await active_connection(str(message.from_user.id))
-        await save_group_settings(grpid, 'auto_delete', True)
-        settings = await get_settings(message.chat.id)
 
     if settings is not None:
         buttons = [
