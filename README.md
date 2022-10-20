@@ -151,6 +151,7 @@ python3 bot.py
  - Thanks To Me 😂
 
 ## Note 🏷️
+ - <b>Importing this repo instead of forking is strictly prohibited 🚫 Kindly fork edit 🙃</b>
  - <b>If you find any bugs or errors, report it to the developer.</b>
 * [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/creatorbeatz)
 
