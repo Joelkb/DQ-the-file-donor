@@ -23,7 +23,6 @@ from database.filters_mdb import (
     get_filters,
 )
 from database.gfilters_mdb import (
-    del_all_gfilters,
     find_gfilter,
     get_gfilters,
 )
