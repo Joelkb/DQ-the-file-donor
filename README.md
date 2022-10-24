@@ -30,6 +30,7 @@
 - [x] Forward Restriction
 - [x] File Protect
 - [x] Manual File Filtering
+- [x] Global File Filtering
 - [x] IMDB
 - [x] Admin Commands
 - [x] User Broadcast
@@ -89,6 +90,9 @@
 • /link - to create link for one post
 • /status - Your Heroku API Key to check dyno, bot uptime and bot working day prediction.
 • /set_template - To set a custom IMDb template for individual groups
+• /gfilter - To add global filters.
+• /gfilters - To view list of all global filters.
+• /delg - To delete a specific global filter.
 ```
 
 ## Variables
