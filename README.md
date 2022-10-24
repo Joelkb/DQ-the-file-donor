@@ -32,7 +32,8 @@
 - [x] Manual File Filtering
 - [x] IMDB
 - [x] Admin Commands
-- [x] Broadcast
+- [x] User Broadcast
+- [x] Group Broadcast
 - [x] Index
 - [x] IMDB search
 - [x] Inline Search
@@ -83,6 +84,7 @@
 • /unban  - to unban a user.
 • /channel - to get list of total connected channels
 • /broadcast - to broadcast a message to all users
+• /grp_broadcast - To broadcast a message to all connected groups.
 • /batch - to create link for multiple posts
 • /link - to create link for one post
 • /status - Your Heroku API Key to check dyno, bot uptime and bot working day prediction.
