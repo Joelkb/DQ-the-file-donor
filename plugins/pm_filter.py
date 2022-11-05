@@ -488,6 +488,68 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
 
+    elif query.data == "show_options":
+        btn = [[
+                InlineKeyboardButton("Unavailable", callback_data="unavailable"),
+                InlineKeyboardButton("Uploaded", callback_data="uploaded")
+             ],[
+                InlineKeyboardButton("Already Available", callback_data="already_available")
+              ]]
+        if query.from_user.id in ADMINS:
+            reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_reply_markup(reply_markup)
+            await query.answer("Here are the options !")
+        else:
+            await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
+        
+    elif query.data == "unavailable":
+        btn = [[
+                InlineKeyboardButton("⚠️ Unavailable ⚠️", callback_data="unalert")
+              ]]
+        if query.from_user.id in ADMINS:
+            reply_markup = InlineKeyboardMarkup(btn)
+            content = query.message.text
+            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
+            await query.message.edit_reply_markup(reply_markup)
+            await query.answer("Set to Unavailable !")
+        else:
+            await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
+
+    elif query.data == "uploaded":
+        btn = [[
+                InlineKeyboardButton("✅ Uploaded ✅", callback_data="upalert")
+              ]]
+        if query.from_user.id in ADMINS:
+            reply_markup = InlineKeyboardMarkup(btn)
+            content = query.message.text
+            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
+            await query.message.edit_reply_markup(reply_markup)
+            await query.answer("Set to Uploaded !")
+        else:
+            await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
+
+    elif query.data == "already_available":
+        btn = [[
+                InlineKeyboardButton("🟢 Already Available 🟢", callback_data="alalert")
+              ]]
+        if query.from_user.id in ADMINS:
+            reply_markup = InlineKeyboardMarkup(btn)
+            content = query.message.text
+            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
+            await query.message.edit_reply_markup(reply_markup)
+            await query.answer("Set to Already Available !")
+        else:
+            await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
+
+    elif query.data == "alalert":
+        await query.answer("Your Requested Movie is Already Available !", show_alert=True)
+
+    elif query.data == "upalert":
+        await query.answer("Your Requested Movie is Uploaded !", show_alert=True)
+        
+    elif query.data == "unalert":
+        await query.answer("Your Requested Movie is Unavailable !", show_alert=True)
+
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
 
