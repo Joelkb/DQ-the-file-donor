@@ -685,7 +685,8 @@ async def requests(bot, message):
                     await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>")
             if len(content) < 3:
                 success = False
-        except:
+        except Exception as e:
+            await message.reply_text(f"Error: {e}")
             pass
 
     else:
