@@ -659,11 +659,6 @@ async def requests(bot, message):
                         InlineKeyboardButton('Show Options', callback_data=f'show_options#{reporter}#{content}#{name}')
                       ]]
                 reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
-                await reported_post.reply_text(
-                    text=f"𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {message.link}",
-                    disable_web_page_preview=True,
-                    parse_mode=enums.ParseMode.HTML
-                )
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -672,11 +667,6 @@ async def requests(bot, message):
                         InlineKeyboardButton('Show Options', callback_data=f'show_options#{reporter}#{content}#{name}')
                       ]]
                     reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
-                    await reported_post.reply_text(
-                        text=f"𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {message.link}",
-                        disable_web_page_preview=True,
-                        parse_mode=enums.ParseMode.HTML
-                    )
                     success = True
             else:
                 if len(content) < 3:
