@@ -488,67 +488,99 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
 
-    elif query.data == "show_options":
+    elif query.data.startswith("show_options"):
+        ident, from_user, content, name = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("Unavailable", callback_data="unavailable"),
-                InlineKeyboardButton("Uploaded", callback_data="uploaded")
+                InlineKeyboardButton("Unavailable", callback_data=f"unavailable#{from_user}#{name}"),
+                InlineKeyboardButton("Uploaded", callback_data=f"uploaded#{from_user}#{name}")
              ],[
-                InlineKeyboardButton("Already Available", callback_data="already_available")
+                InlineKeyboardButton("Already Available", callback_data=f"already_available#{from_user}#{name}")
               ]]
+        btn2 = [[
+                 InlineKeyboardButton("View Status", url=f"{query.message.link}")
+               ]]
         if query.from_user.id in ADMINS:
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_reply_markup(reply_markup)
             await query.answer("Here are the options !")
+            await client.send_message(chat_id=int(from_user), text=f"<b>Hey {name}, Your request ({content}) has been accepted by our admins. Please wait for the reply !</b>", reply_markup=InlineKeyboardMarkup(btn2))
         else:
             await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
         
-    elif query.data == "unavailable":
+    elif query.data.startswith("unavailable"):
+        ident, from_user, name = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⚠️ Unavailable ⚠️", callback_data="unalert")
+                InlineKeyboardButton("⚠️ Unavailable ⚠️", callback_data=f"unalert#{from_user}#{name}")
               ]]
+        btn2 = [[
+                 InlineKeyboardButton("View Status", url=f"{query.message.link}")
+               ]]
         if query.from_user.id in ADMINS:
             reply_markup = InlineKeyboardMarkup(btn)
             content = query.message.text
             await query.message.edit_text(f"<b><strike>{content}</strike></b>")
             await query.message.edit_reply_markup(reply_markup)
             await query.answer("Set to Unavailable !")
+            await client.send_message(chat_id=int(from_user), text=f"<b>Hey {name}, Sorry Your requested movie is unavailable. So our moderators can't upload it.</b>", reply_markup=InlineKeyboardMarkup(btn2))
         else:
             await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
 
-    elif query.data == "uploaded":
+    elif query.data.startswith("uploaded"):
+        ident, from_user, name = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("✅ Uploaded ✅", callback_data="upalert")
+                InlineKeyboardButton("✅ Uploaded ✅", callback_data=f"upalert#{from_user}#{name}")
               ]]
+        btn2 = [[
+                 InlineKeyboardButton("View Status", url=f"{query.message.link}")
+               ]]
         if query.from_user.id in ADMINS:
             reply_markup = InlineKeyboardMarkup(btn)
             content = query.message.text
             await query.message.edit_text(f"<b><strike>{content}</strike></b>")
             await query.message.edit_reply_markup(reply_markup)
             await query.answer("Set to Uploaded !")
+            await client.send_message(chat_id=int(from_user), text=f"<b>Hey {name}, Your requested movie has been uploaded by our moderators. Kindly search again.</b>", reply_markup=InlineKeyboardMarkup(btn2))
         else:
             await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
 
-    elif query.data == "already_available":
+    elif query.data.startswith("already_available"):
+        ident, from_user, name = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("🟢 Already Available 🟢", callback_data="alalert")
+                InlineKeyboardButton("🟢 Already Available 🟢", callback_data=f"alalert#{from_user}#{name}")
               ]]
+        btn2 = [[
+                 InlineKeyboardButton("View Status", url=f"{query.message.link}")
+               ]]
         if query.from_user.id in ADMINS:
             reply_markup = InlineKeyboardMarkup(btn)
             content = query.message.text
             await query.message.edit_text(f"<b><strike>{content}</strike></b>")
             await query.message.edit_reply_markup(reply_markup)
             await query.answer("Set to Already Available !")
+            await client.send_message(chat_id=int(from_user), text=f"<b>Hey {name}, Your requested movie is already available on our bot's database. Kindly search again.</b>", reply_markup=InlineKeyboardMarkup(btn2))
         else:
             await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
 
-    elif query.data == "alalert":
-        await query.answer("Your Requested Movie is Already Available !", show_alert=True)
+    elif query.data.startswith("alalert"):
+        ident, from_user, name = query.data.split("#")
+        if int(query.from_user.id) == int(from_user):
+            await query.answer(f"Hey {name}, Your Requested Movie is Already Available !", show_alert=True)
+        else:
+            await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
 
-    elif query.data == "upalert":
-        await query.answer("Your Requested Movie is Uploaded !", show_alert=True)
+    elif query.data.startswith("upalert"):
+        ident, from_user, name = query.data.split("#")
+        if int(query.from_user.id) == int(from_user):
+            await query.answer(f"Hey {name}, Your Requested Movie is Uploaded !", show_alert=True)
+        else:
+            await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
         
-    elif query.data == "unalert":
-        await query.answer("Your Requested Movie is Unavailable !", show_alert=True)
+    elif query.data.startswith("unalert"):
+        ident, from_user, name = query.data.split("#")
+        if int(query.from_user.id) == int(from_user):
+            await query.answer(f"Hey {name}, Your Requested Movie is Unavailable !", show_alert=True)
+        else:
+            await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
 
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
