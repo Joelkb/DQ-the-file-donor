@@ -608,14 +608,13 @@ async def requests(bot, message):
         chat_id = message.chat.id
         reporter = str(message.from_user.id)
         mention = message.from_user.mention
-        name = message.from_user.first_name
         success = True
         content = message.reply_to_message.text
         try:
             if REQST_CHANNEL is not None:
                 btn = [[
                         InlineKeyboardButton('View Request', url=f"{message.reply_to_message.link}"),
-                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}#{name}')
+                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}')
                       ]]
                 reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
@@ -623,7 +622,7 @@ async def requests(bot, message):
                 for admin in ADMINS:
                     btn = [[
                         InlineKeyboardButton('View Request', url=f"{message.reply_to_message.link}"),
-                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}#{name}')
+                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}')
                       ]]
                     reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
@@ -640,7 +639,6 @@ async def requests(bot, message):
         chat_id = message.chat.id
         reporter = str(message.from_user.id)
         mention = message.from_user.mention
-        name = message.from_user.first_name
         success = True
         content = message.text
         keywords = ["#request", "/request", "#Request", "/Request"]
@@ -651,7 +649,7 @@ async def requests(bot, message):
             if REQST_CHANNEL is not None and len(content) >= 3:
                 btn = [[
                         InlineKeyboardButton('View Request', url=f"{message.link}"),
-                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}#{name}')
+                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}')
                       ]]
                 reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
@@ -659,7 +657,7 @@ async def requests(bot, message):
                 for admin in ADMINS:
                     btn = [[
                         InlineKeyboardButton('View Request', url=f"{message.link}"),
-                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}#{name}')
+                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}')
                       ]]
                     reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
