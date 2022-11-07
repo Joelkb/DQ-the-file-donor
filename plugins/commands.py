@@ -665,6 +665,7 @@ async def requests(bot, message):
                     disable_web_page_preview=True,
                     parse_mode=enums.ParseMode.HTML
                 )
+                success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
                     btn = [[
@@ -678,12 +679,11 @@ async def requests(bot, message):
                         disable_web_page_preview=True,
                         parse_mode=enums.ParseMode.HTML
                     )
+                    success = True
             else:
                 if len(content) < 3:
                     await message.reply_text("<b>You must type about your request [Minimum 3 Characters]. Requests can't be empty.</b>")
-            if len(content) >= 3:
-                success = True
-            else:
+            if len(content) < 3:
                 success = False
         except:
             pass
