@@ -489,7 +489,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
 
     elif query.data.startswith("show_options"):
-        ident, from_user, content, name = query.data.split("#")
+        ident, from_user, name = query.data.split("#")
         btn = [[
                 InlineKeyboardButton("Unavailable", callback_data=f"unavailable#{from_user}#{name}"),
                 InlineKeyboardButton("Uploaded", callback_data=f"uploaded#{from_user}#{name}")
@@ -503,7 +503,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_reply_markup(reply_markup)
             await query.answer("Here are the options !")
-            await client.send_message(chat_id=int(from_user), text=f"<b>Hey {name}, Your request ({content}) has been accepted by our admins. Please wait for the reply !</b>", reply_markup=InlineKeyboardMarkup(btn2))
+            await client.send_message(chat_id=int(from_user), text=f"<b>Hey {name}, Your request has been accepted by our admins. Please wait for the reply !</b>", reply_markup=InlineKeyboardMarkup(btn2))
         else:
             await query.answer("You don't have sufficiant rigts to do this !", show_alert=True)
         
