@@ -488,7 +488,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
 
-    elif query.data.startswith("so"):
+    elif query.data.startswith("show_option"):
         ident, from_user = query.data.split("#")
         btn = [[
                 InlineKeyboardButton("Unavailable", callback_data=f"unavailable#{from_user}"),
