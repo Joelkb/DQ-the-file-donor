@@ -489,7 +489,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
 
     elif query.data.startswith("so"):
-        from_user = query.data.split("#")
+        ident, from_user = query.data.split("#")
         btn = [[
                 InlineKeyboardButton("Unavailable", callback_data=f"unavailable#{from_user}"),
                 InlineKeyboardButton("Uploaded", callback_data=f"uploaded#{from_user}")
