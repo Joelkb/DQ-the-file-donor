@@ -1017,7 +1017,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         grpid = await active_connection(str(query.from_user.id))
 
         if str(grp_id) != str(grpid):
-            await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
+            await query.message.edit("Your Active Connection Has Been Changed. Go To /connections and change your active connection.")
             return await query.answer(MSG_ALRT)
 
         if status == "True":
