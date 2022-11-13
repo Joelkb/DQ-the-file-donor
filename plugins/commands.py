@@ -700,7 +700,7 @@ async def send_msg(bot, message):
         command = ["/send "]
         for cmd in command:
             if cmd in target_id:
-                target_id = target_id.replace(cmd, "0")
+                target_id = target_id.replace(cmd, "")
         success = False
         try:
             await message.reply_to_message.copy(int(target_id))
