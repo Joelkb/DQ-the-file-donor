@@ -696,7 +696,7 @@ async def requests(bot, message):
 @Client.on_message(filters.command("send") & filters.user(ADMINS))
 async def send_msg(bot, message):
     if message.reply_to_message:
-        target_id = extract_user_id(message)
+        target_id, _ = extract_user_id(message)
         success = False
         try:
             await message.reply_to_message.copy(target_id)
