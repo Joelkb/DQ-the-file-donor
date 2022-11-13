@@ -703,7 +703,7 @@ async def send_msg(bot, message):
                 target_id = target_id.replace(cmd, "0")
         success = False
         try:
-            await message.reply_to_message.copy(target_id)
+            await message.reply_to_message.copy(int(target_id))
             success = True
         except Exception as e:
             await message.reply_text(f"<b>Must give a valid chat id ! \nError: {e}</b>")
