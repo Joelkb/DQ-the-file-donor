@@ -697,7 +697,7 @@ async def requests(bot, message):
 async def send_msg(bot, message):
     if message.reply_to_message:
         target_id = message.text
-        command = ["/send"]
+        command = ["/send "]
         for cmd in command:
             if cmd in target_id:
                 target_id = target_id.replace(cmd, "")
