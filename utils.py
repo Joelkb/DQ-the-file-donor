@@ -375,23 +375,3 @@ def humanbytes(size):
         size /= power
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
-
-def extract_user_id(message: Message) -> Union[int, str]:
-    if len(message.command) > 1:
-        if (
-            len(message.entities) > 1 and
-            message.entities[1].type == enums.MessageEntityType.TEXT_MENTION
-        ):
-           
-            required_entity = message.entities[1]
-            user_id = required_entity.user.id
-            user_first_name = required_entity.user.first_name
-        else:
-            user_id = message.command[1]
-            # don't want to make a request -_-
-            user_first_name = user_id
-        try:
-            user_id = int(user_id)
-        except ValueError:
-            pass
-    return (user_id, user_first_name)
