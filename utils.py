@@ -394,3 +394,4 @@ def extract_user_id(message: Message) -> Union[int, str]:
             user_id = int(user_id)
         except ValueError:
             pass
+    return (user_id, user_first_name)
