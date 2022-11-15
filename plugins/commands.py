@@ -704,8 +704,12 @@ async def send_msg(bot, message):
         success = False
         try:
             user = await bot.get_users(int(target_id))
-            await message.reply_to_message.copy(int(user.id))
-            success = True
+            users = await db.get_all_users()
+            if target_id in users['id']:
+                await message.reply_to_message.copy(int(user.id))
+                success = True
+            else:
+                await message.reply_text("<b>This person is not a user of this bot.</b>")
         except Exception as e:
             await message.reply_text(f"<b>Must give a valid chat id ! \nError: {e}</b>")
         if success:
