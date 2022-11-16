@@ -698,6 +698,7 @@ async def send_msg(bot, message):
     if message.reply_to_message:
         target_id = message.text
         command = ["/send "]
+        out = "Users Saved In DB Are:\n\n"
         for cmd in command:
             if cmd in target_id:
                 target_id = target_id.replace(cmd, "")
@@ -706,11 +707,13 @@ async def send_msg(bot, message):
             user = await bot.get_users(int(target_id))
             users = await db.get_all_users()
             async for usr in users:
-                if str(target_id) == str(usr['id']):
-                    await message.reply_to_message.copy(int(user.id))
-                    success = True
-                else:
-                    success = False
+                out += f"{usr['id']}"
+                out += '\n'
+            if str(target_id) in str(out):
+                await message.reply_to_message.copy(int(user.id))
+                success = True
+            else:
+                success = False
             if success:
                 await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
             else:
