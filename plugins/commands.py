@@ -706,7 +706,7 @@ async def send_msg(bot, message):
             user = await bot.get_users(int(target_id))
             users = await db.get_all_users()
             async for usr in users:
-                if target_id == usr['id']:
+                if str(target_id) == str(usr['id']):
                     await message.reply_to_message.copy(int(user.id))
                     success = True
                 else:
