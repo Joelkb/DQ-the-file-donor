@@ -705,15 +705,17 @@ async def send_msg(bot, message):
         try:
             user = await bot.get_users(int(target_id))
             users = await db.get_all_users()
-            for usr in users:
-                if target_id in usr['id']:
+            async for usr in users:
+                if target_id == usr['id']:
                     await message.reply_to_message.copy(int(user.id))
                     success = True
+                else:
+                    success = False
+            if success:
+                await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
+            else:
+                await message.reply_text("<b>This user didn't started this bot yet !</b>")
         except Exception as e:
-            await message.reply_text(f"<b>Must give a valid chat id ! \nError: {e}</b>")
-        if success:
-            await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
-        else:
-            await message.reply_text("<b>An error occurred !</b>")
+            await message.reply_text(f"<b>Error: {e}</b>")
     else:
         await message.reply_text("<b>Use this command as a reply to any message using the target chat id. For eg: /send userid</b>")
