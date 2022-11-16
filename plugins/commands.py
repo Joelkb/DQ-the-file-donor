@@ -709,7 +709,7 @@ async def send_msg(bot, message):
             async for usr in users:
                 out += f"{usr['id']}"
                 out += '\n'
-            if str(target_id) in str(out):
+            if str(user.id) in str(out):
                 await message.reply_to_message.copy(int(user.id))
                 success = True
             else:
