@@ -704,7 +704,7 @@ async def send_msg(bot, message):
                 target_id = target_id.replace(cmd, "")
         success = False
         try:
-            user = await bot.get_users(int(target_id))
+            user = await bot.get_users(target_id)
             users = await db.get_all_users()
             async for usr in users:
                 out += f"{usr['id']}"
