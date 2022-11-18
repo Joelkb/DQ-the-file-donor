@@ -44,7 +44,7 @@ class Bot(Client):
         logging.info(LOG_STR)
         users = await db.get_all_users()
         async for user in users:
-            await self.send_message(chat_id=f"{user['id']}", text="<b>Bot Restarted !</b>")
+            await self.send_message(chat_id=int(f"{user['id']}"), text="<b>Bot Restarted !</b>")
 
     async def stop(self, *args):
         await super().stop()
