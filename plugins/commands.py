@@ -486,7 +486,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Fɪʟᴇ Sᴇᴄᴜʀᴇ',
+                    'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ',
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
