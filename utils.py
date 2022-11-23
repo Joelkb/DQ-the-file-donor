@@ -155,7 +155,8 @@ async def broadcast_messages(user_id, message):
         return False, "Error"
 
 async def search_gagala(text):
-    usr_agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+    usr_agent = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+    'AppleWebKit/537.36 (KHTML, like Gecko) '
     'Chrome/107.0.0.0 Safari/537.36'
     }
     text = text.replace(" ", '+')
