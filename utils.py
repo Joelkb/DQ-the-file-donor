@@ -6,6 +6,7 @@ import asyncio
 from pyrogram.types import Message, InlineKeyboardButton
 from pyrogram import enums
 from typing import Union
+import random 
 import re
 import os
 from datetime import datetime
@@ -155,12 +156,18 @@ async def broadcast_messages(user_id, message):
         return False, "Error"
 
 async def search_gagala(text):
-    usr_agent = {
-    'User-Agent': 'Mozilla/5.0'
+    usr_agents = [
+    "Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0",
+    "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0",
+    "Mozilla/5.0 (X11; Linux x86_64; rv:95.0) Gecko/20100101 Firefox/95.0"
+    ]
+    random_user_agent = random.choice(usr_agents)
+    user_agent = {
+    'User-Agent': random_user_agent
     }
     text = text.replace(" ", '+')
     url = f'https://www.google.com/search?q={text}'
-    response = requests.get(url, headers=usr_agent)
+    response = requests.get(url, headers=user_agent)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, 'html.parser')
     titles = soup.find_all( 'h3' )
