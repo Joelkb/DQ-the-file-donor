@@ -161,7 +161,7 @@ async def search_gagala(text):
         'Chrome/61.0.3163.100 Safari/537.36'
         }
     text = text.replace(" ", '+')
-    url = f'https://duckduckgo.com/?q={text}'
+    url = f'https://yandex.com/search/touch/?text={text}'
     response = requests.get(url, headers=usr_agent)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, 'html.parser')
