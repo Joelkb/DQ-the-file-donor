@@ -160,7 +160,7 @@ async def search_gagala(text):
     'User-Agent': 'Microsoft Edge: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393'
     }
     text = text.replace(" ", '+')
-    url = f'https://www.google.com/search?q={text}'
+    url = f'https://duckduckgo.com/?q={text}'
     response = requests.get(url, headers=usr_agent)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, 'html.parser')
