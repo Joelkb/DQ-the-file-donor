@@ -157,8 +157,7 @@ async def broadcast_messages(user_id, message):
 
 async def search_gagala(text):
     usr_agent = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) '
-    'Chrome/50.0.2661.102 Safari/537.36'
+    'User-Agent': 'Microsoft Edge: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393'
     }
     text = text.replace(" ", '+')
     url = f'https://www.google.com/search?q={text}'
