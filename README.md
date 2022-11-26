@@ -51,9 +51,9 @@
 - [x] Spelling Check Feature
 - [x] File Store
 - [x] Auto Delete
-- [x] Heroku Dyno Check
-- [x] Bot Uptime
-- [x] Bot work day prediction
+- [x] And More...
+
+<b>To know about all features, Join our <a href='https://telegram.me/DQ_The_File_Donor_Updates'>updates channel</a>.</b>
 
 ## Commands
 ```
