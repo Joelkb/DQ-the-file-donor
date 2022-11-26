@@ -486,7 +486,7 @@ async def settings(client, message):
             ],
             [
                 InlineKeyboardButton(
-                    'Fɪʟᴇ Sᴇᴄᴜʀᴇ',
+                    'Pʀᴏᴛᴇᴄᴛ Cᴏɴᴛᴇɴᴛ',
                     callback_data=f'setgs#file_secure#{settings["file_secure"]}#{grp_id}',
                 ),
                 InlineKeyboardButton(
@@ -546,15 +546,28 @@ async def settings(client, message):
             ],
         ]
 
-        reply_markup = InlineKeyboardMarkup(buttons)
+        btn = [[
+                InlineKeyboardButton("Oᴘᴇɴ Hᴇʀᴇ ↓", callback_data=f"opnsetgrp#{grp_id}"),
+                InlineKeyboardButton("Oᴘᴇɴ Iɴ PM ⇲", callback_data=f"opnsetpm#{grp_id}")
+              ]]
 
-        await message.reply_text(
-            text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As Yᴏᴜʀ Wɪsʜ ⚙</b>",
-            reply_markup=reply_markup,
-            disable_web_page_preview=True,
-            parse_mode=enums.ParseMode.HTML,
-            reply_to_message_id=message.id
-        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        if chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+            await message.reply_text(
+                text="<b>Dᴏ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴏᴘᴇɴ sᴇᴛᴛɪɴɢs ʜᴇʀᴇ ?</b>",
+                reply_markup=InlineKeyboardMarkup(btn),
+                disable_web_page_preview=True,
+                parse_mode=enums.ParseMode.HTML,
+                reply_to_message_id=message.id
+            )
+        else:
+            await message.reply_text(
+                text=f"<b>Cʜᴀɴɢᴇ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs Fᴏʀ {title} As Yᴏᴜʀ Wɪsʜ ⚙</b>",
+                reply_markup=reply_markup,
+                disable_web_page_preview=True,
+                parse_mode=enums.ParseMode.HTML,
+                reply_to_message_id=message.id
+            )
 
 
 
@@ -614,7 +627,7 @@ async def requests(bot, message):
             if REQST_CHANNEL is not None:
                 btn = [[
                         InlineKeyboardButton('View Request', url=f"{message.reply_to_message.link}"),
-                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}')
+                        InlineKeyboardButton('Show Options', callback_data=f'show_option#{reporter}')
                       ]]
                 reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
@@ -622,7 +635,7 @@ async def requests(bot, message):
                 for admin in ADMINS:
                     btn = [[
                         InlineKeyboardButton('View Request', url=f"{message.reply_to_message.link}"),
-                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}')
+                        InlineKeyboardButton('Show Options', callback_data=f'show_option#{reporter}')
                       ]]
                     reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
@@ -649,7 +662,7 @@ async def requests(bot, message):
             if REQST_CHANNEL is not None and len(content) >= 3:
                 btn = [[
                         InlineKeyboardButton('View Request', url=f"{message.link}"),
-                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}')
+                        InlineKeyboardButton('Show Options', callback_data=f'show_option#{reporter}')
                       ]]
                 reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
@@ -657,7 +670,7 @@ async def requests(bot, message):
                 for admin in ADMINS:
                     btn = [[
                         InlineKeyboardButton('View Request', url=f"{message.link}"),
-                        InlineKeyboardButton('Show Options', callback_data=f'so#{reporter}')
+                        InlineKeyboardButton('Show Options', callback_data=f'show_option#{reporter}')
                       ]]
                     reported_post = await bot.send_message(chat_id=admin, text=f"<b>𝖱𝖾𝗉𝗈𝗋𝗍𝖾𝗋 : {mention} ({reporter})\n\n𝖬𝖾𝗌𝗌𝖺𝗀𝖾 : {content}</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
@@ -678,3 +691,34 @@ async def requests(bot, message):
                 InlineKeyboardButton('View Request', url=f"{reported_post.link}")
               ]]
         await message.reply_text("<b>Your request has been added! Please wait for some time.</b>", reply_markup=InlineKeyboardMarkup(btn))
+
+        
+@Client.on_message(filters.command("send") & filters.user(ADMINS))
+async def send_msg(bot, message):
+    if message.reply_to_message:
+        target_id = message.text
+        command = ["/send"]
+        out = "Users Saved In DB Are:\n\n"
+        for cmd in command:
+            if cmd in target_id:
+                target_id = target_id.replace(cmd, "")
+        success = False
+        try:
+            user = await bot.get_users(target_id)
+            users = await db.get_all_users()
+            async for usr in users:
+                out += f"{usr['id']}"
+                out += '\n'
+            if str(user.id) in str(out):
+                await message.reply_to_message.copy(int(user.id))
+                success = True
+            else:
+                success = False
+            if success:
+                await message.reply_text(f"<b>Your message has been successfully send to {user.mention}.</b>")
+            else:
+                await message.reply_text("<b>This user didn't started this bot yet !</b>")
+        except Exception as e:
+            await message.reply_text(f"<b>Error: {e}</b>")
+    else:
+        await message.reply_text("<b>Use this command as a reply to any message using the target chat id. For eg: /send userid</b>")
