@@ -803,7 +803,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "filters":
         buttons = [[
             InlineKeyboardButton('Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('Aᴜᴛᴏ FIʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('Aᴜᴛᴏ FIʟᴛᴇʀ', callback_data='autofilter')
+        ],[
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs', callback_data='global_filters')
         ]]
         
@@ -969,7 +971,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     
-    elif query.data == "file_store":
+    elif query.data == "store_file":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='admin')
         ]]
@@ -988,7 +990,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra'),
-            InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='file_store')
+            InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
