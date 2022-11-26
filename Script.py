@@ -190,3 +190,12 @@ Nᴀᴍᴇ - {}
 ▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Updates
 ▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
 =========== • ✠ • ===========</b>"""
+
+    IMDB_TEMPLATE_TXT = """
+<b>Query: {query}
+IMDb Data:
+
+🏷 Title: <a href={url}>{title}</a>
+🎭 Genres: {genres}
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
