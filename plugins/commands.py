@@ -704,7 +704,7 @@ async def send_msg(bot, message):
             if cmd in target_id:
                 target_id = target_id.replace(cmd, "")
         success = False
-        chat_detail = await bot.get_chat(target_id)
+        chat_detail = await bot.get_chat(chat_id=target_id)
         if chat_detail.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP, enums.ChatType.CHANNEL]:
             await message.reply_text("<b>You can't send messages to any channel or group !</b>")
             return
