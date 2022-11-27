@@ -4,11 +4,7 @@ then
   git clone https://github.com/Joelkb/DQ-the-file-donor.git /DQ-The-File-Donor
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  if [ -z $BRANCH ]
-  then
-    git clone $UPSTREAM_REPO /DQ-The-File-Donor
-  else
-    git clone -b $BRANCH $UPSTREAM_REPO /DQ-The-File-Donor
+  git clone $UPSTREAM_REPO /DQ-The-File-Donor
 fi
 cd /DQ-The-File-Donor
 pip3 install -U -r requirements.txt
