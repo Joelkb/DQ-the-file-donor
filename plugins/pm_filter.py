@@ -446,10 +446,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                              InlineKeyboardButton('𝕄𝕆𝕍𝕀𝔼 𝔾ℝ𝕆𝕌ℙ', url=GRP_LNK),
+                              InlineKeyboardButton('𝕄𝕆𝕍𝕀𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃', url=CHNL_LNK)
                            ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/MW_BOTS")
                              ]
                             ]
                         )
@@ -494,14 +494,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-               ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                   InlineKeyboardButton('𝕄𝕆𝕍𝕀𝔼 𝔾ℝ𝕆𝕌ℙ', url=GRP_LNK),
+                   InlineKeyboardButton('𝕄𝕆𝕍𝕀𝔼𝕊 ℂℍ𝔸ℕℕ𝔼𝕃', url=CHNL_LNK)
+                ],[
+                   InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/MW_BOTS")
+                  ]
                  ]
-                ]
-            )
-        )
+             )
+         ) 
     elif query.data == "pages":
         await query.answer()
 
