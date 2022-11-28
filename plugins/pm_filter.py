@@ -650,93 +650,84 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 disable_web_page_preview=True,
                 parse_mode=enums.ParseMode.HTML,
                 reply_to_message_id=query.message.id
-            )
-
-    elif query.data.startswith("show_option"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("Uɴᴀᴠᴀɪʟᴀʙʟᴇ", callback_data=f"unavailable#{from_user}"),
-                InlineKeyboardButton("Uᴘʟᴏᴀᴅᴇᴅ", callback_data=f"uploaded#{from_user}")
-             ],[
-                InlineKeyboardButton("Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ", callback_data=f"already_available#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Hᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ᴏᴘᴛɪᴏɴs !")
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-        
-    elif query.data.startswith("unavailable"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("⚠️ Uɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Uɴᴀᴠᴀɪʟᴀʙʟᴇ !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<b>Hᴇʏ {user.mention}, Sᴏʀʀʏ Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ɪs ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ. Sᴏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ɪᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<b>Hᴇʏ {user.mention}, Sᴏʀʀʏ Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ɪs ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ. Sᴏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ɪᴛ.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("uploaded"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("✅ Uᴘʟᴏᴀᴅᴇᴅ ✅", callback_data=f"upalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Uᴘʟᴏᴀᴅᴇᴅ !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<b>Hᴇʏ {user.mention}, Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ʜᴀs ʙᴇᴇɴ ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs. Kɪɴᴅʟʏ sᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<b>Hᴇʏ {user.mention}, Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ʜᴀs ʙᴇᴇɴ ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs. Kɪɴᴅʟʏ sᴇᴀʀᴄʜ ᴀɢᴀɪɴ.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("already_available"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("🟢 Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ 🟢", callback_data=f"alalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<b>Hᴇʏ {user.mention}, Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴏᴜʀ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ. Kɪɴᴅʟʏ sᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<b>Hᴇʏ {user.mention}, Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴏᴜʀ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ. Kɪɴᴅʟʏ sᴇᴀʀᴄʜ ᴀɢᴀɪɴ.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
+           )
+    elif query.data.startswith("req_upld"):
+        if query.from_user.id not in ADMINS:
+            await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴛʜɪs", show_alert = True)
+            return
+        mess_id = query.data.split()[1]
+        bmess_id = query.data.split()[2]
+        await client.delete_messages(SUPPORT_GROUP, message_ids=int(bmess_id))
+        await query.edit_message_text(text=f"<s>{query.message.text}</s>",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="✅️ Uᴘʟᴏᴀᴅᴇᴅ ✅️", callback_data="doneupld")]])
+        )
+        await client.send_message(SUPPORT_GROUP, text=script.DONE_UPLOAD2,
+            reply_to_message_id=int(mess_id),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cᴏᴍᴘʟᴇᴛᴇᴅ Rᴇǫᴜᴇsᴛ ✅️", url=f"{query.message.link}")]]),
+        )            
+    elif query.data.startswith("req_unabl"):
+        if query.from_user.id not in ADMINS:
+            await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴛʜɪs", show_alert = True)
+            return
+        mess_id = query.data.split()[1]
+        bmess_id = query.data.split()[2]
+        await client.delete_messages(SUPPORT_GROUP, message_ids=int(bmess_id))
+        await query.edit_message_text(text=f"<s>{query.message.text}</s>",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⚠️ Uɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data="notavl")]])
+        )
+        await client.send_message(SUPPORT_GROUP, text=script.REQ_NO2,
+            reply_to_message_id=int(mess_id),            
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ⚠️", url=f"{query.message.link}")]]),
+        )
+    elif query.data.startswith("req_dcln"):
+        if query.from_user.id not in ADMINS:
+            await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴛʜɪs", show_alert = True)
+            return
+        mess_id = query.data.split()[1]
+        bmess_id = query.data.split()[2]
+        await client.delete_messages(SUPPORT_GROUP, message_ids=int(bmess_id))
+        await query.edit_message_text(text=f"<s>{query.message.text}</s>",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="❌ Rᴇᴊᴇᴄᴛᴇᴅ ❌", callback_data="rjctreq")]])
+        )
+        await client.send_message(SUPPORT_GROUP, text=script.REQ_REJECT2,
+            reply_to_message_id=int(mess_id),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ❌", url=f"{query.message.link}")]]),
+        )
+    elif query.data.startswith("req_aval"):
+        if query.from_user.id not in ADMINS:
+            await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴛʜɪs", show_alert = True)
+            return
+        mess_id = query.data.split()[1]
+        bmess_id = query.data.split()[2]
+        await client.delete_messages(SUPPORT_GROUP, message_ids=int(bmess_id))
+        await query.edit_message_text(text=f"<s>{query.message.text}</s>",
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="♻️ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ ♻️", callback_data="donealrd")]])
+        )
+        await client.send_message(SUPPORT_GROUP, text=script.DONE_ALREADY2,
+            reply_to_message_id=int(mess_id),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Cʜᴇᴄᴋ Yᴏᴜʀ Rᴇǫᴜᴇsᴛ ♻️", url=f"{query.message.link}")]]),
+        )
+    elif query.data.startswith("morbtn"):
+        if query.from_user.id not in ADMINS:
+            await query.answer("ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ʀɪɢʜᴛs ᴛᴏ ᴛʜɪs", show_alert = True)
+            return
+        mess_id = query.data.split()[1]
+        bmess_id = query.data.split()[2]
+        mrbtn = [[
+                  InlineKeyboardButton(text="Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ", callback_data=f"req_aval {mess_id} {bmess_id}")
+                ],[
+                  InlineKeyboardButton(text="Uɴᴀᴠᴀɪʟᴀʙʟᴇ", callback_data=f"req_unabl {mess_id} {bmess_id}"),
+                  InlineKeyboardButton(text="Rᴇᴊᴇᴄᴛ", callback_data=f"req_dcln {mess_id} {bmess_id}")
+                ],[
+                  InlineKeyboardButton(text="Uᴘʟᴏᴀᴅᴇᴅ", callback_data=f"req_upld {mess_id} {bmess_id}")
+                ]]
+        reply_markup = InlineKeyboardMarkup(mrbtn)
+        await query.message.edit_reply_markup(reply_markup)
+                 
     elif query.data.startswith("alalert"):
         ident, from_user = query.data.split("#")
         if int(query.from_user.id) == int(from_user):
