@@ -443,12 +443,12 @@ Kɪɴᴅʟʏ Cʜᴇᴄᴋ Tʜᴇ Bᴏᴛ Bᴇғᴏʀᴇ Rᴇǫᴜᴇsᴛɪɴɢ.<
 
 <b>
 ╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
+🔅 ʙᴏᴛ ᴍᴀᴅᴇ ʙy:  <a href="https://t.me/MW_BOTS">𝙼𝚆 𝙱𝙾𝚃𝚂</a>
 ╰─────── • ◆ • ───────╯
 
 =========== • ✠ • ===========
 ▫️ ᴄʜᴀɴɴᴇʟ : @MoviesWorld_Chan_nel
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @MoviesWorld_Group2
+▫️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ : @MoviesWorld_Group2
 =========== • ✠ • ===========</b>"""
 
     IMDB_TEMPLATE_TXT = """
