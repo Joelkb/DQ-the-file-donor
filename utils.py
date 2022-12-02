@@ -178,7 +178,7 @@ async def search_gagala(text):
             success = True
         except Exception as e:
             wait = retries * 10
-            logging.info(f'Error: {e}\n\nWait for {wait} seconds to retry !')
+            logging.info(f"Error: {e}\n\nWait for {wait} seconds to retry !\n\n Used agent = {usr_agent['User-Agent']}")
             asyncio.sleep(wait)
             retries += 1
     soup = BeautifulSoup(response.text, 'html.parser')
