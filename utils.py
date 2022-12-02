@@ -163,15 +163,10 @@ async def search_gagala(text):
     text = text.replace(" ", '+')
     url = f'https://www.google.com/search?q={text}'
     response = requests.get(url, headers=usr_agent)
-    if (response.headers['x-pco-api-request-rate-count'] == response.headers['x-pco-api-request-rate-limit']):
-        # Call GET to force a 429 error and the corresponding Retry-After header.
-        response = session.request(
-            method='GET',
-            url=config['urls']['people']['lists']
-        )
-        if response.status_code != 429:
-            response.raise_for_status()
+    if response.status_code == 429:
         await asyncio.sleep(int(response.headers['retry-after']))
+    else:
+        response.raise_for_status()
     soup = BeautifulSoup(response.text, 'html.parser')
     titles = soup.find_all( 'h3' )
     return [title.getText() for title in titles]
