@@ -139,15 +139,3 @@ async def delallgfilters(client, message):
             ]),
             quote=True
         )
-
-@Client.on_callback_query()
-async def dellgfiltersconfirm(client, message):
-    if message.data == "gfiltersdeleteallconfirm":
-        await del_allg(message.message, 'gfilters')
-        await message.answer("Done !")
-        return
-    elif message.data == "gfiltersdeleteallcancel": 
-        await message.message.reply_to_message.delete()
-        await message.delete()
-        await message.answer("Process Cancelled !")
-        return
