@@ -66,10 +66,6 @@
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "Telegram_files",
             "required": false
-        },
-        "HEROKU_API_KEY": {
-            "description": "Your Heroku API Key to check dyno, bot uptime and bot working day prediction",
-            "required": true
         }
     },
     "addons": [],
