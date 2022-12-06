@@ -26,6 +26,7 @@ from database.filters_mdb import (
 from database.gfilters_mdb import (
     find_gfilter,
     get_gfilters,
+    del_allg
 )
 import logging
 
