@@ -5,8 +5,7 @@ from database.gfilters_mdb import(
    add_gfilter,
    get_gfilters,
    delete_gfilter,
-   count_gfilters,
-   del_allg
+   count_gfilters
 )
 
 from database.connections_mdb import active_connection
