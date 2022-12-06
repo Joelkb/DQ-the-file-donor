@@ -147,7 +147,7 @@ async def dellgfiltersconfirm(client, message):
         await message.answer("Done !")
         return
     elif message.data == "gfiltersdeleteallcancel": 
-        await message.reply_to_message.delete()
+        await message.message.reply_to_message.delete()
         await message.delete()
         await message.answer("Process Cancelled !")
         return
