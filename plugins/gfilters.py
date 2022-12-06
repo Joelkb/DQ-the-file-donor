@@ -144,8 +144,10 @@ async def delallgfilters(client, message):
 async def dellgfiltersconfirm(client, message):
     if message.data == "gfiltersdeleteallconfirm":
         await del_allg(message.message, 'gfilters')
-        return await message.reply("Done !")
+        await message.answer("Done !")
+        return
     elif message.data == "gfiltersdeleteallcancel": 
         await message.reply_to_message.delete()
         await message.delete()
-        return await message.reply("Process Cancelled !")
+        await message.answer("Process Cancelled !")
+        return
