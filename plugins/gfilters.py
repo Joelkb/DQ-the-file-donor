@@ -5,8 +5,7 @@ from database.gfilters_mdb import(
    add_gfilter,
    get_gfilters,
    delete_gfilter,
-   count_gfilters,
-   del_allg
+   count_gfilters
 )
 
 from database.connections_mdb import active_connection
@@ -134,13 +133,8 @@ async def delallgfilters(client, message):
     await message.reply_text(
             f"Do you want to continue??",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(text="YES",callback_data="gconforme")],
-                [InlineKeyboardButton(text="CANCEL",callback_data="close_data")]
+                [InlineKeyboardButton(text="YES",callback_data="gfiltersdeleteallconfirm")],
+                [InlineKeyboardButton(text="CANCEL",callback_data="gfiltersdeleteallcancel")]
             ]),
             quote=True
         )
-
-@Client.on_callback_query(filters.regex("gconforme"))
-async def dellgfiltersconfirm(client, message):
-    await del_allg(message.message, 'gfilters')
-    return await message.reply("👍 Done")
