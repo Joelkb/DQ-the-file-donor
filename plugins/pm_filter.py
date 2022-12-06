@@ -26,6 +26,7 @@ from database.filters_mdb import (
 from database.gfilters_mdb import (
     find_gfilter,
     get_gfilters,
+    del_allg
 )
 import logging
 
@@ -212,6 +213,15 @@ async def advantage_spoll_choker(bot, query):
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
         await query.message.delete()
+    elif query.data == "gfiltersdeleteallconfirm":
+        await del_allg(query.message, 'gfilters')
+        await query.answer("Done !")
+        return
+    elif query.data == "gfiltersdeleteallcancel": 
+        await query.message.reply_to_message.delete()
+        await query.message.delete()
+        await query.answer("Process Cancelled !")
+        return
     elif query.data == "delallconfirm":
         userid = query.from_user.id
         chat_type = query.message.chat.type
