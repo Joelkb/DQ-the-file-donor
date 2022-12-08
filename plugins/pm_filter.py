@@ -293,8 +293,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
-             InlineKeyboardButton("DELETE", callback_data=f"deletecb:{group_id}")],
-            [InlineKeyboardButton("BACK", callback_data="backcb")]
+             InlineKeyboardButton("⚠️DELETE⚠️", callback_data=f"deletecb:{group_id}")],
+            [InlineKeyboardButton("«BACK", callback_data="backcb")]
         ])
 
         await query.message.edit_text(
@@ -456,10 +456,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                              InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                              InlineKeyboardButton('💫Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ💫', url=GRP_LNK),
+                              InlineKeyboardButton('📣Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
                            ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/LUTTAPPIxTG")
+                              InlineKeyboardButton("📍Bᴏᴛ Oᴡɴᴇʀ📍", url="t.me/LUTTAPPIxTG")
                              ]
                             ]
                         )
@@ -504,10 +504,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                  InlineKeyboardButton('💫Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ💫', url=GRP_LNK),
+                  InlineKeyboardButton('📣Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/LUTTAPPIxTG")
+                  InlineKeyboardButton("📍Bᴏᴛ Oᴡɴᴇʀ📍", url="t.me/LUTTAPPIxTG")
                  ]
                 ]
             )
@@ -781,16 +781,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('⚡️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⚡️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('⚡️Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ⚡️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⚔️ Bᴏᴛ Oᴡɴᴇʀ ⚔️', callback_data="owner_info"),
-                    InlineKeyboardButton('💫 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 💫', url=GRP_LNK)
+                    InlineKeyboardButton('⚔️Bᴏᴛ Oᴡɴᴇʀ⚔️', callback_data="owner_info"),
+                    InlineKeyboardButton('💫Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ💫', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('⚙️ Hᴇʟᴘ ⚙️', callback_data='help'),
-                    InlineKeyboardButton('🛡️ Aʙᴏᴜᴛ 🛡️', callback_data='about'),
-                    InlineKeyboardButton('⚠️ Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ⚠️', switch_inline_query_current_chat='')
+                    InlineKeyboardButton('⚙️Hᴇʟᴘ⚙️', callback_data='help'),
+                    InlineKeyboardButton('🛡️Aʙᴏᴜᴛ🛡️', callback_data='about'),
+                    InlineKeyboardButton('⚠️Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ⚠️', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('✇ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('📣Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -808,11 +808,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "filters":
         buttons = [[
-            InlineKeyboardButton('Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('Aᴜᴛᴏ FIʟᴛᴇʀ', callback_data='autofilter')
+            InlineKeyboardButton('🤍Mᴀɴᴜᴀʟ FIʟᴛᴇʀ🤍', callback_data='manuelfilter'),
+            InlineKeyboardButton('🖤Aᴜᴛᴏ FIʟᴛᴇʀ🖤', callback_data='autofilter')
         ],[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs', callback_data='global_filters')
+            InlineKeyboardButton('🌍Gʟᴏʙᴀʟ Fɪʟᴛᴇʀ🌍', callback_data='global_filters')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1194,17 +1194,17 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'💛ɪɴꜰᴏ💛', 'reqinfo'),
+                    InlineKeyboardButton(f'💙ᴍᴏᴠɪᴇ💙', 'minfo'),
+                    InlineKeyboardButton(f'💜ꜱᴇʀɪᴇꜱ💜', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'💙ᴍᴏᴠɪᴇ💙', 'minfo'),
+                    InlineKeyboardButton(f'💜ꜱᴇʀɪᴇꜱ💜', 'sinfo')
                 ]
             )
                 
@@ -1215,17 +1215,17 @@ async def auto_filter(client, msg, spoll=False):
         if settings['auto_delete']:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ɪɴꜰᴏ', 'reqinfo'),
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'💜ɪɴꜰᴏ💜', 'reqinfo'),
+                    InlineKeyboardButton(f'💛ᴍᴏᴠɪᴇ💛', 'minfo'),
+                    InlineKeyboardButton(f'💙ꜱᴇʀɪᴇꜱ💙', 'sinfo')
                 ]
             )
 
         else:
             btn.insert(0, 
                 [
-                    InlineKeyboardButton(f'ᴍᴏᴠɪᴇ', 'minfo'),
-                    InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
+                    InlineKeyboardButton(f'💛ᴍᴏᴠɪᴇ💛', 'minfo'),
+                    InlineKeyboardButton(f'💙ꜱᴇʀɪᴇꜱ💙', 'sinfo')
                 ]
             )
 
