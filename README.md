@@ -93,6 +93,7 @@
 • /gfilter - To add global filters.
 • /gfilters - To view list of all global filters.
 • /delg - To delete a specific global filter.
+• /delallg - To delete all global filters.
 ```
 
 ## Variables
