@@ -135,7 +135,7 @@
 </details>
 
 <details><summary>Deploy on Railway</summary>
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/y0ryFO)
+<a href="https://railway.app/new/template/y0ryFO">https://railway.app/button.svg</a>
 </details>
 
 <details><summary>Deploy To VPS</summary>
