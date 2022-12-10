@@ -7,18 +7,20 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>🥱 My Name : {}
 🕵‍♂ Creater : <a href="https://t.me/crazyspiderr">『🦞』༺𓆩𝑹𝒐𝒍𝒆𝒙𓆪࿐</a>
-📚 Library : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-🖥 Language : 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
+📚 Library : <a href='https://docs.pyrogram.org/'>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
+🖥 Language : <a href='https://www.python.org/download/releases/3.0/'>𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</a>
 🧑‍💻 Developer : <a href='https://t.me/AFxSU'>🍒ɛӼ_ռöֆ__⁷⁷⁷ ✘ ⁴✨🦋</a>
-🎪 Data Base : 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
+🎪 Data Base : <a href='https://www.mongodb.com/'>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>
 📡 Server : <a href='https://t.me/quickfastt'>QuickFast'</a>
-🔋 Bot Group : @at3movies </b>"""
+🔋 Bot Group : <a href='https://t.me/at3movies>MovieGroup</a></b>"""
 
     SOURCE_TXT = """<b>ɴᴏᴛᴇ:
 - ⚠️ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɴᴏᴛ ᴀɴ  ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ ⚠️.
 - ꜱource⚡️ - <a href="https://github.com/MyBotzz/RashmikaBot">ʜᴇʀᴇ</a>
+
 Dᴇᴠs:
 - <a href="https://t.me/crazyspiderr">『🦞』༺𓆩𝑹𝒐𝒍𝒆𝒙𓆪࿐</a>
+
 - <a href="https://t.me/AFxSU">🍒ɛӼ_ռöֆ__⁷⁷⁷ ✘ ⁴✨🦋 [ OғғLɪɴᴇ ]</b>"""
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
