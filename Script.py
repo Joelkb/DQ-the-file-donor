@@ -209,14 +209,11 @@ Nᴀᴍᴇ - {}"""
 ╰─────── • ◆ • ───────╯
 
 =========== • ✠ • ===========
-▫️ ɢʀᴏᴜᴘ : <a href="https://t.me/at3movies>AT3MOVIES</a>
+▫️ ɢʀᴏᴜᴘ : <a href="https://t.me/at3movies">AT3MOVIES</a>
 =========== • ✠ • ===========</b>"""
 
     IMDB_TEMPLATE_TXT = """
-<b>Query: {query}
-IMDb Data:
-
-🏷 Title: <a href={url}>{title}</a>
+<b>🏷 Title: <a href={url}>{title}</a>
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 🌟 Rating: <a href={url}/ratings>{rating}</a>/10 
