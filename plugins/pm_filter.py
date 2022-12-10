@@ -455,15 +455,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         protect_content=True if ident == "filep" else False,
                         reply_markup=InlineKeyboardMarkup(
                             [
-                             [
-                              InlineKeyboardButton('💫Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ💫', url=GRP_LNK),
-                              InlineKeyboardButton('📣Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
-                           ],[
-                              InlineKeyboardButton("📍Bᴏᴛ Oᴡɴᴇʀ📍", url="t.me/LUTTAPPIxTG")
-                             ]
-                            ]
-                        )
+                         [              
+                          InlineKeyboardButton("🚨Bᴏᴛ Oᴡɴᴇʀ🚨", url="https://t.me/aboutexinos")
+                         ]
+                        ]
                     )
+                )
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
                 await query.answer('Cʜᴇᴄᴋ PM, I ʜᴀᴠᴇ sᴇɴᴛ ғɪʟᴇs ɪɴ PM', show_alert=True)
@@ -503,15 +500,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                  InlineKeyboardButton('💫Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ💫', url=GRP_LNK),
-                  InlineKeyboardButton('📣Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
-               ],[
-                  InlineKeyboardButton("📍Bᴏᴛ Oᴡɴᴇʀ📍", url="t.me/LUTTAPPIxTG")
-                 ]
-                ]
-            )
-        )
+                         [              
+                          InlineKeyboardButton("🚨Bᴏᴛ Oᴡɴᴇʀ🚨", url="https://t.me/aboutexinos")
+                         ]
+                        ]
+                    )
+                )
     elif query.data == "pages":
         await query.answer()
 
@@ -783,15 +777,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('⚡️Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ⚡️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('⚔️Bᴏᴛ Oᴡɴᴇʀ⚔️', callback_data="owner_info"),
+                    InlineKeyboardButton('⚔️Bᴏᴛ Oᴡɴᴇʀ⚔️', url=f"https://t.me/aboutexinos"),
                     InlineKeyboardButton('💫Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ💫', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('⚙️Hᴇʟᴘ⚙️', callback_data='help'),
                     InlineKeyboardButton('🛡️Aʙᴏᴜᴛ🛡️', callback_data='about'),
                     InlineKeyboardButton('⚠️Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ⚠️', switch_inline_query_current_chat='')
                 ],[
-                    InlineKeyboardButton('📣Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
-                    
+                    InlineKeyboardButton('📣Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -869,7 +862,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('❄️Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ❄️', url=GRP_LNK),
+            InlineKeyboardButton('❄️Dᴇᴠᴏʟᴏᴘᴇʀ❄️', url='https://t.me/aboutexinos'),
             InlineKeyboardButton('⚓️Sᴏᴜʀᴄᴇ Cᴏᴅᴇ⚓️', callback_data='source')
         ],[
             InlineKeyboardButton('🏡Hᴏᴍᴇ🏡', callback_data='start'),
