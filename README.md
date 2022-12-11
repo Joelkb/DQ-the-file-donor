@@ -120,6 +120,7 @@
 </a>
 </p>
 </details>
+
 <details><summary>Deploy To Heroku Via Bot</summary>
 <p>
 <br>
@@ -128,6 +129,7 @@
 </a>
 </p>
 </details>
+
 <details><summary>Deploy To Koyeb</summary>
 <b>The fastest way to deploy the application is to click the Deploy to Koyeb button below.</b>
 
@@ -138,6 +140,15 @@
 <a href="https://railway.app/new/template/y0ryFO">
 <img src="https://railway.app/button.svg" alt="Deploy on Railway">
 </a>
+</details>
+
+<details><summary> Deploy To Okteto </summary>
+<br>
+<p>
+<a href="https://cloud.okteto.com/deploy?repository=https://github.com/Joelkb/DQ-The-File-Donor&branch=master">
+  <img src="https://okteto.com/develop-okteto.svg" alt="Deploy to Okteto">
+</a>
+</p>
 </details>
 
 <details><summary>Deploy To VPS</summary>
