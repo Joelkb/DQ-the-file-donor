@@ -459,7 +459,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                               InlineKeyboardButton('💫Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ💫', url=GRP_LNK),
                               InlineKeyboardButton('📣Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
                            ],[
-                              InlineKeyboardButton("📍Bᴏᴛ Oᴡɴᴇʀ📍", url="t.me/LUTTAPPIMOVIE")
+                              InlineKeyboardButton("📍ꜱʜᴀʀᴇ ᴍᴇ📍", url="https://t.me/share/url?url=https://t.me/Kom_auto_filter5_bot")
                              ]
                             ]
                         )
@@ -507,7 +507,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('💫Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ💫', url=GRP_LNK),
                   InlineKeyboardButton('📣Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ📣', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("📍Bᴏᴛ Oᴡɴᴇʀ📍", url="t.me/LUTTAPPIMOVIE")
+                  InlineKeyboardButton("📍ꜱʜᴀʀᴇ ᴍᴇ📍", url="https://t.me/share/url?url=https://t.me/Kom_auto_filter5_bot")
                  ]
                 ]
             )
