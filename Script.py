@@ -15,7 +15,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 🔋 Bot Group : <a href='https://t.me/at3movies'>MovieGroup</a> </b>"""
 
     SOURCE_TXT = """<b>ɴᴏᴛᴇ:
-- ⚠️ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɴᴏᴛ ᴀɴ  ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ ⚠️.
+- ⚠️ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɴᴏᴛ ᴀɴ  ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
 - ꜱource⚡️ - <a href="https://github.com/MyBotzz/RashmikaBot">ʜᴇʀᴇ</a>
 
 Dᴇᴠs:
