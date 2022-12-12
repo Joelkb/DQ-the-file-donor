@@ -121,6 +121,7 @@
 </a>
 </p>
 </details>
+
 <details><summary>Deploy To Heroku Via Bot</summary>
 <p>
 <br>
@@ -134,6 +135,15 @@
 <b>The fastest way to deploy the application is to click the Deploy to Koyeb button below.</b>
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Joelkb/DQ-The-FIle-Donor&branch=koyeb&name=dqthefiledonor)
+</details>
+
+<details><summary> Deploy To Okteto </summary>
+<br>
+<p>
+<a href="https://cloud.okteto.com/deploy?repository=https://github.com/mayavi/DQ-The-File-Donor&branch=master">
+  <img src="https://okteto.com/develop-okteto.svg" alt="Deploy to Okteto">
+</a>
+</p>
 </details>
 
 <details><summary>Deploy To VPS</summary>
