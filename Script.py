@@ -7,14 +7,14 @@ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b>🥱 My Name : {}
-🕵‍♂ Creater : <a href="tg://settings">『🦞』༺𓆩𝑹𝒐𝒍𝒆𝒙𓆪࿐</a>
-📚 Library : <a href='https://docs.pyrogram.org/'>𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼</a>
-🖥 Language : <a href='https://www.python.org/download/releases/3.0/'>𝙿𝚈𝚃𝙷𝙾𝙽 𝟹</a>
-🧑‍💻 Developer : <a href='https://t.me/AFxSU'>🍒ɛӼ_ռöֆ__⁷⁷⁷ ✘ ⁴</a>
-🎪 Data Base : <a href='https://www.mongodb.com/'>𝙼𝙾𝙽𝙶𝙾 𝙳𝙱</a>
-📡 Server : <a href='https://t.me/quickfastt'>QuickFast</a>
-🔋 Bot Group : <a href='https://t.me/at3movies'>MovieGroup</a> </b>"""
+    ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
+✯ Cʀᴇᴀᴛᴏʀ: <a href='tg://settings'>Tʜɪs ᴘᴇʀsᴏɴ</a>
+✯ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
+✯ Dᴇᴠᴏʟᴏᴘᴇʀ: <a href'https://t.me/AFxSU'>Ex_ɴᴏs__⁷⁷⁷ ✘ ⁴</a>
+✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
+✯ DᴀᴛᴀBᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
+✯ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://t.me/quickfastt'>Qᴜɪᴄᴋ Fᴀsᴛ</a>
+✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: v2.0.3 [ Sᴛᴀʙʟᴇ ]</b>"""
 
     SOURCE_TXT = """<b>ɴᴏᴛᴇ:
 - ⚠️ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɴᴏᴛ ᴀɴ  ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
