@@ -455,8 +455,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         protect_content=True if ident == "filep" else False,
                         reply_markup=InlineKeyboardMarkup(
                             [
-                         [              
-                          InlineKeyboardButton("🚨Bᴏᴛ Oᴡɴᴇʀ🚨", url="https://t.me/aboutexinos")
+                         [
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url=CHNL_LNK),
+                          InlineKeyboardButton('ᴍᴏᴠɪᴇɢʀᴏᴜᴘ', url="https://t.me/at3movies")
+                       ],[
+                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/aboutexinos")
                          ]
                         ]
                     )
@@ -500,8 +503,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             protect_content=True if ident == 'checksubp' else False,
             reply_markup=InlineKeyboardMarkup(
                 [
-                         [              
-                          InlineKeyboardButton("🚨Bᴏᴛ Oᴡɴᴇʀ🚨", url="https://t.me/aboutexinos")
+                         [
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url=CHNL_LNK),
+                          InlineKeyboardButton('ᴍᴏᴠɪᴇɢʀᴏᴜᴘ', url="https://t.me/at3movies")
+                       ],[
+                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/aboutexinos")
                          ]
                         ]
                     )
