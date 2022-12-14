@@ -148,8 +148,11 @@ async def start(client, message):
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                         [              
-                          InlineKeyboardButton("🚨Bᴏᴛ Oᴡɴᴇʀ🚨", url="https://t.me/aboutexinos")
+                         [
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url=CHNL_LNK),
+                          InlineKeyboardButton('ᴍᴏᴠɪᴇɢʀᴏᴜᴘ', url="https://t.me/at3movies")
+                       ],[
+                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/aboutexinos")
                          ]
                         ]
                     )
@@ -164,8 +167,11 @@ async def start(client, message):
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
                         [
-                         [              
-                          InlineKeyboardButton("🚨Bᴏᴛ Oᴡɴᴇʀ🚨", url="https://t.me/aboutexinos")
+                         [
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url=CHNL_LNK),
+                          InlineKeyboardButton('ᴍᴏᴠɪᴇɢʀᴏᴜᴘ', url="https://t.me/at3movies")
+                       ],[
+                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/aboutexinos")
                          ]
                         ]
                     )
@@ -232,8 +238,11 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                         [              
-                          InlineKeyboardButton("🚨Bᴏᴛ Oᴡɴᴇʀ🚨", url="https://t.me/aboutexinos")
+                         [
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url=CHNL_LNK),
+                          InlineKeyboardButton('ᴍᴏᴠɪᴇɢʀᴏᴜᴘ', url="https://t.me/at3movies")
+                       ],[
+                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/aboutexinos")
                          ]
                         ]
                     )
@@ -272,8 +281,11 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [
-                         [              
-                          InlineKeyboardButton("🚨Bᴏᴛ Oᴡɴᴇʀ🚨", url="https://t.me/aboutexinos")
+                         [
+                          InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇ', url=CHNL_LNK),
+                          InlineKeyboardButton('ᴍᴏᴠɪᴇɢʀᴏᴜᴘ', url="https://t.me/at3movies")
+                       ],[
+                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="https://t.me/aboutexinos")
                          ]
                         ]
                     )
