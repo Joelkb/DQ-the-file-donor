@@ -212,7 +212,8 @@ Nᴀᴍᴇ - {}"""
 ╰─────── • ◆ • ───────╯
 
 =========== • ✠ • ===========
-▫️ ɢʀᴏᴜᴘ : <a href="https://t.me/at3movies">AT3MOVIES</a>
+▫️ ɢʀᴏᴜᴘ : <a href="https://t.me/at3movies">ᴍᴏᴠɪᴇ ʜᴜʙ</a>
+▫️ ɢʀᴏᴜᴘ : <a href="https://t.me/Colours_Movies">ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇs​</a>
 =========== • ✠ • ===========</b>"""
 
     IMDB_TEMPLATE_TXT = """
