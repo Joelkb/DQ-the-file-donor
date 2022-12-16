@@ -40,14 +40,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('⚚ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚​', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ', url=f"https://t.me/aboutexinos"),
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ​', url='https://t.me/at3movies'),
+                    InlineKeyboardButton('♚ ᴏᴡɴᴇʀ ♚', url='https://t.me/aboutexinos')
                 ],[
-                    InlineKeyboardButton('𝐇𝐞𝐥𝐩', callback_data='help'),
-                    InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭', callback_data='about'),
-                 ]] 
+                    InlineKeyboardButton('〄 ʜᴇʟᴘ 〄', callback_data='help'),
+                    InlineKeyboardButton('⍟ ᴀʙᴏᴜᴛ ⍟', callback_data='about'),
+                   ],[
+                    InlineKeyboardButton('⌬ sᴜᴘᴘᴏʀᴛ ⌬', url=GRP_LNK)
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         m=await message.reply_sticker("CAACAgIAAxkBAAEG0VljmNpU5h3I5F-pER6Ycg36J8_DRAACZBgAAvG1EEmY4_NunlJkaywE")
         await asyncio.sleep(1)
