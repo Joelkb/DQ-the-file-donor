@@ -45,6 +45,12 @@ async def give_filter(client, message):
     if manual == False:
         settings = await get_settings(message.chat.id)
         try:
+            try:
+                if settings['max_btn']:
+                    settings = await get_settings(message.chat.id)
+            except KeyError:
+                await save_group_settings(message.chat.id, 'max_btn', False)
+                settings = await get_settings(message.chat.id)
             if settings['auto_ffilter']:
                 await auto_filter(client, message)
         except KeyError:
@@ -1239,7 +1245,7 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
+            files, offset, total_results = await get_search_results(message.chat.id ,search.lower(), offset=0, filter=True)
             if not files:
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, msg)
