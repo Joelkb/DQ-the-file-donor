@@ -91,14 +91,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('⚚ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ', url=f"https://t.me/aboutexinos"),
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
-                ],[
-                    InlineKeyboardButton('𝐇𝐞𝐥𝐩', callback_data='help'),
-                    InlineKeyboardButton('𝐀𝐛𝐨𝐮𝐭', callback_data='about'),
-                 ]] 
+            InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('💠 ᴜᴘᴅᴀᴛᴇ 💠', url='https://t.me/MyBotzzupdate'),
+            InlineKeyboardButton('💠 ᴍᴏᴠɪᴇs 💠', url='https://t.me/at3movies')
+            ],[      
+            InlineKeyboardButton('♻️ ʜᴇʟᴘ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ᴀʙᴏᴜᴛ ♻️', callback_data='about')
+        ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         m=await message.reply_sticker("CAACAgIAAxkBAAEG0VljmNpU5h3I5F-pER6Ycg36J8_DRAACZBgAAvG1EEmY4_NunlJkaywE")
         await asyncio.sleep(1)
