@@ -743,10 +743,10 @@ async def deletemultiplefiles(bot, message):
     except KeyError:
         await save_group_settings(chat_id, 'max_btn', False)
         settings = await get_settings(chat_id)
-            if settings['max_btn']:
-                dlt_num = str(10)
-            else:
-                dlt_num = str(MAX_B_TN)
+        if settings['max_btn']:
+            dlt_num = str(10)
+        else:
+            dlt_num = str(MAX_B_TN)
     btn = [[
             InlineKeyboardButton("Delete PreDVDs", callback_data="predvd"),
             InlineKeyboardButton("Delete CamRips", callback_data="camrip")
