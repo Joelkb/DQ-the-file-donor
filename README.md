@@ -8,13 +8,14 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+DQ-The-File-Donor!;Created+by+Jᴏᴇʟ+ᠰ+TɢX!;A+simple+and+powerful+Bot!;Indexes+Files+above+2GB;A+Bot+with+double+button!;Start+message+with+pic!;And+more+features!)
 </p>
 
-[![Stars](https://img.shields.io/github/stars/Joelkb/DQ-The-File-Donor?style=flat-square&color=yellow)](https://github.com/Joelkb/DQ-The-File-Donor/stargazers)
-[![Forks](https://img.shields.io/github/forks/Joelkb/DQ-The-File-Donor?style=flat-square&color=orange)](https://github.com/Joelkb/DQ-The-File-Donor/fork)
-[![Size](https://img.shields.io/github/repo-size/Joelkb/DQ-The-File-Donor?style=flat-square&color=green)](https://github.com/Joelkb/DQ-The-File-Donor/)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Joelkb/DQ-The-File-Donor)   
-[![Contributors](https://img.shields.io/github/contributors/Joelkb/DQ-The-File-Donor?style=flat-square&color=green)](https://github.com/Joelkb/DQ-The-File-Donor/graphs/contributors)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/Joelkb/DQ-The-File-Donor/blob/main/LICENSE)
-[![Sparkline](https://stars.medv.io/Joelkb/DQ-The-File-Donor.svg)](https://stars.medv.io/Joelkb/DQ-The-File-Donor)
+<a href="https://github.com/Joelkb/DQ-The-File-Donor/stargazers"><img src="https://img.shields.io/github/stars/Joelkb/DQ-The-File-Donor?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/Joelkb/DQ-The-File-Donor/network/members"> <img src="https://img.shields.io/github/forks/Joelkb/DQ-The-File-Donor?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/Joelkb/DQ-The-File-Donor"> <img src="https://img.shields.io/github/repo-size/Joelkb/DQ-The-File-Donor?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>   
+<a href="https://github.com/Joelkb/DQ-The-File-Donor/commits/kdbotz"> <img src="https://img.shields.io/github/last-commit/Joelkb/DQ-The-File-Donor?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/Joelkb/DQ-The-File-Donor"> <img src="https://img.shields.io/github/contributors/Joelkb/DQ-The-File-Donor?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/Joelkb/DQ-The-File-Donor/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License- GPL 2.0 license -blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-skyblue?style=for-the-badge&logo=python" alt="Python" /> </a>
+<a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=white&label=pyrogram&logo=python&logoColor=blue&style=for-the-badge" /></a>
 
 ## Features
 - [x] IMDB Template Set
