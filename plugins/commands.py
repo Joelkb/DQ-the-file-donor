@@ -733,11 +733,25 @@ async def send_msg(bot, message):
 
 @Client.on_message(filters.command("deletefiles") & filters.user(ADMINS))
 async def deletemultiplefiles(bot, message):
+    chat_id = await active_connection(str(message.from_user.id))
+    settings = await get_settings(chat_id)
+    try:
+        if settings['max_btn']:
+            dlt_num = str(10)
+        else:
+            dlt_num = str(MAX_B_TN)
+    except KeyError:
+        await save_group_settings(chat_id, 'max_btn', False)
+        settings = await get_settings(chat_id)
+            if settings['max_btn']:
+                dlt_num = str(10)
+            else:
+                dlt_num = str(MAX_B_TN)
     btn = [[
             InlineKeyboardButton("Delete PreDVDs", callback_data="predvd"),
             InlineKeyboardButton("Delete CamRips", callback_data="camrip")
           ]]
     await message.reply_text(
-        text="<b>Select the type of files you want to delete !</b>",
+        text=f"<b>Select the type of files you want to delete !\n\nThis will delete {dlt_num} files from the database for the selected type.\n\nTo increase the number of files deleting, Add a variable named MAX_B_TN and give the number as its value.\nNOTE:- Use the minimum number, because this will increase the number of autofilter buttons and the traffic.</b>",
         reply_markup=InlineKeyboardMarkup(btn)
     )
