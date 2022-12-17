@@ -1,3 +1,4 @@
+import re
 import logging
 from pyrogram import Client, filters
 from info import DELETE_CHANNELS
@@ -9,7 +10,7 @@ media_filter = filters.document | filters.video | filters.audio
 
 
 @Client.on_message(filters.chat(DELETE_CHANNELS) & media_filter)
-async def deltemedia(bot, message):
+async def deletemultiplemedia(bot, message):
     """Delete Multiple files from database"""
 
     for file_type in ("document", "video", "audio"):
