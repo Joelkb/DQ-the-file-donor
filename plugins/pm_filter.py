@@ -862,6 +862,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
             
     elif query.data == "predvd":
+        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting PreDVDs... Please wait...</b>")
         chat_ids = await active_connection(str(query.from_user.id))
         files, next_offset, total = await get_search_results(
                                                   chat_ids,
@@ -877,9 +878,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.info('PreDVD File Found ! Successfully deleted from database.')
             deleted+=1
         deleted = str(deleted)
-        await client.send_message(chat_id=query.message.chat.id, text=f"<b>Successfully deleted {deleted} PreDVD files.</b>")
+        await k.edit_text(text=f"<b>Successfully deleted {deleted} PreDVD files.</b>")
 
     elif query.data == "camrip":
+        k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting CamRips... Please wait...</b>")
         chat_ids = await active_connection(str(query.from_user.id))
         files, next_offset, total = await get_search_results(
                                                   chat_ids,
@@ -895,7 +897,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.info('CamRip File Found ! Successfully deleted from database.')
             deleted+=1
         deleted = str(deleted)
-        await client.send_message(chat_id=query.message.chat.id, text=f"<b>Successfully deleted {deleted} CamRip files.</b>")
+        await k.edit_text(text=f"<b>Successfully deleted {deleted} CamRip files.</b>")
 
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
