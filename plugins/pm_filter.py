@@ -45,12 +45,6 @@ async def give_filter(client, message):
     if manual == False:
         settings = await get_settings(message.chat.id)
         try:
-            try:
-                if settings['max_btn']:
-                    settings = await get_settings(message.chat.id)
-            except KeyError:
-                await save_group_settings(message.chat.id, 'max_btn', False)
-                settings = await get_settings(message.chat.id)
             if settings['auto_ffilter']:
                 await auto_filter(client, message)
         except KeyError:
