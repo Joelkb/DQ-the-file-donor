@@ -1534,8 +1534,7 @@ async def advantage_spell_chok(client, msg):
         await asyncio.sleep(30)
         await k.delete()
         return
-    for movie in movies:
-        movielist.append(f"{movie.get('title')}")
+    movielist += [movie.get('title') for movie in movies]
     SPELL_CHECK[msg.id] = movielist
     btn = [
         [
