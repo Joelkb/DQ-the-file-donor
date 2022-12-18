@@ -1510,7 +1510,7 @@ async def auto_filter(client, msg, spoll=False):
 
 
 async def advantage_spell_chok(client, msg):
-    if ' ' in msg_txt:
+    if ' ' in msg.text:
         r, title = msg.text.split(None, 1)
     else:
         title = msg.text.split(None, 1)
