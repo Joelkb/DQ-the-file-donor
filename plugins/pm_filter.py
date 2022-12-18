@@ -1510,8 +1510,7 @@ async def auto_filter(client, msg, spoll=False):
 
 
 async def advantage_spell_chok(client, msg):
-    msg = f". {msg}"
-    r, title = msg.split(None, 1)
+    mv_id = msg.id
     mv_rqst = msg.text
     reqstr1 = msg.from_user.id if msg.from_user else 0
     reqstr = await client.get_users(reqstr1)
@@ -1520,6 +1519,8 @@ async def advantage_spell_chok(client, msg):
         r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)",
         "", msg.text, flags=re.IGNORECASE)  # plis contribute some common words
     query = query.strip() + " movie"
+    msg_txt = f". {msg}"
+    r, title = msg_txt.split(None, 1)
     movies = await get_poster(title, bulk=True)
     movielist = []
     if not movies:
@@ -1537,7 +1538,7 @@ async def advantage_spell_chok(client, msg):
         await k.delete()
         return
     movielist += [movie.get('title') for movie in movies]
-    SPELL_CHECK[msg.id] = movielist
+    SPELL_CHECK[mv_id] = movielist
     btn = [
         [
             InlineKeyboardButton(
