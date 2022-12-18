@@ -34,6 +34,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
+SPELL_CHECK = {}
 
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
@@ -250,9 +251,10 @@ async def next_page(bot, query):
     await query.answer()
 
 
-@Client.on_callback_query(filters.regex(r"^spolling"))
+@Client.on_callback_query(filters.regex(r"^spol"))
 async def advantage_spoll_choker(bot, query):
-    _, user, movie_ = query.data.split('#')
+    _, movie_ = query.data.split('#')
+    user = SPELL_CHECK.get(query.message.reply_to_message.id)
     if int(user) != 0 and query.from_user.id != int(user):
         return await query.answer(script.ALRT_TXT.format(query.from_user.first_name), show_alert=True)
     if movie_ == "close_spellcheck":
@@ -1514,6 +1516,7 @@ async def advantage_spell_chok(client, msg):
         "", msg.text, flags=re.IGNORECASE)  # plis contribute some common words
     query = query.strip() + " movie"
     movies = await get_poster(query, bulk=True)
+    SPELL_CHECK[msg.id] = reqstr1
     if not movies:
         reqst_gle = mv_rqst.replace(" ", "+")
         button = [[
@@ -1532,12 +1535,12 @@ async def advantage_spell_chok(client, msg):
         [
             InlineKeyboardButton(
                 text=f"{movie.get('title')}",
-                callback_data=f"spolling#{reqstr1}#{movie.get('title')}",
+                callback_data=f"spol#{movie.get('title')}",
             )
         ]
         for movie in movies
     ]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{reqstr1}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
