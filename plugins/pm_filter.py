@@ -1512,7 +1512,7 @@ async def auto_filter(client, msg, spoll=False):
 async def advantage_spell_chok(client, msg):
     msg_txt = f". {msg.text}"
     if ' ' in msg_txt:
-        r, title = message.text.split(None, 1)
+        r, title = msg.text.split(None, 1)
     mv_id = msg.id
     mv_rqst = msg.text
     reqstr1 = msg.from_user.id if msg.from_user else 0
