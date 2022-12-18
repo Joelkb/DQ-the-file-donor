@@ -20,6 +20,8 @@
 ## Features
 - [x] IMDB Template Set
 - [x] Indexes Files above 2GB
+- [x] PreDVD and CamRip Delete Mode
+- [x] Multiple File Deletion
 - [x] Settings Menu
 - [x] Force Subscription
 - [x] Welcome Message
@@ -95,6 +97,7 @@
 • /gfilters - To view list of all global filters.
 • /delg - To delete a specific global filter.
 • /delallg - To delete all global filters.
+• /deletefiles - To delete PreDVD and CamRip Files from the bot's database.
 ```
 
 ## Variables
