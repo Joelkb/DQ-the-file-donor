@@ -254,6 +254,7 @@ async def next_page(bot, query):
 @Client.on_callback_query(filters.regex(r"^spol"))
 async def advantage_spoll_choker(bot, query):
     _, movie_ = query.data.split('#')
+    movie = movie_[0]
     user = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not user:
         return await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name), show_alert=True)
@@ -262,16 +263,16 @@ async def advantage_spoll_choker(bot, query):
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     await query.answer(script.TOP_ALRT_MSG)
-    k = await manual_filters(bot, query.message, text=movie_)
+    k = await manual_filters(bot, query.message, text=movie)
     if k == False:
-        files, offset, total_results = await get_search_results(query.message.chat.id, movie_, offset=0, filter=True)
+        files, offset, total_results = await get_search_results(query.message.chat.id, movie, offset=0, filter=True)
         if files:
-            k = (movie_, files, offset, total_results)
+            k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
             reqstr1 = query.from_user.id if query.from_user else 0
             reqstr = await bot.get_users(reqstr1)
-            await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie_)))
+            await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
             k = await query.message.edit(script.MVE_NT_FND)
             await asyncio.sleep(10)
             await k.delete()
@@ -1537,12 +1538,12 @@ async def advantage_spell_chok(client, msg):
         [
             InlineKeyboardButton(
                 text=f"{movie.get('title')}",
-                callback_data=f"spol#{movie.get('title')}",
+                callback_data=f"spol#{list(movie.get('title'))}",
             )
         ]
         for movie in movies
     ]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#{reqstr1}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spol#close_spellcheck')])
     spell_check_del = await msg.reply_photo(
         photo=(SPELL_IMG),
         caption=(script.CUDNT_FND.format(mv_rqst)),
