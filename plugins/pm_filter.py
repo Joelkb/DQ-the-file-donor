@@ -17,7 +17,7 @@ from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings
 from database.users_chats_db import db
-from database.ia_filterdb import Media, get_file_details, get_search_results
+from database.ia_filterdb import Media, get_file_details, get_search_results, get_bad_files
 from database.filters_mdb import (
     del_all,
     find_filter,
@@ -863,9 +863,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
     elif query.data == "predvd":
         k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting PreDVDs... Please wait...</b>")
-        chat_ids = await active_connection(str(query.from_user.id))
-        files, next_offset, total = await get_search_results(
-                                                  chat_ids,
+        files, next_offset, total = await get_bad_files(
                                                   'predvd',
                                                   offset=0)
         deleted = 0
@@ -882,9 +880,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "camrip":
         k = await client.send_message(chat_id=query.message.chat.id, text="<b>Deleting CamRips... Please wait...</b>")
-        chat_ids = await active_connection(str(query.from_user.id))
-        files, next_offset, total = await get_search_results(
-                                                  chat_ids,
+        files, next_offset, total = await get_bad_files(
                                                   'camrip',
                                                   offset=0)
         deleted = 0
