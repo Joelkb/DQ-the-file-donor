@@ -6,7 +6,7 @@ marshmallow==3.14.1
 umongo==3.0.1
 requests
 bs4
-cinemagoer==2022.12.4
+cinemagoer
 datetime
 pytz
 aiohttp
