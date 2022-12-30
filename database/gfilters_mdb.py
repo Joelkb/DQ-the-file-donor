@@ -78,7 +78,9 @@ async def delete_gfilter(message, text, gfilters):
 
 async def del_allg(message, gfilters):
     if str(gfilters) not in mydb.list_collection_names():
+
         await message.edit_text("Nothing to remove !")
+
         return
 
     mycol = mydb[str(gfilters)]
