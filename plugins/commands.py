@@ -458,6 +458,10 @@ async def settings(client, message):
     except KeyError:
         await save_group_settings(grp_id, 'max_btn', False)
         settings = await get_settings(grp_id)
+    if 'is_shortlink' not in settings.keys():
+        await save_group_settings(grp_id, 'is_shortlink', False)
+    else:
+        pass
 
     if settings is not None:
         buttons = [
