@@ -757,6 +757,7 @@ async def deletemultiplefiles(bot, message):
     await k.edit_text(f"<b>Found {total} files for your query {keyword} !</b>")
     deleted = 0
     for file in files:
+        await k.edit_text(f"<b>Process started for deleting files from DB. Successfully deleted {str(deleted)} files from DB for your query {keyword} !\n\nPlease wait...</b>")
         file_ids = file.file_id
         file_name = file.file_name
         result = await Media.collection.delete_one({
@@ -765,8 +766,7 @@ async def deletemultiplefiles(bot, message):
         if result.deleted_count:
             logger.info(f'File Found for your query {keyword}! Successfully deleted {file_name} from database.')
         deleted += 1
-    deleted = str(deleted)
-    await k.edit_text(text=f"<b>Successfully deleted {deleted} files from database for your query {keyword}.</b>")
+    await k.edit_text(text=f"<b>Process Completed for file deletion !\n\nSuccessfully deleted {str(deleted)} files from database for your query {keyword}.</b>")
 
 @Client.on_message(filters.command("shortlink") & filters.user(ADMINS))
 async def shortlink(bot, message):
