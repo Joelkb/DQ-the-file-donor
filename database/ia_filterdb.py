@@ -152,7 +152,6 @@ async def get_bad_files(query, file_type=None, max_results=1000, offset=0, filte
         filter['file_type'] = file_type
 
     total_results = await Media.count_documents(filter)
-    max_results = total_results
     next_offset = offset + max_results
 
     if next_offset > total_results:
