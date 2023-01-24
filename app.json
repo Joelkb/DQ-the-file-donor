@@ -16,7 +16,7 @@
       "inline"
     ],
     "website": "https://github.com/Joelkb/DQ-the-file-donor",
-    "repository": "https://github.com/Joelkb/DQ-the-file-donor",
+    "repository": "https://github.com/senapatisachi111/DQ-the-file-donor",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -75,7 +75,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "free"
+            "size": "eco"
         }
     }
 }
