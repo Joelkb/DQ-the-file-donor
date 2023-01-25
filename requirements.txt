@@ -10,3 +10,4 @@ git+https://github.com/Joelkb/cinemagoer
 datetime
 pytz
 aiohttp
+string
