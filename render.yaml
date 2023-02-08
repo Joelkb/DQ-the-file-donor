@@ -7,7 +7,7 @@ services:
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
     branch: Link-shortner # optional (defaults to master)
-    rootDir: dq_the_file_donor
+    rootDir: DQ-The-File-Donor
     dockerCommand: ./webdis.sh # optional (defaults to Dockerfile command)
     numInstances: 1 # optional (defaults to 1)
     healthCheckPath: /
