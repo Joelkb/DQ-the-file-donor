@@ -2,7 +2,7 @@ services:
   # A Docker web service
   - type: web
     name: DQ-The-File-Donor
-    env: docker
+    env: python
     repo: https://github.com/Joelkb/DQ-the-file-donor.git # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter)
