@@ -5,7 +5,7 @@ services:
     env: docker
     repo: https://github.com/Joelkb/DQ-the-file-donor.git # optional
     region: oregon # optional (defaults to oregon)
-    plan: standard # optional (defaults to starter)
+    plan: starter # optional (defaults to starter)
     branch: Link-shortner # optional (defaults to master)
     rootDir: dq_the_file_donor
     dockerCommand: ./webdis.sh # optional (defaults to Dockerfile command)
