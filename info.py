@@ -23,7 +23,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/42519dda4755340dd10f7.jpg https://telegra.ph/file/c901186bd760c82824fe3.jpg https://telegra.ph/file/2293984bd0e297095678d.jpg https://telegra.ph/file/0c1d922a6b562d406d51f.jpg https://telegra.ph/file/d5812064dd21dea6bb534.jpg https://telegra.ph/file/e7923e972c09ddc262a63.jpg https://telegra.ph/file/f5ad26d1194350e49b2f7.jpg https://telegra.ph/file/0746e2630a908d0ff1183.jpg https://telegra.ph/file/50e94f5441b80da71a95c.jpg https://telegra.ph/file/89ebceb2fccc949f88dff.jpg https://telegra.ph/file/2d561e87a07ff1df13a1c.jpg https://telegra.ph/file/06c8ceca3ac59fb4b45a4.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/75d4149a9a971c77508fc.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b990044507.mp4")
+MELCOW_IMG = environ.get("MELCOW_IMG", "https://telegra.ph/file/ab5cfd20c8ebcf0a886b1.jpg")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/17b82ea772e4bc357bbf5.jpg")
 
 # Admins, Channels & Users
