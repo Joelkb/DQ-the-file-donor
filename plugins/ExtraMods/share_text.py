@@ -16,11 +16,11 @@ async def share_text(client, message):
         await message.reply_text(
             text=f"**Notice:**\n\n1. Reply Any Messages.\n2. No Media Support\n\n**Any Question Join Support Chat**",                
             reply_to_message_id=reply_id,               
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Support Chat", url=f"https://t.me/MKN_BOTZ_DISCUSSION_GROUP")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ​", url=f"https://t.me/MLZ_BOTZ_SUPPORT")]])
             )                                                   
         return
     await message.reply_text(
         text=f"**Here is Your Sharing Text 👇**\n\nhttps://t.me/share/url?url=" + quote(input_text),
         reply_to_message_id=reply_id,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("♂️ Share", url=f"https://t.me/share/url?url={quote(input_text)}")]])       
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("sʜᴀʀᴇ​ 🦋", url=f"https://t.me/share/url?url={quote(input_text)}")]])       
     )
