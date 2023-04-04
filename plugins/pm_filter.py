@@ -637,9 +637,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if not search:
             await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
             return
-        files, n_offset, total = await get_search_results(query.message.chat.id, search, offset=offset, filter=True)
+        files, n_offset, total = await get_search_results(query.message.chat.id, search, offset=int(offset), filter=True)
         await send_all(client, query.from_user.id, files, ident)
-        await query.answer(f"Hey {query.from_user.first_name}, All files on this page has been sent successfully to your PM !")
+        await query.answer(f"Hey {query.from_user.first_name}, All files on this page has been sent successfully to your PM !", show_alert=True)
 
     elif query.data.startswith("killfilesdq"):
         ident, keyword = query.data.split("#")
