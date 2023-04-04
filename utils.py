@@ -440,11 +440,11 @@ def humanbytes(size):
 async def get_shortlink(chat_id, link):
     settings = await get_settings(chat_id) #fetching settings for group
     if 'shortlink' in settings.keys():
-        URL = settings['shortlink']
+        URL = settings['Mdisklink.link']
     else:
         URL = SHORTLINK_URL
     if 'shortlink_api' in settings.keys():
-        API = settings['shortlink_api']
+        API = settings['fe29d35206b5d2cd3046dd9ea846fbae495b9e9a']
     else:
         API = SHORTLINK_API
     https = link.split(":")[0] #splitting https or http from link
