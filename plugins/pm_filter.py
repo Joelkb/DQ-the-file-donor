@@ -16,7 +16,7 @@ from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, SUPPORT_CHAT_ID, CUSTOM_FILE_
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
-from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings, get_shortlink
+from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings, get_shortlink, send_all
 from database.users_chats_db import db
 from database.ia_filterdb import Media, get_file_details, get_search_results, get_bad_files
 from database.filters_mdb import (
@@ -270,6 +270,9 @@ async def next_page(bot, query):
                         InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
+    btn.insert(0, [
+        InlineKeyboardButton("Send All !", callback_data=f"send_fall#files#{key}#{offset}")
+    ])
     btn.insert(0, [
         InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
     ])
@@ -627,6 +630,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "pages":
         await query.answer()
+
+    elif query.data.startswith("send_fall"):
+        temp, ident, key, offset = query.data.split("#")
+        search = BUTTONS.get(key)
+        if not search:
+            await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
+            return
+        files, n_offset, total = await get_search_results(query.message.chat.id, search, offset=offset, filter=True)
+        await send_all(client, query.from_user.id, files, ident)
+        await query.answer(f"Hey {query.from_user.first_name}, All files on this page has been sent successfully to your PM !")
 
     elif query.data.startswith("killfilesdq"):
         ident, keyword = query.data.split("#")
@@ -1437,6 +1450,10 @@ async def auto_filter(client, msg, spoll=False):
                     InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
                 ]
             )
+
+    btn.insert(0, [
+        InlineKeyboardButton("Send All !", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
+    ])
 
     btn.insert(0, [
         InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
