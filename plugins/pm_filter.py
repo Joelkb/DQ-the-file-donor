@@ -282,7 +282,7 @@ async def next_page(bot, query):
         InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Fɪʟᴇs Tᴏ PM !", callback_data=f"send_fall#files#{offset}")
     ])
     btn.insert(0, [
-        InlineKeyboardButton("⚡ HOW TO DOWNLOAD ⚡", url=f("https://t.me/HOWTODOWNLOADRIO/378")
+        InlineKeyboardButton("⚡ HOW TO DOWNLOAD ⚡", url=f"https://t.me/HOWTODOWNLOADRIO/378")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -583,7 +583,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                               InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                            ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/the_smart_boy_07")
                              ]
                             ]
                         )
