@@ -282,7 +282,7 @@ async def next_page(bot, query):
         InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Fɪʟᴇs Tᴏ PM !", callback_data=f"send_fall#files#{offset}")
     ])
     btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
+        InlineKeyboardButton("⚡ HOW TO DOWNLOAD ⚡", url=f("https://t.me/HOWTODOWNLOADRIO/378")
     ])
     try:
         await query.edit_message_reply_markup(
