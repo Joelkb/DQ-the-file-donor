@@ -9,4 +9,7 @@ bs4
 git+https://github.com/Joelkb/cinemagoer
 datetime
 pytz
+telegraph
 aiohttp
+pyshorteners
+dnspython
