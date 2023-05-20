@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://telegra.ph/file/171925d184de01b3055dc.jpg" alt="DQ-The-File-Donor Logo">
+  <img src="" alt="TGram Bot">
 </p>
 <h1 align="center">
-  𝑫𝑸-𝑻𝒉𝒆-𝑭𝒊𝒍𝒆-𝑫𝒐𝒏𝒐𝒓 𝑩𝒐𝒕
+  Tɢʀᴀᴍ-Bᴏᴛ
 </h1>
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝑊𝑒𝑙𝑐𝑜𝑚𝑒+𝑇𝑜+𝐷𝑄-𝑇ℎ𝑒-𝐹𝑖𝑙𝑒-𝐷𝑜𝑛𝑜𝑟!;𝐶𝑟𝑒𝑎𝑡𝑒𝑑+𝑏𝑦+Jᴏᴇʟ+ᠰ+TɢX!;𝐴+𝑠𝑖𝑚𝑝𝑙𝑒+𝑎𝑛𝑑+𝑝𝑜𝑤𝑒𝑟𝑓𝑢𝑙+𝐵𝑜𝑡!;𝐼𝑛𝑑𝑒𝑥𝑒𝑠+𝐹𝑖𝑙𝑒𝑠+𝑎𝑏𝑜𝑣𝑒+2𝐺𝐵;𝐴+𝐵𝑜𝑡+𝑤𝑖𝑡ℎ+𝑑𝑜𝑢𝑏𝑙𝑒+𝑏𝑢𝑡𝑡𝑜𝑛!;𝑆𝑡𝑎𝑟𝑡+𝑚𝑒𝑠𝑠𝑎𝑔𝑒+𝑤𝑖𝑡ℎ+𝑝𝑖𝑐!;𝐴𝑛𝑑+𝑚𝑜𝑟𝑒+𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝑊𝑒𝑙𝑐𝑜𝑚𝑒+𝑇𝑜+TGʀᴀᴍ-Bᴏᴛ!;Cʀᴇᴀᴛᴇᴅ+Bʏ+Jᴏᴇʟ+ᠰ+TɢX!;Mᴏᴅɪғɪᴇᴅ+Bʏ+Bʟᴠᴄᴋ+Aɴɢᴇʟ;𝐴+𝑠𝑖𝑚𝑝𝑙𝑒+𝑎𝑛𝑑+𝑝𝑜𝑤𝑒𝑟𝑓𝑢𝑙+𝐵𝑜𝑡!;𝐼𝑛𝑑𝑒𝑥𝑒𝑠+𝐹𝑖𝑙𝑒𝑠+𝑎𝑏𝑜𝑣𝑒+2𝐺𝐵;𝐴+𝐵𝑜𝑡+𝑤𝑖𝑡ℎ+𝑑𝑜𝑢𝑏𝑙𝑒+𝑏𝑢𝑡𝑡𝑜𝑛!;𝑆𝑡𝑎𝑟𝑡+𝑚𝑒𝑠𝑠𝑎𝑔𝑒+𝑤𝑖𝑡ℎ+𝑝𝑖𝑐!;𝐴𝑛𝑑+𝑚𝑜𝑟𝑒+𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠!)
 </p>
 
 <a href="https://github.com/Joelkb/DQ-The-File-Donor/stargazers"><img src="https://img.shields.io/github/stars/Joelkb/DQ-The-File-Donor?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
@@ -56,7 +56,6 @@
 - [x] 𝐴𝑢𝑡𝑜 𝐷𝑒𝑙𝑒𝑡𝑒
 - [x] 𝐴𝑛𝑑 𝑀𝑜𝑟𝑒...
 
-<b>𝑇𝑜 𝑘𝑛𝑜𝑤 𝑎𝑏𝑜𝑢𝑡 𝑎𝑙𝑙 𝑓𝑒𝑎𝑡𝑢𝑟𝑒𝑠, 𝐽𝑜𝑖𝑛 𝑜𝑢𝑟 <a href='https://telegram.me/DQ_The_File_Donor_Updates'>𝑢𝑝𝑑𝑎𝑡𝑒𝑠 𝑐ℎ𝑎𝑛𝑛𝑒𝑙</a>.</b>
 
 ## 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠
 ```
@@ -175,7 +174,7 @@ Use these settings when adding a monitor:</b>
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/Joelkb/DQ-The-File-Donor
+git clone https://github.com/BLVCK-ANGEL/TGramBot
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -184,25 +183,26 @@ python3 bot.py
 </p>
 </details>
 
-<hr>
+<hr> 
 
 ## Credits 
 * [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
 * [![Joel-TGX](https://img.shields.io/static/v1?label=Jᴏᴇʟ+ᠰ+TɢX&message=Github&color=critical)](https://github.com/Joelkb)
-* [![Contact](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/creatorbeatz)
+* [![Bʟᴠᴄᴋ-Aɴɢᴇʟ](https://img.shields.io/static/v1?label=Bʟᴠᴄᴋ+Aɴɢᴇʟ&message=Github&color=critical)](https://github.com/BLVCK-ANGEL)
 
 ## Thanks to 
  - Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram)
  - Thanks To Mahesh For His Awesome [Media-Search-bot](https://github.com/Mahesh0253/Media-Search-bot)
- - Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome [Unlimited Filter Bot](https://github.com/TroJanzHEX/Unlimited-Filter-Bot) And [AutoFilterBoT](https://github.com/trojanzhex/auto-filter-bot)
+ - Thanks To [Trojanz](https://github.com/trojanzhex)
  - Thanks To All Everyone In This Journey
  - Thanks To [EvamariaTG](https://raw.githubusercontent.com/EvamariaTG) for their awesome [EvaMaria Bot](https://raw.githubusercontent.com/EvamariaTG/EvaMaria)
- - Thanks To [Joelkb](https://github.com/Joelkb) who have edited and modified this repo as now it is. (It's me 😂)
+ - Thanks To [Joelkb](https://github.com/Joelkb) who have edited and modified this repo as now it is. 
+ - - Thanks To [Bʟᴠᴄᴋ-Aɴɢᴇʟ](https://github.com/BLVCK-ANGEL) who have edited and modified this repo as now it is. (It's me 😂)
 
 ## Note 🏷️
  - <b>Importing this repo instead of forking is strictly prohibited 🚫 Kindly fork and edit as your wish (Must Give Credits for devs) 🙃</b>
  - <b>If you find any bugs or errors, report it to the developer.</b>
-* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/creatorbeatz)
+
 
 [Note To A So Called Dev](https://telegram.dog/subin_works/203): 
 
