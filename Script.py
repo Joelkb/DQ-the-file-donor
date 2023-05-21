@@ -253,16 +253,16 @@ Nᴀᴍᴇ - {}"""
 IMDb Data:</b>
 
 🏷 <b>Tɪᴛʟᴇ:</b> <a href={url}>{title}</a>
-🎭 <b>Gᴇɴʀᴇs:</b> {genres} 
-📆 <b>Yᴇᴀʀ:</b> <a href={url}/releaseinfo>{year}</a>
-🌟 <b>Rᴀᴛɪɴɢ:</b> <a href={url}/ratings>{rating}</a> / 10
+🎭 <b>Gᴇɴʀᴇs:</b> </code>{genres}</code> 
+📆 <b>Yᴇᴀʀ:</b> <a href=</code>{url}/releaseinfo>{year}</code></a>
+🌟 <b>Rᴀᴛɪɴɢ:</b> <a href=</code>{url}/ratings>{rating}</a> / 10</code>
 🎙️ <b>Lᴀɴɢᴜᴀɢᴇs:</b> <code>{languages}</code>
-🎭 <b>Cᴀsᴛ:</b> {cast}       
+🎭 <b>Cᴀsᴛ:</b> <code>{cast}</code>       
 🌐 <b>Cᴏᴜɴᴛʀɪᴇs:</b> <code>{countries}</code>
 
 📜 <b>Pʟᴏᴛ:</b> <code>{plot}</code>
 
-🗣 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗕𝘆: <b>{msg.from_user.mention}</b>"""
+🗣 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗕𝘆: <b><code>{msg.from_user.mention}</code></b>"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
