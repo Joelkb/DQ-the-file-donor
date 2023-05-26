@@ -490,10 +490,16 @@ async def get_shortlink(chat_id, link):
                         return data["shortenedUrl"]
                     else:
                         logger.error(f"Error: {data['message']}")
-                        return f'https://{URL}/api?api={API}&link={link}'
+                        if URL == 'clicksfly.com':
+                            return f'https://{URL}/api?api={API}&url={link}'
+                        else:
+                            return f'https://{URL}/api?api={API}&link={link}'
         except Exception as e:
             logger.error(e)
-            return f'https://{URL}/api?api={API}&link={link}'
+            if URL == 'clicksfly.com':
+                return f'https://{URL}/api?api={API}&url={link}'
+            else:
+                return f'https://{URL}/api?api={API}&link={link}'
 
 async def get_verify_shorted_link(num, link):
     if int(num) == 1:
@@ -536,14 +542,19 @@ async def get_verify_shorted_link(num, link):
                 async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
                     data = await response.json()
                     if data["status"] == "success":
-                        return data['shortenedUrl']
+                        return data["shortenedUrl"]
                     else:
                         logger.error(f"Error: {data['message']}")
-                        return f'https://{URL}/api?api={API}&link={link}'
-
+                        if URL == 'clicksfly.com':
+                            return f'https://{URL}/api?api={API}&url={link}'
+                        else:
+                            return f'https://{URL}/api?api={API}&link={link}'
         except Exception as e:
             logger.error(e)
-            return f'{URL}/api?api={API}&link={link}'
+            if URL == 'clicksfly.com':
+                return f'https://{URL}/api?api={API}&url={link}'
+            else:
+                return f'https://{URL}/api?api={API}&link={link}'
 
 async def check_token(bot, userid, token):
     user = await bot.get_users(userid)
