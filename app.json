@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/Joelkb/DQ-the-file-donor",
-    "repository": "https://github.com/Joelkb/DQ-the-file-donor",
+    "website": "https://github.com/dokkumeme/dokkumemebot1",
+    "repository": "https://github.com/dokkumeme/dokkumemebot1",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
