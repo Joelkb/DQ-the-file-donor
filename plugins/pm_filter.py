@@ -1193,16 +1193,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     
-    elif query.data == "help":
+    elif query.data == "movie":
         buttons = [[
-            InlineKeyboardButton('FIʟᴛᴇʀs', callback_data='filters'),
-            InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file')
+            InlineKeyboardButton('ನಟಸಾರ್ವಬೌಮ ಡಾ. ರಾಜ್‌ಕುಮಾರ್', callback_data='rajkumar')
         ], [
-            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct'),
-            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅs', callback_data='extra')
+            InlineKeyboardButton('ಸಾಹಸ ಸಿಂಹ ಡಾ. ವಿಷ್ಣುವರ್ಧನ್', callback_data='vishnuvardhan')
+        ], [
+            InlineKeyboardButton('ರೆಬೆಲ್ ಸ್ಟಾರ್ ಅಂಬರೀಷ್', callback_data='ambarish')
+        ], [
+            InlineKeyboardButton('ಕರಾಟೆ ಕಿಂಗ್ ಶಂಕರ್ ನಾಗ್', callback_data='shankarnag')
+        ], [
+            InlineKeyboardButton('ಪವರ್ ಸ್ಟಾರ್ ಪುನೀತ್ ರಾಜ್‌ಕುಮಾರ್', callback_data='punithrajkumar')
         ], [
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats')
+            InlineKeyboardButton('Next', callback_data='movie1')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1212,7 +1216,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=script.movie.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
