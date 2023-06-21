@@ -180,7 +180,10 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Bhaari Bharjari Bete 1981</code>
 <code>Avala Hejje 1981</code>"""
     
-    AMBARISH1 = """<code>Snehada Sankole 1982</code>
+    AMBARISH1 = """<code>Shankar Sundar1982</code>
+<code>Prema Matsara 1982</code>
+<code>Maava Sose Savaal 1982</code>
+<code>Snehada Sankole 1982</code>
 <code>Ajith 1982</code>
 <code>Tony 1982</code>
 <code>Khadeema Kallaru 1992</code>
@@ -226,12 +229,12 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Prema Kadambari 1987</code>
 <code>Mr Raja 1987</code>
 <code>Poornachandra 1987</code>
-<code>Antima Theerpu 1987</code>
-<code>Digvijaya 1987</code>
-<code>Inspector Krantikumar 1987</code>
-<code>Bedi 1987</code>"""
+<code>Antima Theerpu 1987</code>"""
 
-    AMBARISH2 = """<code>Bandha Muktha 1987</code>
+    AMBARISH2 = """<code>Digvijaya 1987</code>
+<code>Inspector Krantikumar 1987</code>
+<code>Bedi 1987</code>
+<code>Bandha Muktha 1987</code>
 <code>Aapadbhandava 1987</code>
 <code>Elu Suttina Kote 1987</code>
 <code>Brahma Vishnu Maheshwara 1988</code>
@@ -277,12 +280,12 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Solillada Saradara 1992</code>
 <code>Saptapadhi 1992</code>
 <code>Bhanda Nanna Ganda 1992</code>
-<code>Prema Sangama 1992</code>
-<code>Megha Mandara 1992</code>
-<code>Mallige Hoove 1992</code>
-<code>Mannina Doni 1992</code>"""
+<code>Prema Sangama 1992</code>"""
 
-    AMBARISH3 = """<code>Suryodaya 1993</code>
+    AMBARISH3 = """<code>Megha Mandara 1992</code>
+<code>Mallige Hoove 1992</code>
+<code>Mannina Doni 1992</code>
+<code>Suryodaya 1993</code>
 <code>Olavina Kanike 1993</code>
 <code>Vasantha Poornima 1993</code>
 <code>Midida Hrudayagalu 1993</code>
