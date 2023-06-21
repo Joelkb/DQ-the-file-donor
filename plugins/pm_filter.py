@@ -1317,10 +1317,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "extra":
+    elif query.data == "ambarish2":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('Aᴅᴍɪɴ', callback_data='admin')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='ambarish1'),
+            InlineKeyboardButton('Next➡️', callback_data='ambarish3')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1329,7 +1329,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.EXTRAMOD_TXT,
+            text=script.AMBARISH2,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1350,9 +1350,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     
-    elif query.data == "admin":
+    elif query.data == "ambarrish3":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='extra')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='ambarish2')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1361,7 +1361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.ADMIN_TXT,
+            text=script.AMBARISH3,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
