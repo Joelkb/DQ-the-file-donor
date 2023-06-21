@@ -132,59 +132,201 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Punda Prachanda 1991</code>
 <code>Prana Snehitha 1992</code>"""
 
-    AUTOFILTER_TXT = """ʜᴇʟᴘ: <b>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</b>
-<b>ɴᴏᴛᴇ: Fɪʟᴇ Iɴᴅᴇx</b>
-1. ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ'ꜱ ᴘʀɪᴠᴀᴛᴇ.
-2. ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇꜱ ɴᴏᴛ ᴄᴏɴᴛᴀɪɴꜱ ᴄᴀᴍʀɪᴘꜱ, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇꜱ.
-3. ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ Qᴜᴏᴛᴇꜱ. ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ.
+    AMBARISH = """<b>ರೆಬೆಲ್ ಸ್ಟಾರ್ ಅಂಬರೀಷ್</b>
+<code>Naagarahaavu 1972</code>
+<code>Bangarada Kalla 1973</code>
+<code>Seethe alla savithri 1973</code>
+<code>Chamundeshwari Mahime 1974</code>
+<code>Mahadeshwara Pooja Phala 1975</code>
+<code>Shubhamangala 1975</code>
+<code>Bhagya Jyothi 1975</code>
+<code>Nagakanye 1975</code>
+<code>Onde Roopa Eradu guna 1975</code>
+<code>Devara Kannu 1975</code>
+<code>Hudugatada Hudugi 1976</code>
+<code>Hosilu Mettida Hennu 1976</code>
+<code>Bangarada Gudi 1976</code>
+<code>Kanasu Nanasu 1976</code>
+<code>Kudure Mukha 1977</code>
+<code>Nagarahole 1977</code>
+<code>Maagiya Kanasu 1977</code>
+<code>Manasinanthe Mangalya 1977</code>
+<code>Mugdha Manava 1977</code>
+<code>Chinna Ninna Muddaduve 1977</code>
+<code>Banashankari 1977</code>
+<code>Halli Haida 1978</code>
+<code>Havina Hejje 1978</code>
+<code>Muyyige Muyyi 1978</code>
+<code>Siritanakke Savaal 1978</code>
+<code>Paduvaaralli Pandavaru 1978</code>
+<code>Sneha Sedu 1978</code>
+<code>Amarnath 1978</code>
+<code>Kiladi Jodi 1978</code>
+<code>Balu Aparoopa Nam Jodi 1978</code>
+<code>Pakka Kalla 1979</code>
+<code>Kamala 1979</code>
+<code>Putani Agent 123 1979</code>
+<code>Savathiya Neralu 1979</code>
+<code>Dhairya Lakshmi 1980</code>
+<code>Vajrada Jalapatha 1980</code>
+<code>Ondu Hennu Aaru Kannu 1980</code>
+<code>Subbi Subbakka Suvvalali 1980</code>
+<code>Nyaya Neethi Dharma 1980</code>
+<code>Leader Vishwanath 1981</code>
+<code>Ranganayaki 1981</code>
+<code>Antha 1981</code>
+<code>Maha Prachandaru 1981</code>
+<code>Snehitara Savaal 1981</code>
+<code>Bhaari Bharjari Bete 1981</code>
+<code>Avala Hejje 1981</code>
+<code>Shankar Sundar1982</code>
+<code>Prema Matsara 1982</code>
+<code>Maava Sose Savaal 1982</code>"""
+    
+    AMBARISH1 = """<code>Snehada Sankole 1982</code>
+<code>Ajith 1982</code>
+<code>Tony 1982</code>
+<code>Khadeema Kallaru 1992</code>
+<code>Thirugu Baana 1983</code>
+<code>Aasha 1983</code>
+<code>Jaggu 1983</code>
+<code>Avala Neralu 1983</code>
+<code>Chakravyuha 1983</code>
+<code>Matthe Vasantha 1983</code>
+<code>Maneli Ramanna Beedili Kamanna 1983</code>
+<code>Geluvu Nannade 1983</code>
+<code>Hasida Hebbuli 1983</code>
+<code>Dharma Yuddha 1983</code>
+<code>Gajendra 1984</code>
+<code>Gandu Bherunda 1984</code>
+<code>Sidilu 1984</code>
+<code>Guru Bhakti 1984</code>
+<code>Onti Dhwani 1984</code>
+<code>Rowdy Raja 1984</code>
+<code>Mooru Janma 1984</code>
+<code>Shapatha 1984</code>
+<code>Onde Raktha 1984</code>
+<code>Goonda Guru 1985</code>
+<code>Guru Jagadguru 1985</code>
+<code>Amara Jyothi 1985</code>
+<code>Shabash Vikram 1985</code>
+<code>Devara Mane 1985</code>
+<code>Giri Baale 1985</code>
+<code>Chaduranga 1985</code>
+<code>Devarelliddane 1985</code>
+<code>Masanada Hoovu 1985</code>
+<code>Mamatheya Madilu 1985</code>
+<code>Madhura Bandhavya 1986</code>
+<code>Sathkara 1986</code>
+<code>Mrugaalaya 1986</code>
+<code>Brahmastra 1986</code>
+<code>Preethi 1986</code>
+<code>Matthondu Charitre 1986</code>
+<code>Bete 1986</code>
+<code>Vishwaroopa 1986</code>
+<code>Bazar Bheema 1987</code>
+<code>Olavina Udugore 9871</code>
+<code>Prema Kadambari 1987</code>
+<code>Mr Raja 1987</code>
+<code>Poornachandra 1987</code>
+<code>Antima Theerpu 1987</code>
+<code>Digvijaya 1987</code>
+<code>Inspector Krantikumar 1987</code>
+<code>Bedi 1987</code>"""
 
-<b>Nᴏᴛᴇ: AᴜᴛᴏFɪʟᴛᴇʀ</b>
-1. Aᴅᴅ ᴛʜᴇ ʙᴏᴛ ᴀs ᴀᴅᴍɪɴ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-2. Usᴇ /connect ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴛʜᴇ ʙᴏᴛ.
-3. Usᴇ /settings ᴏɴ ʙᴏᴛ's PM ᴀɴᴅ ᴛᴜʀɴ ᴏɴ AᴜᴛᴏFɪʟᴛᴇʀ ᴏɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ."""
+    AMBARISH2 = """<code>Bandha Muktha 1987</code>
+<code>Aapadbhandava 1987</code>
+<code>Elu Suttina Kote 1987</code>
+<code>Brahma Vishnu Maheshwara 1988</code>
+<code>Praja Prabhutva 1988</code>
+<code>Arjun 1988</code>
+<code>Vijaya Khadga 1988</code>
+<code>Nava Bharatha 1988</code>
+<code>Ramanna Shamanna 1988</code>
+<code>New Delhi 1988</code>
+<code>Sangliyana 1988</code>
+<code>Thayigobba Karna 1988</code>
+<code>Hongkongnalli Agent Amar 1989</code>
+<code>Jackey 1989</code>
+<code>Guru 1989</code>
+<code>Indrajith 1989</code>
+<code>Gandandre Gandu 1989</code>
+<code>Avatara Purusha 1989</code>
+<code>Nyayakkagi Naanu 1989</code>
+<code>Samsara Nouke 1989</code>
+<code>Anthintha Gandu Nanalla 1989</code>
+<code>Raja Yuvaraja 1989</code>
+<code>Onti Salaga 1989</code>
+<code>Jai Karnataka 1989</code>
+<code>Jayabheri 1989</code>
+<code>Matsara 1990</code>
+<code>Nammoora Hammera 1990</code>
+<code>Ranabheri 1990</code>
+<code>Kempu Surya 1990</code>
+<code>Kempu Gulabi 1990</code>
+<code>Chakravarthy 1990</code>
+<code>Ekalavya 1990</code>
+<code>Rani Maharani 1990</code>
+<code>Utkarsha 1990</code>
+<code>Hrudaya Haadithu 1991</code>
+<code>Kadana 1991</code>
+<code>Kalachakra 1991</code>
+<code>Puksatte Ganda hotte thumba unda 1991</code>
+<code>Gandu Sidigundu 1991</code>
+<code>Rowdy MLA 1991</code>
+<code>Aranyadalli Abhimanyu 1991</code>
+<code>Entede Bhanta 1992</code>
+<code>Mysore Jaana 1992</code>
+<code>Solillada Saradara 1992</code>
+<code>Saptapadhi 1992</code>
+<code>Bhanda Nanna Ganda 1992</code>
+<code>Prema Sangama 1992</code>
+<code>Megha Mandara 1992</code>
+<code>Mallige Hoove 1992</code>
+<code>Mannina Doni 1992</code>"""
 
-    CONNECTION_TXT = """ʜᴇʟᴘ: <b>ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ</b>
-- ᴜꜱᴇᴅ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʙᴏᴛ ᴛᴏ ᴘᴍ ꜰᴏʀ ᴍᴀɴᴀɢɪɴɢ ꜰɪʟᴛᴇʀꜱ 
-- ɪᴛ ʜᴇʟᴘꜱ ᴛᴏ ᴀᴠᴏɪᴅ ꜱᴘᴀᴍᴍɪɴɢ ɪɴ ɢʀᴏᴜᴘꜱ.
-<b>ɴᴏᴛᴇ:</b>
-1. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ᴀ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.
-2. ꜱᴇɴᴅ <code>/ᴄᴏɴɴᴇᴄᴛ</code> ꜰᴏʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴘᴍ
-Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
-• /connect  - <code>ᴄᴏɴɴᴇᴄᴛ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴄʜᴀᴛ ᴛᴏ ʏᴏᴜʀ ᴘᴍ</code>
-• /disconnect  - <code>ᴅɪꜱᴄᴏɴɴᴇᴄᴛ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ</code>
-• /connections - <code>ʟɪꜱᴛ ᴀʟʟ ʏᴏᴜʀ ᴄᴏɴɴᴇᴄᴛɪᴏɴꜱ</code>"""
-
-    EXTRAMOD_TXT = """ʜᴇʟᴘ: Exᴛʀᴀ Mᴏᴅᴜʟᴇs
-<b>ɴᴏᴛᴇ:</b>
-ᴛʜᴇꜱᴇ ᴀʀᴇ ᴛʜᴇ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ
-Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
-• /id - <code>ɢᴇᴛ ɪᴅ ᴏꜰ ᴀ ꜱᴘᴇᴄɪꜰɪᴇᴅ ᴜꜱᴇʀ.</code>
-• /info  - <code>ɢᴇᴛ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ᴜꜱᴇʀ.</code>
-• /imdb  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ɪᴍᴅʙ ꜱᴏᴜʀᴄᴇ.</code>
-• /search  - <code>ɢᴇᴛ ᴛʜᴇ ꜰɪʟᴍ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ꜰʀᴏᴍ ᴠᴀʀɪᴏᴜꜱ ꜱᴏᴜʀᴄᴇꜱ.</code>"""
-
-    ADMIN_TXT = """ʜᴇʟᴘ: Aᴅᴍɪɴ Mᴏᴅs
-<b>ɴᴏᴛᴇ:</b>
-Tʜɪs Mᴏᴅᴜʟᴇ Oɴʟʏ Wᴏʀᴋs Fᴏʀ Mʏ Aᴅᴍɪɴs
-Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
-• /logs - <code>ᴛᴏ ɢᴇᴛ ᴛʜᴇ ʀᴇᴄᴇɴᴛ ᴇʀʀᴏʀꜱ</code>
-• /stats - <code>ᴛᴏ ɢᴇᴛ ꜱᴛᴀᴛᴜꜱ ᴏꜰ ꜰɪʟᴇꜱ ɪɴ ᴅʙ. [Tʜɪs Cᴏᴍᴍᴀɴᴅ Cᴀɴ Bᴇ Usᴇᴅ Bʏ Aɴʏᴏɴᴇ]</code>
-• /delete - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴇ ꜰʀᴏᴍ ᴅʙ.</code>
-• /users - <code>ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴍʏ ᴜꜱᴇʀꜱ ᴀɴᴅ ɪᴅꜱ.</code>
-• /chats - <code>ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴍʏ ᴄʜᴀᴛꜱ ᴀɴᴅ ɪᴅꜱ</code>
-• /leave  - <code>ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ.</code>
-• /disable  -  <code>ᴛᴏ ᴅɪꜱᴀʙʟᴇ ᴀ ᴄʜᴀᴛ.</code>
-• /ban  - <code>ᴛᴏ ʙᴀɴ ᴀ ᴜꜱᴇʀ.</code>
-• /unban  - <code>ᴛᴏ ᴜɴʙᴀɴ ᴀ ᴜꜱᴇʀ.</code>
-• /channel - <code>ᴛᴏ ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴛᴏᴛᴀʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴄʜᴀɴɴᴇʟꜱ</code>
-• /broadcast - <code>ᴛᴏ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀʟʟ ᴜꜱᴇʀꜱ</code>
-• /grp_broadcast - <code>Tᴏ ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀʟʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘs.</code>
-• /gfilter - <code>ᴛᴏ ᴀᴅᴅ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀs</code>
-• /gfilters - <code>ᴛᴏ ᴠɪᴇᴡ ʟɪsᴛ ᴏғ ᴀʟʟ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀs</code>
-• /delg - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀ sᴘᴇᴄɪғɪᴄ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ</code>
-• /request - <code>Tᴏ sᴇɴᴅ ᴀ Mᴏᴠɪᴇ/Sᴇʀɪᴇs ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ ʙᴏᴛ ᴀᴅᴍɪɴs. Oɴʟʏ ᴡᴏʀᴋs ᴏɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ. [Tʜɪs Cᴏᴍᴍᴀɴᴅ Cᴀɴ Bᴇ Usᴇᴅ Bʏ Aɴʏᴏɴᴇ]</code>
-• /delallg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
-• /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
+    AMBARISH3 = """<code>Suryodaya 1993</code>
+<code>Olavina Kanike 1993</code>
+<code>Vasantha Poornima 1993</code>
+<code>Midida Hrudayagalu 1993</code>
+<code>Hrudaya Bandhana 1993</code>
+<code>Munjaneya Manju 1993</code>
+<code>Musuku 1994</code>
+<code>Odahuttidavaru 1994</code> 
+<code>Mandyada Gandu 1994</code>
+<code>Vijaya Kankana 1994</code>
+<code>Professor 1995</code>
+<code>Kalyanotsava 1995</code>
+<code>Betegara 1995</code>
+<code>Balondu Chaduranga 1995</code>
+<code>Karulina kudi 1995</code> 
+<code>Operation Antha 1995</code>
+<code>Mr Abhishek 1995</code>
+<code>Palegara 1996</code>
+<code>Mounaraga 1996</code>
+<code>Rangena Halliyage Rangada Rangegowda 1997</code>
+<code>Baalida Mane 1997</code>
+<code>April Fool1997</code>
+<code>Prema Geethe 1997</code>
+<code>Habba 1999</code> 
+<code>Devara maga 2000</code>  
+<code>Vande Matharam 2000</code>
+<code>Diggajaru 2001</code> 
+<code>Prema Rajya</code>
+<code>Annavru 2003</code> 
+<code>Gowdru 2004</code> 
+<code>Karnana Sampathu 2005</code>
+<code>Pandavaru 2006</code> 
+<code>Thandege thakka maga 2006</code> 
+<code>Veera parampare 2010</code> 
+<code>Vayuputra 2009</code> 
+<code>Katari veera surasundarangi 2012</code> 
+<code>Rana 2012</code>
+<code>Bulbul 2013</code>
+<code>Ambareesha 2014</code>
+<code>Doddamane hudga 2016</code>
+<code>Ambi ning vayassaytho 2018</code>
+<code>Kurukshetra 2019</code>"""
 
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
