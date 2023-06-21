@@ -91,16 +91,46 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Thayi Kanasu 1985</code>
 <code>Manava Danava 1985</code>"""
 
-    BUTTON_TXT = """ʜᴇʟᴘ: <b>ʙᴜᴛᴛᴏɴꜱ</b>
-- ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴏᴛʜ ᴜʀʟ ᴀɴᴅ ᴀʟᴇʀᴛ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴꜱ.
-<b>ɴᴏᴛᴇ:</b>
-1. ᴛᴇʟᴇɢʀᴀᴍ ᴡɪʟʟ ɴᴏᴛ ᴀʟʟᴏᴡꜱ ʏᴏᴜ ᴛᴏ ꜱᴇɴᴅ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴄᴏɴᴛᴇɴᴛ, ꜱᴏ ᴄᴏɴᴛᴇɴᴛ ɪꜱ ᴍᴀɴᴅᴀᴛᴏʀʏ.
-2. ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴜᴛᴛᴏɴꜱ ᴡɪᴛʜ ᴀɴʏ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ ᴛʏᴘᴇ.
-3. ʙᴜᴛᴛᴏɴꜱ ꜱʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀꜱᴇᴅ ᴀꜱ ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ
-<b>ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonurl:https://t.me/DQ_The_File_Donor_Updates)</code>
-<b>ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ:</b>
-<code>[Button Text](buttonalert:ᴛʜɪꜱ ɪꜱ ᴀɴ ᴀʟᴇʀᴛ ᴍᴇꜱꜱᴀɢᴇ)</code>"""
+    SHANKARNAG1 = """<code>Kiladi Aliya 1985</code>
+<code>Vajra Mushti 1985</code>
+<code>Kari Naga 1985</code>
+<code>Thayiye Nanna Devaru 1986</code>
+<code>Na Ninna Preetisuve 1986</code>
+<code>Agni Parikshe 1986</code>
+<code>Rasthe Raja 1986</code>
+<code>Samsarada Guttu 1986</code>
+<code>Thayi 1987</code>
+<code>Ee Bandha Anubandha 1987</code>
+<code>Huli Hebbuli 1987</code>
+<code>Digvijaya 1987</code>
+<code>Lorry Driver 1987</code>
+<code>Anthima Ghatta 1987</code>
+<code>Mithileya Seetheyaru 1988</code>
+<code>Dharmathma 1988</code>
+<code>Sangliyana 1988</code>
+<code>Shakthi 1988</code>
+<code>Tarka 1989</code>
+<code>Mahayuddha 1989</code>
+<code>Anthintha Gandu Nanalla 1989</code>
+<code>C B I Shankar 1989</code>
+<code>Raja Simha 1989</code>
+<code>Jayabheri 1989</code>
+<code>Narasimha 1989</code>
+<code>Wall Poster 1989</code>
+<code>sp saangliyaana part 2 1990</code>
+<code>Ramarajyadalli Rakshasaru 1990</code>
+<code>Maheshwara 1990</code>
+<code>Trinetra 1990</code>
+<code>Aavesha 1990</code>
+<code>Hosa Jeevana 1990</code>
+<code>Halliya Surasuraru 1990</code>
+<code>Bhale Chathura 1990</code>
+<code>Aata Bombata 1990</code>
+<code>Nigooda Rahasya 1990</code>
+<code>Nagini 1991</code>
+<code>Sundara Kanda 1991</code>
+<code>Punda Prachanda 1991</code>
+<code>Prana Snehitha 1992</code>"""
 
     AUTOFILTER_TXT = """ʜᴇʟᴘ: <b>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</b>
 <b>ɴᴏᴛᴇ: Fɪʟᴇ Iɴᴅᴇx</b>
