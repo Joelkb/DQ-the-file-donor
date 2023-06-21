@@ -1272,7 +1272,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "shankarnag1":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='manuelfilter')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='shankarnag')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1285,9 +1285,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "autofilter":
+    elif query.data == "ambarish":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='hero'),
+            InlineKeyboardButton('Next➡️', callback_data='ambarish1')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1296,13 +1297,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.AUTOFILTER_TXT,
+            text=script.AMBARISH,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "coct":
+    elif query.data == "ambarish1":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='ambarish')
+            InlineKeyboardButton('Next➡️', callback_data='ambarish2')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1311,7 +1313,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.CONNECTION_TXT,
+            text=script.AMBARISH1,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
