@@ -178,10 +178,7 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Maha Prachandaru 1981</code>
 <code>Snehitara Savaal 1981</code>
 <code>Bhaari Bharjari Bete 1981</code>
-<code>Avala Hejje 1981</code>
-<code>Shankar Sundar1982</code>
-<code>Prema Matsara 1982</code>
-<code>Maava Sose Savaal 1982</code>"""
+<code>Avala Hejje 1981</code>"""
     
     AMBARISH1 = """<code>Snehada Sankole 1982</code>
 <code>Ajith 1982</code>
