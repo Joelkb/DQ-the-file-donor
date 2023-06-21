@@ -40,17 +40,56 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>James 2022</code>
 <code>Gandhada Gudi 2022</code>"""
 
-    MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
-- ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
-<b>ɴᴏᴛᴇ:</b>
-1. ᴛʜɪꜱ ʙᴏᴛ ꜱʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇ.
-2. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ.
-3. ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ ʜᴀᴠᴇ ᴀ ʟɪᴍɪᴛ ᴏꜰ 64 ᴄʜᴀʀᴀᴄᴛᴇʀꜱ.
-Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
-• /filter - <code>ᴀᴅᴅ ᴀ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ</code>
-• /filters - <code>ʟɪꜱᴛ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴛᴇʀꜱ ᴏꜰ ᴀ ᴄʜᴀᴛ</code>
-• /del - <code>ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ</code>
-• /delall - <code>ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴡʜᴏʟᴇ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ (ᴄʜᴀᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)</code>"""
+    SHANKARNAG = """<b>ಕರಾಟೆ ಕಿಂಗ್ ಶಂಕರ್ ನಾಗ್</b>
+<code>Ondanondu Kaladalli 1978</code>
+<code>I Love You 1979</code>
+<code>Preethi Madu Thamashe Nodu 1979</code>
+<code>Seetharamu 1979</code>
+<code>Madhu Chandra 1979</code>
+<code>Minchina Ota 1980</code>
+<code>Auto Raja 1980</code>
+<code>Haddina Kannu 1980</code>
+<code>Ondu Hennu Aaru Kannu 1980</code>
+<code>Moogana Sedu 1980</code>
+<code>Aarada Gaaya 1980</code>
+<code>Rusthum Jodi 1980</code>
+<code>Janma Janmada Anubandha 1980</code>
+<code>Kula Puthra 1981</code>
+<code>Hanabalavo Janabalavo 1981</code>
+<code>Geetha 1981</code>
+<code>Devara Aata 1981</code>
+<code>Bhaari Bharjari Bete 1981</code>
+<code>Muniyana Madari 1981</code>
+<code>Jeevakke Jeeva 1981</code>
+<code>Archana 1982</code>
+<code>Benki Chendu 1982</code>
+<code>Karmika Kallanalla 1982</code>
+<code>Nyaya Ellide 1982</code>
+<code>Dharma Daari Tappithu 1982</code>
+<code>Gedda Maga 1983</code>
+<code>Chandi Chamundi 1983</code>
+<code>Keralida Hennu 1983</code>
+<code>Nyaya Gedditu 1983</code>
+<code>Swargadalli Maduve 1983</code>
+<code>Aakrosha 1983</code>
+<code>Nodi Swamy Navirodu Hige 1983</code>
+<code>Raktha Thilaka 1984</code>
+<code>Nagabekamma Nagabeku 1984</code>
+<code>Gandu Bherunda 1984</code>
+<code>Benki Birugali 1984</code>
+<code>Thaliya Bhagya 1984</code>
+<code>Kalinga Sarpa 1984</code>
+<code>Bedaru Bombe 1984</code>
+<code>Indina Bharatha 1984</code>
+<code>Shapatha 1984</code>
+<code>Accident 1984</code>
+<code>Pavithra Prema 1984</code>
+<code>Aasha Kirana 1984</code>
+<code>Utsav 1984</code>
+<code>Makkaliralavva Mane Thumba 1984</code>
+<code>Apoorva Sangama 1985</code>
+<code>Thayi Kanasu 1985</code>
+<code>Manava Danava 1985</code>"""
 
     BUTTON_TXT = """ʜᴇʟᴘ: <b>ʙᴜᴛᴛᴏɴꜱ</b>
 - ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴏᴛʜ ᴜʀʟ ᴀɴᴅ ᴀʟᴇʀᴛ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴꜱ.
