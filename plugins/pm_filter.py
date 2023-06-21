@@ -1140,7 +1140,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('Movie List', callback_data="movie"),
+                    InlineKeyboardButton('Hero List', callback_data="hero"),
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1254,10 +1254,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "manuelfilter":
+    elif query.data == "shankarnag":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters'),
-            InlineKeyboardButton('Bᴜᴛᴛᴏɴs', callback_data='button')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='hero'),
+            InlineKeyboardButton('Next➡️', callback_data='shankarnag1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1266,11 +1266,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.MANUELFILTER_TXT,
+            text=script.SHANKARNAG,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "button":
+    elif query.data == "shankarnag1":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='manuelfilter')
         ]]
@@ -1281,7 +1281,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.BUTTON_TXT,
+            text=script.SHANKARNAG1,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
