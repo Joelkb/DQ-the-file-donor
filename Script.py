@@ -89,7 +89,11 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Makkaliralavva Mane Thumba 1984</code>
 <code>Apoorva Sangama 1985</code>
 <code>Thayi Kanasu 1985</code>
-<code>Manava Danava 1985</code>"""
+<code>Manava Danava 1985</code>
+<code>Nagini 1991</code>
+<code>Sundara Kanda 1991</code>
+<code>Punda Prachanda 1991</code>
+<code>Prana Snehitha 1992</code>"""
 
     BUTTON_TXT = """ʜᴇʟᴘ: <b>ʙᴜᴛᴛᴏɴꜱ</b>
 - ᴛʜɪꜱ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛꜱ ʙᴏᴛʜ ᴜʀʟ ᴀɴᴅ ᴀʟᴇʀᴛ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴꜱ.
