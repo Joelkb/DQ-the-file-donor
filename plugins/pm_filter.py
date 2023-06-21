@@ -1372,7 +1372,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Next➡️', callback_data='vishnuvardhan1')
         ]]
         await client.edit_message_media(
-            query,message.chat.id,
+            query.message.chat.id,
             querry.message.id,
             InputMexiaPhoto(random.choice(PICS))
         )
