@@ -29,6 +29,8 @@ async def start(client, message):
                     InlineKeyboardButton('coming up', callback_data='year')
         ],[
                     InlineKeyboardButton('coming up', callback_data='genres')
+        ],[
+                    InlineKeyboardButton('Recent added new movies', callback_data='recent')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
