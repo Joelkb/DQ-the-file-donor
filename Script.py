@@ -328,6 +328,171 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Ambi ning vayassaytho 2018</code>
 <code>Kurukshetra 2019</code>"""
 
+    VISHNUVARDHAN = """<b>ಸಾಹಸ ಸಿಂಹ ವಿಷ್ಣುವರ್ಧನ್</b>
+<code>naagarahaavu 1972</code>
+<code>mane belagidha sose 1973</code>
+<code>gandhada gudi 1973</code>
+<code>seethe alla savithri 1973</code>
+<code>anna attige 1974</code>
+<code>bhootayyana maga ayyu 1974</code>
+<code>koodi balona 1975</code>
+<code>devara gudi 1975</code>
+<code>onde roopa eradu guna 1975</code>
+<code>kalla kulla 1975</code>
+<code>Nagakanye 1975</code>
+<code>bangarada gudi 1976</code>
+<code>Devaru Kotta Vara 1976</code>
+<code>makkala bhagya 1976</code>
+<code>Devaru Kotta Vara 1977</code>
+<code>Bayasade Banda Bhagya 1977</code>
+<code>Chinna Ninna Muddaduve 1977</code>
+<code>sahodarara savaal 1977</code>
+<code>Sose Tanda Soubhagya 1977</code>
+<code>Nagarahole 1977</code>
+<code>vamsha jyothi 1978</code>
+<code>kiladi kittu 1978</code>
+<code>Siritanakke Savaal 1978</code>
+<code>sneha sedu 1978</code>
+<code>Nanna Prayaschittha 1978</code>
+<code>muyyige muyyi 1978</code>
+<code>bhale huduga 1978</code>
+<code>kiladi jodi 1978</code>
+<code>Singaporenalli Raja Kulla 1978</code>
+<code>asadhya aliya 1979</code>
+<code>vijay vikram 1979</code>
+<code>naniruvude ninagagi 1979</code>
+<code>nentaro gantu kallaro 1979</code>
+<code>nanna rosha nooru varusha 1980</code>
+<code>rama parushurama 1980</code>
+<code>hanthakana sanchu 1980</code>
+<code>rahasya rathri 1980</code>
+<code>simha jodi 1980</code>
+<code>biligiriy banadalli 1980</code>
+<code>bangarada jinke 1980</code>
+<code>avala hejje 1981</code>
+<code>maha prachandaru 1981</code>
+<code>naga kala bhairava 1981</code>
+<code>mane mane kathe 1981</code>
+<code>Snehitara Savaal 1981</code>"""
+
+    VISHNUVARDHAN1 = """<code>Preetisi Nodu 1981</code>
+<code>Sahasasimha 1982</code>
+<code>karmika kallanalla 1982</code>
+<code>jimmy gallu 1982</code>
+<code>suvarna sethuve 1982</code>
+<code>oorige upakari 1982</code>
+<code>kallu veene nudiyithu 1982</code>
+<code>gandugali rama 1983</code>
+<code>sididedda sahodara 1983</code>
+<code>gandharva giri 1983</code>
+<code>chinnadantha maga 1983</code>
+<code>Simha Garjane 1983</code>
+<code>benki birugali 1984</code>
+<code>indina ramayana 1984</code>
+<code>rudranaga 1984</code>
+<code>Khaidi 1984</code>
+<code>Bandhana 1984</code>
+<code>nee thanda kanike 1985</code>
+<code>karthavya 1985</code>
+<code>jeevana chakra 1985</code>
+<code>maha purusha 1985</code>
+<code>nee bareda kadambari 1985</code>
+<code>veeradhi veera 1985</code>
+<code>nanna prathigne 1985</code>
+<code>mareyada manikya 1985</code>
+<code>kathanayaka 1986</code>
+<code>ee jeeva ninagagi 1986</code>
+<code>krishna nee begane baro 1986</code>
+<code>malaya marutha 1986</code>
+<code>sathya jyothi 1986</code>
+<code>karna 1986</code>
+<code>sathyam shivam sundaram 1987</code>
+<code>shubha milana 1987</code>
+<code>jeevana jyothi 1987</code>
+<code>karunamayi 1987</code>
+<code>Aaseya Bale 1987</code>
+<code>sowbhagya lakshmi 1987</code>
+<code>jayasimha 1987</code>
+<code>December 31 1988</code>
+<code>olavina aasare 1988</code>
+<code>nammoora raja 1988</code>
+<code>jana nayaka 1988</code>
+<code>Suprabhatha 1988</code>
+<code>krishna rukmini 1988</code>
+<code>daada 1988</code>"""
+
+    VISHNUVARDHAN2 = """<code>deva 1989</code>
+<code>doctor krishna 1989</code>
+<code>ondagi balu 1989</code>
+<code>hrudaya geethe 1989</code>
+<code>rudra 1989</code>
+<code>mathe haditu kogile 1990</code>
+<code>shivashankar 1990</code>
+<code>muthina haara 1990</code>
+<code>Neenu Nakkare Haalu Sakkare 1991</code>
+<code>jagadeka veera 1991</code>
+<code>lion jagapathi rao 1991</code>
+<code>ravivarma 1992</code>
+<code>harakeya kuri 1992</code>
+<code>rajadhi raja 1992</code>
+<code>Nanna Shathru 1992</code>
+<code>Rayaru Bandaru Mavana Manege 1993</code>
+<code>manikantana mahime 1993</code>
+<code>sangharsha 1993</code>
+<code>Nanendu Nimmavane 1993</code>
+<code>Vishnu Vijaya 1993</code>
+<code>kiladigalu 1994</code>
+<code>nishkarsha 1994</code>
+<code>samrat 1994</code>
+<code>kunthi puthra 1994</code>
+<code>time bomb 1994</code>
+<code>himapatha 1995</code>
+<code>karulina kudi 1995</code>
+<code>bangarada kalasa 1995</code>
+<code>yama kinkara 1995</code>
+<code>halunda thavaru 1995</code>
+<code>karnataka suputra 1996</code>
+<code>hello daddy 1996</code>
+<code>jeevanadhi 1996</code>
+<code>dhani 1996</code>
+<code>mojugara sogasugara 1996</code>
+<code>appaji 1996</code>
+<code>Baalina Jyothi 1996</code>
+<code>mangalasoothra 1997</code>
+<code>ellaranthalla nanna ganda 1997</code>
+<code>janani janmabhoomi 1997</code>
+<code>Laali 1997</code>
+<code>nishyabda 1998</code>
+<code>surya vamsha 1999</code>
+<code>Habba 1999</code>
+<code>veerappa nayaka 1999</code>"""
+
+    VISHNUVARDHAN3 = """<code>deepavali 2000</code>
+<code>Yajamana 2000</code> 
+<code>Soorappa 2000</code> 
+<code>Diggajaru 2001</code> 
+<code>Kotigobba 2001</code> 
+<code>Parva 2002</code> 
+<code>Jamindaru 2002</code>
+<code>Simhadriya simha 2002</code> 
+<code>Raja narasimha 2003</code> 
+<code>Hrudayavantha 2003</code> 
+<code>Jyeshtha 2004</code>
+<code>Sahukara 2004</code> 
+<code>apthamitra 2004</code>
+<code>kadamba 2004</code> 
+<code>Vishnu sena 2005</code> 
+<code>Varsha 2005</code>
+<code>Sirivantha 2006</code>
+<code>Neenello naanalle 2006</code> 
+<code>ekadantha 2007</code> 
+<code>maathaad maathaadu mallige 2007</code>
+<code>Ee Bandhana 2007</code>
+<code>Nam Yajamanru 2008</code>
+<code>Bellary Naga 2009</code>
+<code>School master 2010</code> 
+<code>Aptharakshaka 2010</code>"""
+    
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Cʜᴀᴛs: <code>{}</code>
