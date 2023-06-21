@@ -8,11 +8,37 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
     HERO1 = """<b>HEY: {}
 ನಿಮ್ಮ ನೆಚ್ಚಿನ ನಾಯಕನ ಆಯ್ಕೆ ಮಾಡಿ.</b>"""
 
-    SOURCE_TXT = """<b>ɴᴏᴛᴇ:
-- ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-- ꜱᴏᴜʀᴄᴇ - <a href="https://github.com/Joelkb/DQ-The-File-Donor">ʜᴇʀᴇ</a>
-Dᴇᴠᴇʟᴏᴘᴇʀ:
-- <a href="https://t.me/creatorbeatz">Jᴏᴇʟ ᠰ TɢX</a></b>"""
+    PUNITHRAJKUMAR = """<b>ಪವರ್ ಸ್ಟಾರ್ ಪುನೀತ್ ರಾಜ್‌ಕುಮಾರ್</b>
+<code>appu 2002</code>
+<code>abhi 2003</code>
+<code>maurya 2004</code>
+<code>aakash 2005</code>
+<code>namma basava 2005</code>
+<code>ajay 2006</code>
+<code>arasu 2006</code>
+<code>milana</code>2007
+<code>bindaas 2008</code>
+<code>vamshi 2008</code>
+<code>raaj the show man 2009</code>
+<code>raam</code>2009
+<code>prithvi 2010</code>
+<code>jackie 2010</code>
+<code>hudugaru 2011</code>
+<code>paramathma 2011</code>
+<code>anna bond 2012</code>
+<code>yaare koogadali 2012</code>
+<code>ninnindale 2014</code>
+<code>power 2014</code>
+<code>mythri 2015</code>
+<code>rana vikrama 2015</code>
+<code>chakravyuha 2016</code>
+<code>Doddmane hudga 2016</code>
+<code>raajakumara 2017</code>
+<code>anjaniputra 2017</code>
+<code>natasaarvabhowma 2019</code>
+<code>yuvaratna 2021</code>
+<code>James 2022</code>
+<code>Gandhada Gudi 2022</code>"""
 
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
