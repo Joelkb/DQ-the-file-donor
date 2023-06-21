@@ -492,6 +492,197 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Bellary Naga 2009</code>
 <code>School master 2010</code> 
 <code>Aptharakshaka 2010</code>"""
+
+    RAJKUMAR = """<b>ನಟಸಾರ್ವಭೌಮ ಡಾ. ರಾಜ್‌ಕುಮಾರ್</b>
+<code>bedara kannappa 1954</code>
+<code>sodari 1955</code>
+<code>bhakta vijaya 1956</code>
+<code>ohileshwara 1956</code>
+<code>hari bhakta 1956</code>
+<code>rayara sose 1957</code>
+<code>anna thangi 1958</code>
+<code>bhookailasa 1958</code>
+<code>shree krishna gaarudi 1958</code>
+<code>jagajyothi basveshwara 1959</code>
+<code>dharma vijaya 1959</code>
+<code>mahishasura mardini 1959</code>
+<code>dashavathara 1960</code>
+<code>ranadheera kanteerava 1960</code>
+<code>rani honnamma 1960</code>
+<code>aasha sundari 1960</code>
+<code>bhakta kanakadasa 1960</code>
+<code>kittur chennamma 1961</code>
+<code>kantheredu nodu 1961</code>
+<code>kaiwara mahathme 1961</code>
+<code>bhakta cheta 1961</code>
+<code>nagarjuna 1961</code>
+<code>sri shaila mahathme 1961</code>
+<code>gaali gopura 1962</code>
+<code>karuneye kutumbada kannu 1962</code>
+<code>swarna gowri 1962</code>
+<code>bhoodaana 1962</code>
+<code>mahathma kabir 1962</code>
+<code>devasundari 1962</code>
+<code>thejaswini 1962</code>
+<code>nanda deepa 1963</code>
+<code>valmiki 1963</code>
+<code>gowri 1963</code>
+<code>kanyarathna 1963</code>
+<code>kulavadhu 1963</code>
+<code>jeevana tharanga 1963</code>
+<code>saaku magalu 1963</code>
+<code>veerakesari 1963</code>
+<code>sathi shakthi 1963</code>
+<code>mana mecchida madadi 1963</code>
+<code>sri ramanjaneya yuddha 1963</code>
+<code>chandra kumara 1963</code>
+<code>santha thukaram 1963</code>
+<code>navakoti narayana 1964</code>
+<code>chandavalliya thota 1964</code>
+<code>shivagange mahathme 1964</code>
+<code>tumbida koda 1964</code>
+<code>prathigne 1964</code>"""
+
+    RAJKUMAR1 = """<code>muriyada mane 1964</code>
+<code>naandi 1964</code>
+<code>annapoorna 1964</code>
+<code>chandrahasa 1965</code>
+<code>sarvagna murthy 1965</code>
+<code>vaatsalya 1965</code>
+<code>mahasathi anasuya 1965</code>
+<code>ide mahasudina 1965</code>
+<code>satya harishchandra 1965</code>
+<code>bettada huli 1965</code>
+<code>sati savithri 1965</code>
+<code>maduve madi nodu 1965</code>
+<code>premamayi 1966</code>
+<code>bala nagamma 1966</code>
+<code>mantralaya mahatme 1966</code>
+<code>katari veera 1966</code>
+<code>kilaadi ranga 1966</code>
+<code>madhumalathi 1966</code>
+<code>emme thammanna 1966</code>
+<code>gange gowri 1967</code>
+<code>sathi sukanya 1967</code>
+<code>parvathi kalyana 1967</code>
+<code>rajashekara 1967</code>
+<code>lagna pathrike 1967</code>
+<code>devara gedda manava 1967</code>
+<code>manassiddare maarga 1967</code>
+<code>bangarada hoovu 1967</code>
+<code>beedi basavanna 1967</code>
+<code>chakra theertha 1967</code>
+<code>immadi pulakeshi 1967</code>
+<code>gandhinagara 1978</code>
+<code>manassakshi 1968</code>
+<code>sarvamangala 1968</code>
+<code>bhagya devathe 1968</code>
+<code>bhagyada bagilu 1968</code>
+<code>hannele chiguridaga 1968</code>
+<code>bangalore mail 1968</code>
+<code>hannele chiguridaga 1968</code>
+<code>bhagyada bagilu 1968</code>
+<code>rowdi ranganna 1968</code>
+<code>dhoomaketu 1968</code>
+<code>amma 1968</code>
+<code>simhaswapna 1968</code>
+<code>goa dalli cid 999 1968</code>
+<code>mannina maga 1968</code>
+<code>margadarshi 1969</code>
+<code>gandondu hennaru 1969</code>
+<code>mallammana pavada 1969</code>
+<code>choori chikkanna 1969</code>
+<code>punarjanma 1969</code>"""
+
+    RAJKUMAR2 = """<code>bhale raja 1969</code>
+<code>uyyale 1969</code>
+<code>chikkamma 1969</code>
+<code>mayor muthanna 1969</code>
+<code>sri krishnadevaraya 1970</code>
+<code>hasiru thorana 1970</code>
+<code>karulina kare 1970</code>
+<code>cid rajanna 1970</code>
+<code>paropakari 1970</code>
+<code>mr rajkumar 1970</code>
+<code>devara makkalu 1970</code>
+<code>nadina bhagya 1970</code>
+<code>Baalu Belagithu 1970</code>
+<code>kasturi nivasa 1971</code>
+<code>kula gourava 1971</code>
+<code>thayi devaru 1971</code>
+<code>kasidre kailasa 1971</code>
+<code>Nyayave Devaru 1971</code>
+<code>baala bandhana 1971</code>
+<code>sakshatkara 1971</code>
+<code>nyayave devaru 1971</code>
+<code>pratidwani 1971</code>
+<code>sri krishna rukmini satyabhama 1971</code>
+<code>janma rahasya 1972</code>
+<code>sipayi ramu 1972</code>
+<code>hrudaya sangama 1972</code>
+<code>bangaarada manushya 1972</code>
+<code>kranti veera 1972</code>
+<code>jaga mecchida maga 1972</code>
+<code>Nanda Gokula 1972</code>
+<code>Bhale Huchcha 1972</code>
+<code>swayamvara 1973</code>
+<code>devaru kotta thangi 1973</code>
+<code>doorada betta 1973</code>
+<code>Gandhada Gudi 1973</code>
+<code>mooroovare vajragalu 1973</code>
+<code>Eradu Kanasu 1974</code>
+<code>bangaarada panjara 1974</code>
+<code>sri srinivasa kalyana 1974</code>
+<code>sampathige saval 1974</code>
+<code>Bhakta Kumbara 1974</code>
+<code>mayura 1975</code>
+<code>daari tappida maga 1975</code>
+<code>Trimurti 1975</code>
+<code>naa ninna mareyalare 1976</code>
+<code>premada kanike 1976</code>
+<code>bahaddur gandu 1976</code>
+<code>raja nanna raja 1976</code>
+<code>badavara bandhu 1976</code>
+<code>Babruvahana 1977</code>"""
+
+    RAJKUMAR3 = """<code>bhagyavantharu 1977</code>
+<code>giri kanye 1977</code>
+<code>sanaadi appanna 1977</code>
+<code>olavu geluvu 1977</code>
+<code>operation diamond racket 1978</code>
+<code>thayige thakka maga 1978</code>
+<code>shankar guru 1978</code>
+<code>nanobba kalla 1979</code>
+<code>huliya haalina mevu 1979</code>
+<code>ravichandra 1980</code>
+<code>Vasanta Geetha 1980</code>
+<code>keralida simha 1981</code>
+<code>Nee Nanna Gellalare 1981</code>
+<code>Haavina Hede 1981</code>
+<code>Chalisuva Modagalu 1982</code>
+<code>hosa belaku 1982</code>
+<code>haalu jenu 1982</code>
+<code>Kaamana Billu 1983</code>
+<code>kaviratna kalidasa 1983</code>
+<code>Eradu Nakshatragalu 1983</code>
+<code>Bhakta Prahlada 1983</code>
+<code>samayada gombe 1984</code>
+<code>shravana banthu 1984</code>
+<code>yarivanu 1984</code>
+<code>ade kannu 1985</code>
+<code>dhruva thare 1985</code>
+<code>jwaalamukhi 1985</code>
+<code>Guri 1986</code>
+<code>Anuraga Aralithu 1986</code>
+<code>bhagyada lakshmi baramma 1986</code>
+<code>shruthi seridaaga 1987</code>
+<code>ondu muttina kathe 1987</code>
+<code>devatha manushya 1988</code>
+<code>jeevana chaitra 1989</code>
+<code>jeevana chaitra 1992</code>
+<code>aakasmika 1993</code>
+<code>Odahuttidavaru 1994</code>
+<code>Shabdavedhi 2000</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
