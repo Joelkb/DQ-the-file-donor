@@ -145,43 +145,7 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Devara Kannu 1975</code>
 <code>Hudugatada Hudugi 1976</code>
 <code>Hosilu Mettida Hennu 1976</code>
-<code>Bangarada Gudi 1976</code>
-<code>Kanasu Nanasu 1976</code>
-<code>Kudure Mukha 1977</code>
-<code>Nagarahole 1977</code>
-<code>Maagiya Kanasu 1977</code>
-<code>Manasinanthe Mangalya 1977</code>
-<code>Mugdha Manava 1977</code>
-<code>Chinna Ninna Muddaduve 1977</code>
-<code>Banashankari 1977</code>
-<code>Halli Haida 1978</code>
-<code>Havina Hejje 1978</code>
-<code>Muyyige Muyyi 1978</code>
-<code>Siritanakke Savaal 1978</code>
-<code>Paduvaaralli Pandavaru 1978</code>
-<code>Sneha Sedu 1978</code>
-<code>Amarnath 1978</code>
-<code>Kiladi Jodi 1978</code>
-<code>Balu Aparoopa Nam Jodi 1978</code>
-<code>Pakka Kalla 1979</code>
-<code>Kamala 1979</code>
-<code>Putani Agent 123 1979</code>
-<code>Savathiya Neralu 1979</code>
-<code>Dhairya Lakshmi 1980</code>
-<code>Vajrada Jalapatha 1980</code>
-<code>Ondu Hennu Aaru Kannu 1980</code>
-<code>Subbi Subbakka Suvvalali 1980</code>
-<code>Nyaya Neethi Dharma 1980</code>
-<code>Leader Vishwanath 1981</code>
-<code>Ranganayaki 1981</code>
-<code>Antha 1981</code>
-<code>Maha Prachandaru 1981</code>
-<code>Snehitara Savaal 1981</code>
-<code>Bhaari Bharjari Bete 1981</code>
-<code>Avala Hejje 1981</code>
-<code>Shankar Sundar1982</code>
-<code>Prema Matsara 1982</code>
-<code>Maava Sose Savaal 1982</code>"""
+<code>Bangarada Gudi 1976</code>"""
     
     AMBARISH1 = """<code>Snehada Sankole 1982</code>
 <code>Ajith 1982</code>
