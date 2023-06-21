@@ -1140,7 +1140,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('Hero List', callback_data="hero"),
+                    InlineKeyboardButton('Hero List', callback_data="hero")
+        ],[
+                    InlineKeyboardButton('Recent added new movies', callback_data="recent")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1177,9 +1179,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    elif query.data == "global_filters":
+    elif query.data == "recent":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters')
+            InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='start')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1188,7 +1190,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.GFILTER_TXT,
+            text=script.RECENT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
