@@ -1320,17 +1320,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
     elif query.data == "ambarish2":
         buttons = [[
             InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='ambarish1'),
             InlineKeyboardButton('Next➡️', callback_data='ambarish3')
         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
         )
-        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.AMBARISH2,
             reply_markup=reply_markup,
@@ -1404,22 +1405,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    elif query.data == "vishnuvardhan2":
-        buttons = [[
-            InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='vishnuvardhan1'),
-            InlineKeyboardBitton('Next➡️', callback_data='vishnuvardhan3')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.VISHNUVARDHAN2,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
 
     elif query.data == "vishnuvardhan3":
         buttons = [[
