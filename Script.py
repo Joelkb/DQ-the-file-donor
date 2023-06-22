@@ -2,7 +2,12 @@ class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},
 Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
 
-    RECENT = """<b>Recently Uploaded New Movies</b>"""
+    RECENT = """<b>Recently Uploaded New Movies</b>
+<code>Alluri 2023</code>
+<code>I Love You 2023</code>
+<code>Stand Up Rahul 2023</code>
+<code>Shri Balaji Photo Studio 2023</code>
+<code>Bhikshuka 2 2023</code>"""
 
     HERO = """<b>Hᴇʏ {}
 ನಿಮ್ಮ ನೆಚ್ಚಿನ ನಾಯಕನ ಆಯ್ಕೆ ಮಾಡಿ.</b>"""
