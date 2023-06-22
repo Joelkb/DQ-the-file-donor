@@ -1341,7 +1341,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "ambarish3":
         buttons = [[
             InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='ambarish2'),
-
+            InlineKeyboardButton('⏮Full back', callback_data='hero')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
