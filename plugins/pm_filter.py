@@ -1597,7 +1597,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "darshan":
         buttons = [[
-            InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='hero')
+            InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='hero'),
+            InlineKeyboardButton('Next➡️', callback_data='darshan1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -1611,10 +1612,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    elif query.data == "punithrajkumar":
+    elif query.data == "darshan1":
         buttons = [[
-            InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='darshan')
-
+            InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='darshan'),
+            InlineKeyboardButton('⏮Full Bᴀᴄᴋ', callback_data='hero') 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
