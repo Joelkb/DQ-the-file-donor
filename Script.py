@@ -871,6 +871,47 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Kotigobba 3 2021</code>
 <code>Vikrant Rona 2022</code>
 <code>Kabzaa 2023</code>"""
+
+    GANESH = """<b>ಗೋಲ್ಡನ್ ಸ್ಟಾರ್ ಗಣೇಶ್</b>
+<code>mungaaru male 2006</code>
+<code>chellata 2006</code>
+<code>hudugaata 2007</code>
+<code>cheluvina chittara 2007</code>
+<code>krishna 2007</code>
+<code>Gaalipata 2008</code>
+<code>aramane 2008</code>
+<code>bombaat 2008</code>
+<code>sangama 2008</code>
+<code>circus 2009</code>
+<code>maleyali joteyali 2009</code>
+<code>ullasa uthsaha 2010</code>
+<code>yeno onthara 2010</code>
+<code>kool 2011</code>
+<code>maduve mane 2011</code>
+<code>shyloo 2011</code>
+<code>munjaane 2012</code>
+<code>mr 420 2012</code>
+<code>auto raaja 2012</code>
+<code>sakkare 2012</code>
+<code>Romeo 2012</code>
+<code>shravani subramanya 2013</code>
+<code>dil rangeela 2014</code>
+<code>kushi kushiyaagi 2015</code>
+<code>buguri 2015</code>
+<code>style king 2016</code>
+<code>zoom 2016</code>
+<code>mungaaru male 2 2016</code>
+<code>sundaranga jaana 2016</code>
+<code>pataaki 2017</code>
+<code>Mugulu nage 2017</code>
+<code>chamak 2017</code>
+<code>orange 2018</code>
+<code>99 2019</code>
+<code>gimmick 2019</code>
+<code>geetha 2019</code>
+<code>Sakath 2021</code>
+<code>Gaalipata 2 2022</code>
+<code>Triple Riding 2022</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
