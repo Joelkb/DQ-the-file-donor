@@ -827,6 +827,50 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>bairagee 2022</code>
 <code>vedha 2022</code>
 <code>kabzaa 2022</code>"""
+
+    SUDEEP = """<b>ಅಭಿನಯ ಚಕ್ರವರ್ತಿ ಕಿಚ್ಚ ಸುದೀಪ್</b>
+<code>thayavva 1997</code>
+<code>Sparsha 2000</code>
+<code>Huchcha 2001</code>
+<code>Vaalee 2001</code>
+<code>Chandu 2002</code>
+<code>Dhumm 2002</code>
+<code>Nandhi 2002</code>
+<code>Kiccha 2003</code>
+<code>Partha 2003</code>
+<code>Swathi muthu 2003</code>
+<code>Ranga sslc 2004</code>
+<code>Nalla 2004 </code>
+<code>Maharaja 2005</code>
+<code>Kashi from village 2005</code>
+<code>Nammanna 2005</code>
+<code>My autograph 2006</code>
+<code>Thirupathi 2006</code>
+<code>No73 shanthi nivasa 2007</code>
+<code>Hubli 2006</code>
+<code>Gooli 2008</code>
+<code>Mussanjemaatu 2008</code>
+<code>Kaamannana makkalu 2008</code>
+<code>Mast Maja Maadi 2008</code>
+<code>Veera madakari 2009</code>
+<code>Just maath maathalli 2010</code>
+<code>Mr Theertha 2010</code>
+<code>Kiccha Huccha 2010</code>
+<code>Veera parampare 2010</code>
+<code>Kempe gowda 2011</code>
+<code>Vishnuvardhana 2011</code>
+<code>Varadhanayaka 2013</code>
+<code>Bachchan 2013</code>
+<code>Maanikya 2014</code>
+<code>Ranna 2015</code>
+<code>Kotigobba 2 2016</code>
+<code>Mukunda murari 2016 </code>
+<code>Hebbuli 2017</code>
+<code>The villain 2018</code>
+<code>Pailwan 2019</code>
+<code>Kotigobba 3 2021</code>
+<code>Vikrant Rona 2022</code>
+<code>Kabzaa 2023</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
