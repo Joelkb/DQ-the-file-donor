@@ -1226,9 +1226,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ಶಿವರಾಜಕುಮಾರ್', callback_data='shivarajkumar'),
             InlineKeyboardButton('ಸುದೀಪ್', callback_data='sudeep'),
-            InlineKeyboardButton('ಗಣೇಶ್', callback_data='ganesh')
-        ],[
-            InlineKeyboardButton('ದರ್ಶನ್', callback_data='darshan') 
+            InlineKeyboardButton('ಗಣೇಶ್', callback_data='ganesh') 
         ],[
             InlineKeyboardButton('🔙Back', callback_data='hero'),
             InlineKeyboardButton('➡️Next', callback_data='hero2')
