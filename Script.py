@@ -3,6 +3,11 @@ class script(object):
 Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
 
     RECENT = """<b>Recently Uploaded New Movies</b>
+<code>Malikappuram</code>
+<code>Huli</code> (tamil puli)
+<code>Narasimha</code> (shankar nag old movie)
+<code>Gadiraja</code>
+<code>Parugu</code>
 <code>Alluri 2023</code>
 <code>I Love You 2023</code>
 <code>Stand Up Rahul 2023</code>
