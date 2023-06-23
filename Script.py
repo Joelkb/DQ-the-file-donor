@@ -696,6 +696,137 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>aakasmika 1993</code>
 <code>Odahuttidavaru 1994</code>
 <code>Shabdavedhi 2000</code>"""
+
+    SHIVARAJKUMAR = """<b>ಕರುನಾಡ ಚಕ್ರವರ್ತಿ ಹ್ಯಾಟ್ರಿಕ್ ಹೀರೋ ಡಾ. ಶಿವ ರಾಜ್ ಕುಮಾರ್</b>
+<code>sri srinivasa kalyana 1974</code> (ಬಾಲ ನಟ)
+<code>Anand 1986</code>
+<code>ratha sapthami 1986</code>
+<code>mana mecchida hudugi 1987</code>
+<code>Shiva Mecchida Kannappa 1988</code>
+<code>Samyuktha 1988</code>
+<code>Ranaranga 1988</code>
+<code>Inspector Vikram 1989</code>
+<code>ade raaga ade haadu 1989</code>
+<code>mruthyunjaya 1990</code>
+<code>Aasegobba Meesegobba 1990</code>
+<code>Modada mareyalli 1991</code>
+<code>aralida hoovugalu 1991</code>
+<code>midida shruthi 1992</code>
+<code>Purushotthama 1992</code>
+<code>Mavanige Thakka aliya 1992</code>
+<code>Jaga mechhida huduga 1993</code>
+<code>chirabandhavya 1993</code>
+<code>Gandhada Gudi Part 2 1994</code>
+<code>gandugali 1994</code>
+<code>mutthanna 1994</code>
+<code>Om 1995</code>
+<code>Gadibidi Aliya 1995</code>
+<code>savyasachi 1995</code>
+<code>samara 1995</code>
+<code>dore 1995</code>
+<code>mana midiyithu 1995</code>
+<code>Shiva sainya 1996</code>
+<code>Gajanura Gandu 1996</code>
+<code>janumada jodi 1996</code>
+<code>annavara makkalu 1996</code>
+<code>Aadhitya 1996</code>
+<code>Ibbara Naduve Muddina Aata 1996</code>
+<code>ganga yamuna 1997</code>
+<code>Simhada Mari 1997</code>
+<code>Ammavra Ganda 1997</code>
+<code>muddina kanmani 1997</code>
+<code>Jodi Hakki 1997</code>
+<code>prema raga haadu gelathi 1997</code>
+<code>raaja 1997</code>
+<code>nammoora huduga 1998</code>
+<code>andaman 1998</code>
+<code>mr putsami 1998</code>
+<code>bhoomi thayiya chochchala maga 1998</code>
+<code>gadibidi krishna 1998</code>
+<code>Kurubana rani 1998</code>
+<code>chandrodaya 1999</code>
+<code>Hrudaya hrudaya 1999</code>"""
+
+    SHIVARAJKUMAR1 = """<code>A K 47 1999</code>
+<code>Janumadatha 1999</code>
+<code>Vishwa 1999</code>
+<code>Yare Nee Abhimani 2000</code>
+<code>Preethse 2000</code>
+<code>Hagalu vesha 2000</code>
+<code>Indradhanush 2000</code>
+<code>Krishna Leele 2000</code>
+<code>Devara maga 2000</code>
+<code>Galate aliyandru 2000</code>
+<code>Maduve aagona baa 2001</code>
+<code>Asura 2001</code>
+<code>Bahala chennagide 2001</code>
+<code>Baava Baamaida 2001</code>
+<code>Sundara kanda 2001</code>
+<code>Yuvaraja 2001</code>
+<code>Jodi 2001</code>
+<code>Kodanda rama 2002</code>
+<code>Ninne Preethisuve 2002</code>
+<code>Thavarige Baa Thangi 2002</code>
+<code>Sriram 2003</code>
+<code>Nanjundi 2003</code>
+<code>Chigurida kanasu 2003</code>
+<code>smile 2003</code>
+<code>Rowdy aliya 2004</code>
+<code>Sarvabhouma 2004</code>
+<code>Kanchana ganga 2004</code>
+<code>Rishi 2005</code>
+<code>Rakshasa 2005</code>
+<code>Valmiki 2005</code>
+<code>Jogi 2005</code>
+<code>Anna thangi 2005</code>
+<code>Ashoka 2006</code>
+<code>Thavarina siri 2006</code>
+<code>Gandugali kumara rama 2006</code>
+<code>Thayiya Madilu 2007</code>
+<code>Santha 2007</code>
+<code>Gandana mane 2007</code>
+<code>Lava Kusha 2007 </code>
+<code>Sathya In Love</code>
+<code>Bandhu balaga 2008 </code>
+<code>Madesha 2008</code>
+<code>Paramesha Paanwala 2008</code>
+<code>Nanda 2009</code>
+<code>Hatrick Hodi Maga 2009</code>
+<code>Devaru kotta thangi 2009</code>
+<code>Bhagyada Balegara 2009</code>
+<code>Sugreeva 2010</code>
+<code>Thamassu 2010</code>
+<code>Cheluveye ninne nodalu 2010</code>"""
+
+    SHIVARAJKUMAR2 = """<code>Mylari 2010</code>
+<code>Jogayya 2011</code>
+<code>shiva 2012</code>
+<code> Kaddipudi 2013</code>
+<code>Lakshmi 2013</code>
+<code>Andhar Bahar 2013</code>
+<code>Kaddipudi 2013</code>
+<code>Bhajarangi 2013</code>
+<code>Aaryan 2014 </code>
+<code>Vajrakaya 2015</code>
+<code>Belli 2014</code>
+<code>Killing veerappan 2016</code>
+<code>Shivalinga 2016</code>
+<code>Santheyalli nintha kabira 2016</code>
+<code>Srikanta 2017</code>
+<code>Bangara so bangarada manushya 2017</code>
+<code>Mass leader 2017</code>
+<code>Mufti 2017</code>
+<code>Tagaru 2018</code>
+<code>The villain 2018</code>
+<code>Kavacha 2019</code>
+<code>Rustum 2019</code>
+<code>Ayushman bhava 2019</code>
+<code>Drona 2020</code>
+<code>Bhajarangi2 2021</code>
+<code>James 2022</code>
+<code>bairagee 2022</code>
+<code>vedha 2022</code>
+<code>kabzaa 2022</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
