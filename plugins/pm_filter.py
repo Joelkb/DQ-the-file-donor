@@ -1678,7 +1678,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.PUNITHRscript.VIJAY,
+            text=script.VIJAY,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1694,7 +1694,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.PUNITHRscript.CHIRANJEEVI,
+            text=script.CHIRANJEEVI,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -1710,7 +1710,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.PUNITHRscript.PRAJWAL,
+            text=script.PRAJWAL,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
