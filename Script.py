@@ -1108,6 +1108,149 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Arjun Gowda 2021</code>
 <code>Abbara 2022</code>
 <code>Veeram 2022</code>"""
+
+    RAKSHIT = """<b>ಸಿಂಪಲ್ ಸ್ಟಾರ್ ರಕ್ಷಿತ್ ಶೆಟ್ಟಿ</b>
+<code>Ulidavaru kandanthe 2014</code>
+<code>Ricky 2016</code>
+<code>Kirik party 2016</code>
+<code>simple agi ondh love story 2013</code>
+<code>Katha sangama 2019</code>
+<code>Bell bottom 2019</code>
+<code>Avane srimannarayana 2019</code>
+<code>Hero 2021</code>
+<code>777 Charlie 2022</code>"""
+
+    YOGESH = """<b>ಲೂಸ್ ಮಾದ ಯೋಗೇಶ್</b>
+<code>nanda loves nanditha 2008</code>
+<code>Raavana 2009</code>
+<code>Punda 2010</code>
+<code>Preethse preethse 2009</code>
+<code>Mr Painter 2009</code>
+<code>Yogi 2010</code>
+<code>Ambari 2010</code>
+<code>Yaksha 2010</code>
+<code>Devadas 2011</code>
+<code>Hudugaru 2011</code>
+<code>Dhool 2011</code>
+<code>Sidlingu 2012</code>
+<code>Alemari 2012</code>
+<code>Kalaya Tasmai Namaha 2012</code>
+<code>Yaare koogadali 2012</code>
+<code>Bangari 2013</code>
+<code>Jinke mari 2013</code>
+<code>Ambara 2013</code>
+<code>Darling 2014</code>
+<code>Kala Bhairava 2016</code>
+<code>John jani janardhan 2016</code>
+<code>Kolar 2017</code>
+<code>Yogi duniya 2018</code>
+<code>Lambodara 2019</code>
+<code>Kempe Gowda 2 2019</code>
+<code>Lanke 2021</code>
+<code>Ombatthane Dikku 2022</code>
+</code>Head Bush 2022</code> 
+</code>Kirik Shankar 2022</code>
+<code>Naanu Adu Mattu Saroja 2022</code>"""
+
+    RAVICHANDRAN = """<b>ಕ್ರೇಜಿ ಸ್ಟಾರ್ ರವಿಚಂದ್ರನ್</b>
+<code>Dhoomakethu 1968</code> (ಬಾಲ್ಯನಟ)
+<code>Kula Gourava 1971</code> (ಬಾಲ್ಯನಟ)
+<code>Khadeema Kallaru 1982</code>
+<code>Chakravyuha 1983</code>
+<code>Naane Raja 1984</code>
+<code>Premigala Saval 1984</code>
+<code>Pralayanthaka 1984</code>
+<code>Pithamaha 1985</code>
+<code>Swabhimana 1985</code>
+<code>Naanu Nanna Hendthi 1985</code>
+<code>Savira Sullu 1985</code>
+<code>Na Ninna Preetisuve 1986</code>
+<code>Asambhava 1986</code>
+<code>Premaloka 1987</code>
+<code>Sangrama 1987</code>
+<code>Brahma Vishnu Maheshwara 1988</code>
+<code>Ranadheera 1988</code>
+<code>Anjada Gandu 1988</code>
+<code>Ramanna Shamanna 1988</code>
+<code>Yuga Purusha 1989</code>
+<code>Yuddha Kaanda 1989</code>
+<code>Kindari Jogi 1989</code>
+<code>Poli Huduga 1989</code>
+<code>Abhimanyu 1990</code>
+<code>Bannada Gejje 1990</code>
+<code>Shanti Kranti 1991</code>
+<code>Ramachari 1991</code>
+<code>Halli Meshtru 1992</code>
+<code>Gopi Krishna 1992</code>
+<code>Guru Brahma 1992</code>
+<code>Chikkejamanru 1992</code>
+<code>Sriramachandra 1992</code>
+<code>Gadibidi Ganda 1993</code>
+<code>Mane Devru 1993</code>
+<code>Jaana 1994</code>
+<code>Rasika 1994</code>
+<code>Chinna 1994</code>
+<code>Putnanja 1995</code>
+<code>Sipayi 1996</code>
+<code>Kalavida 1997</code>
+<code>Mommaga 1997</code>
+<code>Cheluva 1997</code>
+<code>Yaare Neenu Cheluve 1998</code>
+<code>Mangalyam Tantunanena 1998</code>
+<code>Preethsod Thappa 1998</code>
+<code>Ravimama 1999</code>
+<code>Naanu Nanna Hendthiru 1999</code>
+<code>Sneha 1999</code>"""
+
+    RAVICHANDRAN = """<code>O Premave 1999</code>
+<code>Chora Chittha Chora 1999</code>
+<code>Mahathma 2000</code>
+<code>Preethsu Thappenilla 2000</code>
+<code>O Nanna Nalle 2000</code>
+<code>Usire 2001</code>
+<code>Kanasugara 2001</code>
+<code>Premakke Sai 2001</code>
+<code>Preethi Mado Hudugarigella 2002</code>
+<code>Ekangi 2002</code>
+<code>Kodanda rama 2002</code>
+<code>Ondagona Baa 2003</code>
+<code>Sahukara 2004</code>
+<code>Rama Krishna 2004</code>
+<code>Malla 2004</code>
+<code>Pandu Ranga Vittala 2005</code>
+<code>Aham Premasmi 2005</code>
+<code>Neelakanta 2006</code>
+<code>Ravi Shastri 2006</code>
+<code>Odahuttidavalu 2006</code>
+<code>Hatavadi 2006</code>
+<code>ugadi 2007</code>
+<code>nee tata naa birla 2008</code>
+<code>hoo 2010</code>
+<code>Naariya Seere Kadda 2010</code>
+<code>Mallikarjuna 2011</code>
+<code>Kalla malla sulla 2011</code>
+<code>Narasimha 2012</code>
+<code>Dashamukha 2012</code>
+<code>Crazy loka 2012</code>
+<code>Crazy star 2014</code>
+<code>Maanikya 2014</code>
+<code>Drishya 2014</code>
+<code>Paramashiva 2014</code>
+<code>Love you alia 2015</code>
+<code>Apoorva 2016</code>
+<code>Mungaaru male 2 2016</code>
+<code>Hebbuli 2017</code>
+<code>Seizer 2018</code>
+<code>Buckasura 2018</code>
+<code>Padde huli 2019</code>
+<code>Dasharatha 2019</code>
+<code>Kurukshetra 2019</code>
+<code>Aa drushya 2019</code>
+<code>Kannadiga 2021</code>
+<code>Drishya 2 2021</code>
+<code>Ravi Bopanna 2022</code>
+<code>Vijayanand 2022</code> theater print
+<code>Kranti 2023</code>"""    
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
