@@ -964,6 +964,49 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Robert 2021</code>"""
 
     DARSHAN1 = """<code>Kranti 2023</code>"""
+
+    UPENDRA = """<b>ಸೂಪರ್ ಸ್ಟಾರ್ ಉಪೇಂದ್ರ</b>
+<code>a 1998</code>
+<code>upendra 1999</code>
+<code>preethse 2000</code>
+<code>H2o 2002</code>
+<code>nagarahavu 2002</code>
+<code>naanu naane 2002</code>
+<code>hollywood 2002</code>
+<code>kutumba 2003</code>
+<code>Raktha Kanneeru 2003</code>
+<code>Gokarna 2003</code>
+<code>omkara 2004</code>
+<code>Omkara 2004</code>
+<code>gowramma 2005</code>
+<code>news 2005</code>
+<code>auto shankar 2005</code>
+<code>Uppi Dada MBBS 2006</code>
+<code>Aishwarya 2006</code>
+<code>Thandege thakka maga 2006</code>
+<code>Lava Kusha 2007</code>
+<code>parodi 2007</code>
+<code>masti 2007</code>
+<code>Anatharu 2007</code>
+<code>Buddhivanta 2008</code>
+<code>Dubai babu 2009</code>
+<code>Rajani 2009</code>
+<code>Shrimathi 2011</code>
+<code>Super 2010</code>
+<code>Aarakshaka 2012</code>
+<code>Godfather 2012</code>
+<code>Katari veera surasundarangi 2012</code>
+<code>Kalpana 2012</code>
+<code>Topiwala 2013</code>
+<code>Brahma 2014</code>
+<code>Super Ranga 2014</code>
+<code>Shivam 2015</code>
+<code>Uppi 2 2015</code>
+<code>Kalpana 2 2016</code>
+<code>Mukunda murari 2016</code>
+<code>Upendra matte baa 2017</code>
+<code>I love you 2019</code>
+<code>Kabzaa 2023</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
