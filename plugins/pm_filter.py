@@ -1232,6 +1232,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ಉಪೇಂದ್ರ', callback_data='upendra'),
             InlineKeyboardButton('ಯಶ್', callback_data='yash')
         ],[
+            InlineKeyboardButton('ದುನಿಯಾ ವಿಜಯ್', callback_data='vijay'), 
+            InlineKeyboardButton('ಚಿರಂಜೀವಿ ಸರ್ಜಾ', callback_data='chiranjeevi'),
+            InlineKeyboardButton('ಪ್ರಜ್ವಲ್ ದೇವರಾಜ್', callback_data='prajwal')
+        ],[
             InlineKeyboardButton('🔙Back', callback_data='hero'),
             InlineKeyboardButton('➡️Next', callback_data='hero2')
         ]]
