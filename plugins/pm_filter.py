@@ -1208,7 +1208,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('P.   ಪವರ್ ಸ್ಟಾರ್ ಪುನೀತ್ ರಾಜ್‌ಕುಮಾರ್', callback_data='punithrajkumar')
         ], [
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Next', callback_data='hero1')
+            InlineKeyboardButton('Next➡️', callback_data='hero1')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1236,8 +1236,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ಚಿರಂಜೀವಿ ಸರ್ಜಾ', callback_data='chiranjeevi'),
             InlineKeyboardButton('ಪ್ರಜ್ವಲ್ ದೇವರಾಜ್', callback_data='prajwal')
         ],[
-            InlineKeyboardButton('🔙Back', callback_data='hero'),
-            InlineKeyboardButton('➡️Next', callback_data='hero2')
+            InlineKeyboardButton('ರಕ್ಷಿತ್ ಶೆಟ್ಟಿ', callback_data='rakshith'),
+            InlineKeyboardButton('ಯೋಗೇಶ್', callback_data='yogesh'),
+            InlineKeyboardButton('ರವಿಚಂದ್ರನ್', callback_data='ravichandran')
+        ],[
+            InlineKeyboardButton('⬅️Back', callback_data='hero'),
+            InlineKeyboardButton('Next➡️', callback_data='hero2')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
