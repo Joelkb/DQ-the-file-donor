@@ -1053,6 +1053,61 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Johnny johnny yes papa 2018</code>
 <code>Salaga 2021</code>
 <code>Veera Simha Reddy 2023</code>"""
+
+    CHIRANJEEVI = """<b>ಯುವ ಸಾಮ್ರಾಟ್ ಚಿರಂಜೀವಿ ಸರ್ಜಾ</b>
+<code>Vayuputra 2009</code>
+<code>Gandedhe 2010</code>
+<code>Chiru 2010</code>
+<code>Dandam dashagunam 2011</code>
+<code>Varadhanayaka 2013</code>
+<code>Whistle 2013</code>
+<code>Chandralekha 2014</code>
+<code>Ajith 2014</code>
+<code>Rudra tandava 2015</code>
+<code>Aatagara 2015</code>
+<code>Ramleela 2015</code>
+<code>Aake 2017</code>
+<code>Samhaara 2018</code>
+<code>Seizer 2018</code>
+<code>Amma i love you 2018</code>
+<code>Sinnga 2019</code>
+<code>Khaki 2020</code>
+<code>Aadya 2020</code>
+<code>Shivarjuna 2020</code>"""
+
+    PRAJWAL = """<b>ಡೈನಾಮಿಕ್ ಪ್ರಿನ್ಸ್ ಪ್ರಜ್ವಲ್ ದೇವರಾಜ್</b>
+<code>Sixer 2007</code>
+<code>Geleya 2007</code>
+<code>Gange baare thunge baare 2008</code>
+<code>Meravanige 2008</code>
+<code>Jeeva 2009</code>
+<code>Gulama 2009</code>
+<code>Kencha 2009</code>
+<code>Nannavanu 2010</code>
+<code>Kote 2011</code>
+<code>Murali meets meera 2011</code>
+<code>Mr Duplicate 2011</code>
+<code>Bhadra 2011</code>
+<code>Sagar 2012</code>
+<code>Gokula Krishna 2012</code>
+<code>Super shastri 2012</code>
+<code>Galaate 2013</code>
+<code>Ziddi 2013</code>
+<code>Angaaraka 2014</code>
+<code>Savaal 2014</code>
+<code>Jamboo savari 2014</code>
+<code>Neenade naa 2014</code>
+<code>Mrugashira 2014</code>
+<code>Arjuna 2015</code>
+<code>Madha mathu manasi 2016</code>
+<code>Bhujanga 2016</code>
+<code>Chowka 2017</code>
+<code>Life jothe ondh selfie 2018</code>
+<code>Gentleman 2020</code>
+<code>Inspector Vikram 2021</code>
+<code>Arjun Gowda 2021</code>
+<code>Abbara 2022</code>
+<code>Veeram 2022</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
