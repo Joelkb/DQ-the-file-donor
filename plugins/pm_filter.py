@@ -1236,7 +1236,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ಚಿರಂಜೀವಿ ಸರ್ಜಾ', callback_data='chiranjeevi'),
             InlineKeyboardButton('ಪ್ರಜ್ವಲ್ ದೇವರಾಜ್', callback_data='prajwal')
         ],[
-            InlineKeyboardButton('ರಕ್ಷಿತ್ ಶೆಟ್ಟಿ', callback_data='rakshith'),
+            InlineKeyboardButton('ರಕ್ಷಿತ್ ಶೆಟ್ಟಿ', callback_data='rakshit'),
             InlineKeyboardButton('ಯೋಗೇಶ್', callback_data='yogesh'),
             InlineKeyboardButton('ರವಿಚಂದ್ರನ್', callback_data='ravichandran')
         ],[
@@ -1719,7 +1719,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    elif query.data == "rakshith":
+    elif query.data == "rakshit":
         buttons = [[
             InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='hero1')
         ]]
@@ -1730,7 +1730,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.RAKSHITH,
+            text=script.RAKSHIT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
