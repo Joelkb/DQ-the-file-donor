@@ -1667,6 +1667,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
+    elif query.data == "vijay":
+        buttons = [[
+            InlineKeyboardButton('⬅️Bᴀᴄᴋ', callback_data='hero1')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        await query.message.edit_text(
+            text=script.PUNITHRscript.VIJAY,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+
+
         
     elif query.data == "stats":
         buttons = [[
