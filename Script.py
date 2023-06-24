@@ -1007,6 +1007,25 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Upendra matte baa 2017</code>
 <code>I love you 2019</code>
 <code>Kabzaa 2023</code>"""
+
+    YASH = """<b>ರಾಕಿಂಗ್ ಸ್ಟಾರ್ ಯಶ್</b>
+<code>Moggina manasu 2008</code>
+<code>Rocky 2008</code>
+<code>Kallara Santhe 2009</code>
+<code>gokula 2009</code>
+<code>Modala sala 2010</code>
+<code>Kirataka 2011</code>
+<code>Rajadhani 2011</code>
+<code>Lucky 2012</code>
+<code>Drama 2012</code>
+<code>Raja huli 2013</code>
+<code>Googly 2013</code>
+<code>Mr and mrs ramachari 2014</code>
+<code>Gajakesari 2014</code>
+<code>Masterpiece 2015</code>
+<code>Santhu Straight Forward 2016</code>
+<code>kgf chapter 1 2018</code>
+<code>kgf chapter 2 2022</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
