@@ -1199,11 +1199,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('R.   ನಟಸಾರ್ವಬೌಮ ಡಾ. ರಾಜ್‌ಕುಮಾರ್', callback_data='rajkumar')
         ], [
-            InlineKeyboardButton('V.      ಸಾಹಸ ಸಿಂಹ ಡಾ. ವಿಷ್ಣುವರ್ಧನ್', callback_data='vishnuvardhan')
+            InlineKeyboardButton('V.       ಸಾಹಸ ಸಿಂಹ ಡಾ. ವಿಷ್ಣುವರ್ಧನ್', callback_data='vishnuvardhan')
         ], [
-            InlineKeyboardButton('A.           ರೆಬೆಲ್ ಸ್ಟಾರ್ ಅಂಬರೀಷ್', callback_data='ambarish')
+            InlineKeyboardButton('A.            ರೆಬೆಲ್ ಸ್ಟಾರ್ ಅಂಬರೀಷ್', callback_data='ambarish')
         ], [
-            InlineKeyboardButton('S.         nಕರಾಟೆ ಕಿಂಗ್ ಶಂಕರ್ ನಾಗ್', callback_data='shankarnag')
+            InlineKeyboardButton('S.          nಕರಾಟೆ ಕಿಂಗ್ ಶಂಕರ್ ನಾಗ್', callback_data='shankarnag')
         ], [
             InlineKeyboardButton('P.   ಪವರ್ ಸ್ಟಾರ್ ಪುನೀತ್ ರಾಜ್‌ಕುಮಾರ್', callback_data='punithrajkumar')
         ], [
