@@ -1026,6 +1026,33 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Santhu Straight Forward 2016</code>
 <code>kgf chapter 1 2018</code>
 <code>kgf chapter 2 2022</code>"""
+
+    VIJAY = """<b>ಬ್ಲಾಕ್ ಕೋಬ್ರಾ ದುನಿಯಾ ವಿಜಯ್</b>
+<code>Duniya 2007</code>
+<code>Yuga 2007</code>
+<code>Slum Bala 2008</code>
+<code>junglee 2009</code>
+<code>Thaakath 2009</code>
+<code>Devru 2009</code>
+<code>Shankar ips 2010 </code>
+<code>Kari chirathe 2010</code>
+<code>Veera Bahu 2011</code>
+<code>Kanteerava 2011</code>
+<code>johny mera naam preethi mera kaam 2011</code>
+<code>Jarasandha 2011</code>
+<code>Bheema theeradalli 2012</code>
+<code>Rajani kantha 2013</code>
+<code>Jayammana maga 2013</code>
+<code>Shivajinagara 2014</code>
+<code>Simhadri 2014</code>
+<code>Jackson 2015</code>
+<code>RX SOORI 2015</code></code>
+<code>dana kayonu 2016</code>
+<code>Kanaka 2018</code>
+<code>Maasthi gudi 2017</code>
+<code>Johnny johnny yes papa 2018</code>
+<code>Salaga 2021</code>
+<code>Veera Simha Reddy 2023</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
