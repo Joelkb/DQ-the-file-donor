@@ -912,6 +912,58 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Sakath 2021</code>
 <code>Gaalipata 2 2022</code>
 <code>Triple Riding 2022</code>"""
+
+    DARSHAN = """<b>ಚಾಲೆಂಜಿಂಗ್ ಸ್ಟಾರ್ ದರ್ಶನ್</b>
+<code>Majestic 2002</code>
+<code>dhruva 2002</code>
+<code>Ninagoskara 2002</code>
+<code>kitty 2002</code>
+<code>kariya 2003</code>
+<code>laali haadu 2003</code>
+<code>lankesh patrike 2003</code>
+<code>namma preethiya ramu 2003</code>
+<code>dasa 2003</code>
+<code>Annavru 2003</code>
+<code>dharma 2004</code>
+<code>darshan 2004</code>
+<code>bhagawan 2004</code>
+<code>kalasipalya 2004</code>
+<code>ayya 2005</code>
+<code>shastri 2005</code>
+<code>swamy 2005</code>
+<code>mandya 2006 </code>
+<code>suntaragaali 2006</code>
+<code>dattha 2006</code>
+<code>thangigagi 2006</code>
+<code>Bhoopathi 2007</code>
+<code>snehana preethina 2007</code>
+<code>anatharu 2007</code>
+<code>gaja 2008</code>
+<code>Indra 2008</code>
+<code>Arjun 2008</code>
+<code>navagraha 2008</code>
+<code>yodha 2009</code>
+<code>abhay 2009</code>
+<code>Porki 2010</code>
+<code>shourya 2010</code>
+<code>boss 2011</code>
+<code>saarathi 2011</code>
+<code>chingari 2012</code>
+<code>krantiveera sangolli rayanna 2012</code>
+<code>bulbul 2013</code>
+<code>Brundaavana 2013</code>
+<code>ambareesha 2014</code>
+<code>mr airavata 2015</code>
+<code>Viraat 2016</code>
+<code>jaggu dada 2016</code>
+<code>chakravarthy 2017</code>
+<code>Tarak 2017</code>
+<code>Yajamana 2019</code>
+<code>kurukshetra 2019</code>
+<code>Odeya 2019</code>
+<code>Robert 2021</code>"""
+
+    DARSHAN1 = """<code>Kranti 2023</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
