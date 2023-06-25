@@ -1307,6 +1307,93 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Pogaru 2021</code>
 <code>James 2022</code>
 <code>Raaji 2022</code>"""
+
+    JAGGESH = """<b>ನವರಸ ನಾಯಕ ಜಗ್ಗೇಶ್</b>     
+<code>Bhanda Nanna Ganda 1992</code>
+<code>Tharle nan Maga 1992</code>
+<code>Super Nanna Maga 1992</code>
+<code>Alli Ramachari Illi Brahmachari 1992</code>
+<code>Server Somanna 1993</code>
+<code>Gadibidi Ganda 1993</code>
+<code>Bombaat Huduga 1993</code>
+<code>Gundana Maduve 1993</code>
+<code>Shivanna 1993</code>
+<code>Urvashi Kalyana 1993</code>
+<code>Bevu Bella 1993</code>
+<code>Military Mava 1993</code>
+<code>Rupayi raja 1993</code>
+<code>Rayara Maga 1994</code>
+<code>Bhairava 1994</code>
+<code>Beda Krishna Ranginaata 1994</code>
+<code>Indrana Gedda Narendra 1994</code>
+<code>Prema Simhasana 1994</code> (notavailable)
+<code>Bal Nan Maga 1995</code>
+<code>Eshwar 1995</code>
+<code>Soma 1996</code>
+<code>Pattanakke Banda Putta 1996</code>
+<code>Bhanda Alla Bahaddur 1997</code>
+<code>Aliya Allay Magala Ganda 1997</code>
+<code>Ranganna 1997</code>
+<code>Anna Andre Nammanna 1997</code>
+<code>Arjun Abhimanyu 1998</code>
+<code>Jaidev 1998</code>
+<code>matina Malla 1998</code>
+<code>Mari Kannu Hori Myage 1998</code>
+<code>Yaare Neenu Cheluve 1998</code>
+<code>Jagath Kiladi 1998</code>
+<code>Veeranna 1998</code>
+<code>Drona 1999</code>
+<code>Patela 1999</code>
+<code>Kubera 1999</code>
+<code>Nannaseya Hoove 1999</code>
+<code>Aaha nanna maduveyanthe 1999</code>
+<code>Mundaithe Oora Habba 2000</code> (notavailable)
+<code>Sultan 2000</code>
+<code>Kiladi 2000</code>
+<code>Haalu Sakkare 2001</code>
+<code>Jodi 2001</code>
+<code>Jeetendra 2001</code>
+<code>Prema Rajya 2001</code>
+<code>Rusthum 2001</code>
+<code>Shukradeshe 2001</code>
+<code>Jipuna Nanna Ganda 2001</code>"""
+
+    JAGGESH1 = """<code>Vamshakkobba 2002</code>
+<code>Makeup 2002</code>
+<code>yardo duddu yellammana jatre 2003</code>
+<code>hucchana maduveli undone jana 2003</code>
+<code>Kasu iddone Basu 2003</code>
+<code>Rama Krishna 2004</code>
+<code>nija 2004</code>
+<code>Aagodella Olledakke 2004</code>
+<code>mr bakra 2005</code>
+<code>Pandavaru 2006</code>
+<code>Tenali Rama 2006</code>
+<code>Mata 2006</code>
+<code>Honeymoon Express 2006</code> (notavailable)
+<code>Ganesha 2007</code>
+<code>Manmatha 2007</code>
+<code>Govinda Gopala 2007</code>
+<code>Kodagana Koli Nungitha 2008
+<code>Eddelu manjunatha 2009</code>
+<code>Chikkapete sachagalu 2009</code>
+<code>Lift Kodla 2010</code>
+<code>Double decker 2011</code>
+<code>Dudde doddappa 2011</code>
+<code>Bodyguard 2011</code>
+<code>Manjunatha BA LLB 2012</code>
+<code>CID EESHA 2013</code>
+<code>Cool ganesha 2013</code>
+<code>Agraja 2014</code>
+<code>Software ganda 2014</code>
+<code>Vaastu Prakaara 2014</code>
+<code>Neer dose 2016</code>
+<code>Melkote manja 2017</code>
+<code>8mm bullet 2018</code>
+<code>Premier padmini 2019</code>
+<code>Kalidasa kannada mestru 2019</code>
+<code>Thothapuri Chapter 1 2022</code>
+<code>Raghavendra Stores 2022</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
