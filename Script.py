@@ -1279,6 +1279,34 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Once Upona Timein Jamaligudda 2022</code>
 <code>Gurudev Hoysala 2023</code>
 <code>Orchestra Mysuru 2023</code>"""
+
+    RAGHAVENDRA = """<b>ರಾಘವೇಂದ್ರ ರಾಜ್‌ಕುಮಾರ್</b> 
+<code>Sri srinivasa kalyana 1974</code>
+<code>Daari tappida maga 1975</code>
+<code>Chiranjeevi Sudhakar 1989</code>
+<code>Nanjundi Kalyana 1989</code>
+<code>Gajaphati garvabhanga 1989</code>
+<code>Anukoolakkobba Ganda 1990</code>
+<code>Kalyana Mantapa 1991</code>
+<code>Bharjari Gandu 1992</code>
+<code>AnuraagadaAlegalu 1993</code>
+<code>Navibbaru Namagibbaru 1993</code>
+<code>Sagara Deepa 1994</code>
+<code>Aata Hudugaata 1995</code>
+<code>Ibbara Naduve Muddina Aata 1996</code>
+<code>Srimathi Kalyana 1996</code>
+<code>Geluvina Saradaara 1996</code>
+<code>Sutradhara 1996</code>
+<code>Shivaranjani 1997</code>
+<code>Swasthik 1998</code>
+<code>Tuvvi Tuvvi Tuvvi 1999</code>
+<code>Pakkadmane Hudugi 2004</code>
+<code>Ammana Mane 2019</code>
+<code>Thrayambakam 2019</code>
+<code>Rajatantra 2021</code>
+<code>Pogaru 2021</code>
+<code>James 2022</code>
+<code>Raaji 2022</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
