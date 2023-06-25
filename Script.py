@@ -1250,7 +1250,35 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 <code>Drishya 2 2021</code>
 <code>Ravi Bopanna 2022</code>
 <code>Vijayanand 2022</code> theater print
-<code>Kranti 2023</code>"""    
+<code>Kranti 2023</code>"""
+
+    DHANANJAY = """<b>ಧನಂಜಯ (ಡಾಲಿ)</b> 
+<code>Directors special 2013</code>
+<code>Rhaatee 2015</code>
+<code>Boxer 2015</code>
+<code>Jessie 2016</code>
+<code>Badmaash 2016</code>
+<code>Allama 2017</code>
+<code>Eradane sala 2017</code>
+<code>Happy new year 2017</code>
+<code>Tagaru 2018</code>
+<code>Bhairava geetha 2018</code>
+<code>Yajamana 2019</code>
+<code>Popcorn monkey tiger 2020</code>
+<code>Pogaru 2021</code>
+<code>Yuvaratna 2021</code>
+<code>Salaga 2021</code>
+<code>Rathnan Prapancha 2021</code>
+<code>Pushpa 2021</code>
+<code>Badava rascal 2021</code>
+<code>Twenty one hours 2022</code>
+<code>Bairagee 2022</code>
+<code>Monsoon raaga 2022</code>
+<code>Thothapuri 2022</code>
+<code>Head Bush 2022</code>
+<code>Once Upona Timein Jamaligudda 2022</code>
+<code>Gurudev Hoysala 2023</code>
+<code>Orchestra Mysuru 2023</code>"""
     
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs: <code>{}</code>
 ★ Tᴏᴛᴀʟ Usᴇʀs: <code>{}</code>
