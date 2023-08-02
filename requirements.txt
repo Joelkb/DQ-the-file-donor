@@ -13,3 +13,4 @@ git+https://github.com/Joelkb/cinemagoer
 datetime
 pytz
 aiohttp
+pip install your_application
