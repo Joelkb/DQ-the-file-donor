@@ -43,16 +43,16 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Dokku_files')
 
 # Others
 IS_VERIFY = bool(environ.get('IS_VERIFY', False))
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/dmmstreaming/6")
-VERIFY2_URL = environ.get('VERIFY2_URL', "kpslink.in")
-VERIFY2_API = environ.get('VERIFY2_API', "96d30576cfc4505fe66c335354f5af7a3e64aef0")
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'kpslink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '96d30576cfc4505fe66c335354f5af7a3e64aef0')
+VERIFY2_URL = environ.get('VERIFY2_URL', "dalink.in")
+VERIFY2_API = environ.get('VERIFY2_API', "48b777447d158b7e4dd3ac16283b3465bd2c7e32")
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'dalink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '48b777447d158b7e4dd3ac16283b3465bd2c7e32')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
