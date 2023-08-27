@@ -1,15 +1,39 @@
 services:
-  # A Docker web service
   - type: web
-    name: DQ-The-File-Donor
+    plan: free
+    name: SPARROW-AUTO-FILTER
     env: python
-    startCommand: python3 bot.py
-    buildCommand: pip3 install -U -r requirements.txt
-    repo: https://github.com/Joelkb/DQ-the-file-donor.git # optional
-    region: oregon # optional (defaults to oregon)
-    plan: free # optional (defaults to starter)
-    branch: web # optional (defaults to master)
-    numInstances: 1 # optional (defaults to 1)
-    healthCheckPath: /
-
-#End of yaml
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    repo: https://github.com/God-Luffy/SPARROW-AUTO-FILTER.git
+    branch: web
+    autoDeploy: false
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: CHANNELS
+        sync: false
+      - key: ADMINS
+        sync: false
+      - key: PICS
+        sync: false
+      - key: LOG_CHANNEL
+        sync: false
+      - key: AUTH_CHANNEL
+        sync: false
+      - key: DATABASE_URI
+        sync: false
+      - key: DATABASE_NAME
+        sync: false
+      - key: SUPPORT_CHAT_ID
+        sync: false
+      - key: GRP_LNK
+        sync: false
+      - key: CHNL_LNK
+        sync: false
+      - key: SUPPORT_CHAT
+        sync: false
