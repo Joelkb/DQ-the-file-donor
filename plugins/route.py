@@ -4,4 +4,4 @@ routes = web.RouteTableDef()
 
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
-    return web.json_response("DQTheFileDonor")
+    return web.json_response("SPARROW-AUTO-FILTER")
