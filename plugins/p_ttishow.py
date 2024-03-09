@@ -165,11 +165,10 @@ async def get_ststs(bot, message):
     total_users = await db.total_users_count()
     totl_chats = await db.total_chat_count()
     files = await Media.count_documents()
-    size = await db.get_db_size()
-    free = 536870912 - size
-    size = get_size(size)
-    free = get_size(free)
-    await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
+    stats = await clientDB.command('dbStats')
+    used_dbSize = (stats['dataSize']/(1024*1024))+(stats['indexSize']/(1024*1024))
+    free_dbSize = 512-used_dbSize
+    await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, round(used_dbSize, 2), round(free_dbSize, 2)))
 
 
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
