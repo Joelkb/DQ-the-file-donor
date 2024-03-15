@@ -1533,6 +1533,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
+
+    elif query.data.startswith("getagain#"):
+        ident, method, file_id = query.data.split("#")
+        if method == "batch":
+            await query.answer(f"https://t.me/{temp.U_NAME}?start=BATCH-{file_id}")
+        else:
+            await query.answer(f"https://t.me/{temp.U_NAME}?start={file_id}")
     await query.answer(MSG_ALRT)
 
     

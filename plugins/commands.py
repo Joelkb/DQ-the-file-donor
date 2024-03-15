@@ -17,6 +17,7 @@ import base64
 logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
+VP_MSGS ={}
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
@@ -152,7 +153,7 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                await client.send_cached_media(
+                vp = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
@@ -168,10 +169,11 @@ async def start(client, message):
                         ]
                     )
                 )
+                VP_MSGS.append(vp)
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
-                await client.send_cached_media(
+                vp = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
@@ -187,11 +189,20 @@ async def start(client, message):
                         ]
                     )
                 )
+                VP_MSGS.append(vp)
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
             await asyncio.sleep(1) 
         await sts.delete()
+        await client.send_message("<b><i>Note: This files will be deleted in 10 mins to avoid copyrights. Save the files to Somewhere else</b></i>")
+        await asyncio.sleep(600)
+        for delmsg in VP_MSGS:
+            await delmsg.delete()
+        btn = [[
+            InlineKeyboardButton("Get Again", callback_data=f"getagain#batch#{file_id}")
+        ]]
+        await client.send_message(message.from_user.id, "Your requested files has been successfully deleted!!!", reply_markup=InlinekeyboardMarkup(btn))
         return
     elif data.split("-", 1)[0] == "DSTORE":
         sts = await message.reply("<b>Pʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>")
@@ -317,6 +328,14 @@ async def start(client, message):
                 except:
                     return
             await msg.edit_caption(f_caption)
+            vp = await msg.reply_text("<b><i>Note: This message will be deleted in 10 mins to avoid copyrights. Save the file to Somewhere else</b></i>")
+            await asyncio.sleep(600)
+            await msg.delete()
+            await vp.delete()
+            btn = [[
+                InlineKeyboardButton("Get Again", callback_data=f"getagain#file#{file_id}")
+            ]]
+            await client.send_message(message.from_user.id, "Your requested file is successfully deleted!!!", reply_markup=InlinekeyboardMarkup(btn))
             return
         except:
             pass
@@ -344,7 +363,7 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return
-    await client.send_cached_media(
+    message = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
@@ -360,6 +379,14 @@ async def start(client, message):
             ]
         )
     )
+    vp = await message.reply_text("<b><i>Note: This message will be deleted in 10 mins to avoid copyrights. Save the file to Somewhere else</b></i>")
+    await asyncio.sleep(600)
+    await message.delete()
+    await vp.delete()
+    btn = [[
+        InlineKeyboardButton("Get Again", callback_data=f"getagain#file#{file_id}")
+    ]]
+    await client.send_message(message.from_user.id, "Your requested file is successfully deleted!!!", reply_markup=InlinekeyboardMarkup(btn))
                     
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
