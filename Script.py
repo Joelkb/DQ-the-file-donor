@@ -206,9 +206,9 @@ Nᴀᴍᴇ - {}"""
 
 <b>
 =========== • ✠ • ===========
-<a href='https://t.me/+EqSY4JxOm5E3MzA1'>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 1 </a></b>"""
-<a href='https://t.me/+baguWv_zqF8yOWI1'>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 2 </a></b>"""
-<a href='https://t.me/+Me9dQQOVna8xZmI1'>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 3 </a></b>"""
+ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 1 : https://t.me/+EqSY4JxOm5E3MzA1
+ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 2 : https://t.me/+baguWv_zqF8yOWI1
+ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 3 : https://t.me/+Me9dQQOVna8xZmI1
 =========== • ✠ • ===========</b>"""
 
     IMDB_TEMPLATE_TXT = """
