@@ -50,20 +50,25 @@ class temp(object):
     KEYWORD = {}
 
 async def is_subscribed(bot, query=None, userid=None):
-    try:
-        if userid == None and query != None:
-            user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
+    invite_links = []
+    for id in AUTH_CHANNEL:
+        try:
+            if userid == None and query != None:
+                chat = await bot.get_chat(id)
+                user = await bot.get_chat_member(id, query.from_user.id)
+            else:
+                chat = await bot.get_chat(id)
+                user = await bot.get_chat_member(AUTH_CHANNEL, int(userid))
+        except UserNotParticipant:
+            invite_links.append(chat.invite_link)
+        except Exception as e:
+            logger.exception(e)
+            continue
         else:
-            user = await bot.get_chat_member(AUTH_CHANNEL, int(userid))
-    except UserNotParticipant:
-        pass
-    except Exception as e:
-        logger.exception(e)
-    else:
-        if user.status != enums.ChatMemberStatus.BANNED:
-            return True
+            if user.status != enums.ChatMemberStatus.BANNED:
+                continue
 
-    return False
+    return invite_links
 
 async def get_poster(query, bulk=False, id=False, file=None):
     if not id:
