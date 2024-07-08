@@ -435,7 +435,7 @@ async def advantage_spoll_choker(bot, query):
     movie = movies[(int(movie_))]
     await query.answer(script.TOP_ALRT_MSG)
     gl = await global_filters(bot, query.message, text=movie)
-    k = await manual_filters(bot, query.message, text=movie)
+    manual = await manual_filters(bot, query.message, text=movie)
     files, offset, total_results = await get_search_results(query.message.chat.id, movie, offset=0, filter=True)
     if files:
         k = (movie, files, offset, total_results)
@@ -445,15 +445,14 @@ async def advantage_spoll_choker(bot, query):
             reqstr1 = query.from_user.id if query.from_user else 0
             reqstr = await bot.get_users(reqstr1)
             await bot.send_message(chat_id=LOG_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
-        k = await query.message.edit(script.MVE_NT_FND)
+        k_msg = await query.message.edit(script.MVE_NT_FND)
         await asyncio.sleep(10)
-        await k.delete()
-        await asyncio.sleep(600)
+        await k_msg.delete()
+        await asyncio.sleep(590)
     if gl:
         await gl.delete()
-    if k:
-        await k.delete()
-
+    if manual:
+        await manual.delete()
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
