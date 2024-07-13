@@ -205,11 +205,7 @@ Nᴀᴍᴇ - {}"""
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
 
 <b>
-=========== • ✠ • ===========
-ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 1 : https://t.me/+EqSY4JxOm5E3MzA1
-ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 2 : https://t.me/+baguWv_zqF8yOWI1
-ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 3 : https://t.me/+Me9dQQOVna8xZmI1
-=========== • ✠ • ===========</b>"""
+@Netflix_Group3 </b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
