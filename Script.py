@@ -202,10 +202,28 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+<b><pre>
+Hi Gentleman 😍 You're File Is Ready,(^_^)
 
-<b>
-@Netflix_Group3 </b>"""
+  📂 File Name: {file_name}
+
+💾 Size: {file_size}
+  </pre>
+<blockquote>
+╔═  ᴊᴏɪɴ ᴡɪᴛʜ ᴜs   ═╗
+ Jᴏɪɴ :- [MAIN CHANNEL](https://t.me/New_indian_cinemas)
+ Jᴏɪɴ :- [MOVIE UPDATES](https://t.me/new_ott_movies3)
+ Jᴏɪɴ :- [Movie Group 1](https://t.me/MOVIES_GROUP_MN)
+ Jᴏɪɴ :- [Movie Group 2](https://t.me/all_movies_group2)
+ Jᴏɪɴ :- [Movie Group 3](https://t.me/mallu_movies4)
+ Jᴏɪɴ :- [Movie Group 4](https://t.me/Netflix_Group3)
+ Jᴏɪɴ :- [Movie Group 5](https://t.me/Malayalam_Movie_Request_group)
+ Jᴏɪɴ :- [Movie Group 6](https://t.me/English_Movie_search)
+ Jᴏɪɴ :- [Movie Group 7](https://t.me/New_Release_Group)
+ Jᴏɪɴ :- [Movie Group 8](https://t.me/+_c0Cj--mClszZDY1)
+╚═  ᴊᴏɪɴ ᴡɪᴛʜ ᴜs    ═╝
+
+</blockquote> </b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
