@@ -201,12 +201,9 @@ Nᴀᴍᴇ - {}"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """
-<pre>
+    CAPTION = """<pre>
 Hi Gentleman 😍 You're File Is Ready,(^_^)
-
   📂 File Name: {file_name}
-
 💾 Size: {file_size}
   </pre>
 <blockquote>
@@ -221,9 +218,8 @@ Hi Gentleman 😍 You're File Is Ready,(^_^)
  Jᴏɪɴ :- [Movie Group 6](https://t.me/English_Movie_search)
  Jᴏɪɴ :- [Movie Group 7](https://t.me/New_Release_Group)
  Jᴏɪɴ :- [Movie Group 8](https://t.me/+_c0Cj--mClszZDY1)
-╚═  ᴊᴏɪɴ ᴡɪᴛʜ ᴜs    ═╝
-
-</blockquote> """
+╚═  ᴊᴏɪɴ ᴡɪᴛʜ ᴜs    ═╝
+</blockquote>"""
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
