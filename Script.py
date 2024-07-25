@@ -202,7 +202,7 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b><pre>
+<pre>
 Hi Gentleman 😍 You're File Is Ready,(^_^)
 
   📂 File Name: {file_name}
@@ -223,7 +223,7 @@ Hi Gentleman 😍 You're File Is Ready,(^_^)
  Jᴏɪɴ :- [Movie Group 8](https://t.me/+_c0Cj--mClszZDY1)
 ╚═  ᴊᴏɪɴ ᴡɪᴛʜ ᴜs    ═╝
 
-</blockquote> </b>"""
+</blockquote> """
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {query}
